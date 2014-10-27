@@ -6,24 +6,30 @@ gem 'rails-api'
 
 gem 'airbrake'
 gem 'elasticsearch'
-gem 'iso_country_codes'
-gem 'us_states', :git => 'git://github.com/GSA-OCSIT/us_states.git'
+gem 'iso_country_codes', '0.4.2'
+gem 'us_states', git: 'git://github.com/GSA-OCSIT/us_states.git'
 gem 'jbuilder'
-gem 'newrelic_rpm'
-gem 'nokogiri'
+gem 'nokogiri', '1.6.0'
 gem 'rack-contrib'
 gem 'rake'
-gem 'sanitize'
+gem 'sanitize', '~> 2.0.6'
+gem 'parslet'
+
+group :production do
+  gem 'newrelic_rpm'
+end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails',  '~> 2.14.0'
   gem 'shoulda-matchers'
   gem 'thin'
   gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do
   gem 'capistrano',  '~> 2.15'
+  gem 'rubocop', require: false
 end
 
 group :test do

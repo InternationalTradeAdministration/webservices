@@ -13,7 +13,7 @@ module Importer
 
   def sanitize_entry(entry)
     entry.each do |k, v|
-      next if v.is_a?(Array)
+      next unless v.is_a?(String)
       entry[k] = v.present? ? v.squish : nil
     end
     entry
@@ -61,5 +61,15 @@ module Importer
 
   def parse_american_date(date_str)
     Date.strptime(date_str, '%m/%d/%Y').iso8601 rescue nil
+  end
+
+  def self.included(base)
+    base.class_eval do
+      class << self
+        def model_class
+          name.sub(/Data$/, '').constantize
+        end
+      end
+    end
   end
 end

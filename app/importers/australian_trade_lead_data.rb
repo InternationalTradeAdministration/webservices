@@ -4,19 +4,22 @@ require 'open-uri'
 class AustralianTradeLeadData
   include Importer
 
+  # Original source: http://data.gov.au/dataset/austender-contract-notice-export
+  ENDPOINT = "#{Rails.root}/data/australian_trade_leads/trade_leads_full.csv"
+
   COLUMN_HASH = {
-      agency: :agency,
-      amendment_date: :publish_date_amended,
-      category: :topic,
-      cn_id: :id,
-      value: :contract_value,
-      description: :description,
-      parent_cn_id: :parent_id,
-      procurement_method: :procurement_method,
-      status: :status
+    agency:             :agency,
+    amendment_date:     :publish_date_amended,
+    category:           :topic,
+    cn_id:              :id,
+    value:              :contract_value,
+    description:        :description,
+    parent_cn_id:       :parent_id,
+    procurement_method: :procurement_method,
+    status:             :status,
   }
 
-  def initialize(resource)
+  def initialize(resource = ENDPOINT)
     @resource = resource
   end
 
