@@ -1,44 +1,37 @@
 namespace :ita do
-  desc 'Import data for a given index'
-  task :import, [:index_name] => :environment do |_t, args|
-    import_data(args.index_name)
+  desc 'Import data for a given module containing models, or a given model class'
+  task :import, [:module_or_model_class] => :environment do |_t, args|
+    importers(args.module_or_model_class.constantize).each { |i| do_import(i.new) }
   end
 
-  desc 'Recreate an index'
-  task :recreate_index, [:index_name] => :environment do |_t, args|
-    args.index_name.constantize.recreate_index
-  end
-
-  desc 'Recreate then import all CSL indices'
-  task recreate_then_import_csl_indices: :environment do
-    %w( ScreeningList::Dpl
-        ScreeningList::Dtc
-        ScreeningList::El
-        ScreeningList::Fse
-        ScreeningList::Isn
-        ScreeningList::Plc
-        ScreeningList::Sdn
-        ScreeningList::Ssi
-        ScreeningList::Uvl
-    ).each do |class_name|
-      class_name.constantize.recreate_index
-      import_data(class_name)
+  desc 'Recreate indices for a given module containing models, or a given model class'
+  task :recreate_index, [:module_or_model_class] => :environment do |_t, args|
+    importers(args.module_or_model_class.constantize).each do |i|
+      i.new.model_class.recreate_index
     end
   end
 
-  desc 'Recreate then import all Trade Lead indices'
-  task recreate_then_import_trade_lead_indices: :environment do
-    %w( CanadaLead
-        FbopenLead
-        StateTradeLead
-        UkTradeLead
-    ).each do |class_name|
-      class_name.constantize.recreate_index
-      import_data(class_name)
+  def importers(module_or_model_class)
+    if module_or_model_class.is_a?(Indexable)
+      model_class = module_or_model_class
+      ["#{model_class.name}Data".constantize]
+    else
+      modu1e = module_or_model_class
+      module_importer_files =
+        "#{Rails.root}/app/importers/#{modu1e.name.typeize}/*"
+      Dir[module_importer_files].each { |f| require f }
+
+      modu1e.constants
+        .map { |constant| modu1e.const_get(constant) }
+        .select { |klass| klass.include?(Importer) }
     end
   end
 
-  def import_data(model_class_name)
-    "#{model_class_name}Data".constantize.new.import
+  def do_import(importer)
+    if importer.can_purge_old?
+      importer.import_then_purge_old
+    else
+      importer.import
+    end
   end
 end

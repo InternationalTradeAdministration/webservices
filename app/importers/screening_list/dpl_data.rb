@@ -5,19 +5,24 @@ require 'digest/md5'
 module ScreeningList
   class DplData
     include ::Importer
-    include CanGroupRows
 
-    self.group_by = [:name, :beginning_date, :ending_date, :fr_citation]
+    include ::CanEnsureCsvHeaders
+    self.expected_csv_headers = %i(
+      action city country effective_date expiration_date fr_citation last_update
+      name postal_code standard_order state street_address)
+
+    include ScreeningList::CanGroupRows
+    self.group_by = %i(name beginning_date ending_date fr_citation)
 
     ENDPOINT = 'http://www.bis.doc.gov/dpl/dpl.txt'
 
     COLUMN_HASH = {
-      name:             :name,
-      effective_date:   :start_date,
-      expiration_date:  :end_date,
-      standard_order:   :standard_order,
-      action:           :remarks,
-      fr_citation:      :federal_register_notice,
+      name:            :name,
+      effective_date:  :start_date,
+      expiration_date: :end_date,
+      standard_order:  :standard_order,
+      action:          :remarks,
+      fr_citation:     :federal_register_notice,
     }
 
     ADDRESS_HASH = {
@@ -36,11 +41,13 @@ module ScreeningList
       Rails.logger.info "Importing #{@resource}"
       rows = CSV.parse(open(@resource).read, headers: true, header_converters: :symbol, encoding: 'UTF-8', col_sep: "\t")
 
+      ensure_expected_headers(rows.first)
+
       docs = group_rows(rows).map do |id, grouped|
         process_grouped_rows(id, grouped)
       end
 
-      self.class.model_class.index(docs)
+      model_class.index(docs)
     end
 
     private
@@ -49,7 +56,7 @@ module ScreeningList
       doc = remap_keys(COLUMN_HASH, rows.first.to_hash)
 
       doc[:id] = id
-      doc[:source] = self.class.model_class.source
+      doc[:source] = model_class.source
       doc[:source_list_url] =
         'http://www.bis.doc.gov/index.php/the-denied-persons-list'
       doc[:source_information_url] =

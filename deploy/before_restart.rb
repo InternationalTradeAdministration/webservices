@@ -1,3 +1,6 @@
+# This deploy hook exists to enable GovWizely-specific (private)
+# behaviors on GovWizely servers. This hook is designed not to
+# fail if you do not have these files on your own server.
 shared_files =
   begin
     node[:apps][:webservices][:shared_files] || []

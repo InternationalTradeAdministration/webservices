@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'DDTC ITAR Debarred Parties API V1' do
+describe 'DDTC ITAR Debarred Parties API V1', type: :request do
   include_context 'DTC data'
   let(:v1_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v1' } }
 
@@ -29,11 +29,6 @@ describe 'DDTC ITAR Debarred Parties API V1' do
       context 'when search term exists only in alt_names' do
         let(:params) { { q: 'mcsulla' } }
         it_behaves_like 'it contains all DTC results that match "mcsulla"'
-      end
-
-      context 'when search term exists only in remarks' do
-        let(:params) { { q: 'original' } }
-        it_behaves_like 'it contains all DTC results that match "original"'
       end
     end
 

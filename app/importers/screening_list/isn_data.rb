@@ -5,9 +5,14 @@ require 'digest/md5'
 module ScreeningList
   class IsnData
     include ::Importer
-    include CanGroupRows
 
-    self.group_by = [:name, :effective_date, :federal_register_notice]
+    include ::CanEnsureCsvHeaders
+    self.expected_csv_headers = %i(
+      address country date_liftedwaivedexpired effective_date
+      federal_register_notice name programs)
+
+    include ScreeningList::CanGroupRows
+    self.group_by = %i(name effective_date federal_register_notice)
 
     ENDPOINT = "#{Rails.root}/data/screening_lists/isn/isn.csv"
 
@@ -26,13 +31,15 @@ module ScreeningList
       Rails.logger.info "Importing #{@resource}"
       rows = CSV.parse(open(@resource, 'r:ISO-8859-1').read, headers: true, header_converters: :symbol, encoding: 'UTF-8')
 
+      ensure_expected_headers(rows.first)
+
       rows = rows.select { |row| !expired?(row) }
 
       docs = group_rows(rows).map do |id, grouped|
         process_grouped_rows(id, grouped)
       end
 
-      self.class.model_class.index(docs)
+      model_class.index(docs)
     end
 
     private
@@ -41,7 +48,7 @@ module ScreeningList
       doc = remap_keys(COLUMN_HASH, rows.first.to_hash)
 
       doc[:id] = id
-      doc[:source] = self.class.model_class.source
+      doc[:source] = model_class.source
       doc[:source_list_url] = 'http://www.state.gov/t/isn/c15231.htm'
       doc[:source_information_url] = 'http://www.state.gov/t/isn/c15231.htm'
 

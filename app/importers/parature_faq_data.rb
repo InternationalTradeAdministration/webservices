@@ -22,34 +22,42 @@ class ParatureFaqData
   end
 
   def import
-    article_count = 379
-    pause_duration = 10
     Rails.logger.info "Importing #{@resource}"
 
-    id = 1
-    data = []
-
-    while id <= article_count
-      if (id % 100 == 0)
-        sleep pause_duration
-     end
-
+    data = Array(1..379).map do |id|
+      sleep 10 if id % 10 == 0 && should_throttle
       begin
-        resource = @resource % id
-        entry = Hash.from_xml(open(resource))
-        entry = entry.symbolize_keys
-        entry[:Article] = entry[:Article].symbolize_keys
-        data << entry
-      rescue
-        next
-      ensure
-        id += 1
+        extract_hash_from_resource(id)
+      rescue OpenURI::HTTPError, Errno::ENOENT => e
+        raise unless error_permitted(e)
+        nil
       end
-    end
+    end.compact
 
     faqs = data.map { |faq_hash| process_faq_info(faq_hash) }.compact
+    model_class.index(faqs)
+  end
 
-    ParatureFaq.index faqs
+  private
+
+  def error_permitted(error)
+    @permitted_error_messages ||= [
+      '404 Not Found',
+      '500 Internal Server Error',
+      'No such file or directory',
+    ]
+    @permitted_error_messages.select { |m| error.message =~ /#{m}/ }.count > 0
+  end
+
+  def extract_hash_from_resource(id)
+    resource = @resource % id
+    entry = Hash.from_xml(open(resource)).symbolize_keys
+    entry[:Article].symbolize_keys!
+    entry
+  end
+
+  def should_throttle
+    @should_throttle ||= URI.parse(@resource % 1).scheme =~ /ftp|http/
   end
 
   def process_faq_info(faq_hash)
@@ -69,6 +77,7 @@ class ParatureFaqData
 
     faq[:answer] &&= Nokogiri::HTML.fragment(faq[:answer]).inner_text.squish
     faq[:answer] &&= strip_nonascii(faq[:answer])
+    faq[:question] &&= strip_nonascii(faq[:question])
     faq[:update_date] &&= Date.parse(faq[:update_date]).to_s
     faq
   end

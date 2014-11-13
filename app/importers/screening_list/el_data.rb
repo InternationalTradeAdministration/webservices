@@ -5,9 +5,19 @@ require 'digest/md5'
 module ScreeningList
   class ElData
     include ::Importer
-    include CanGroupRows
 
-    self.group_by = [:name, :federal_register_notice, :effective_date]
+    include ::CanEnsureCsvHeaders
+    self.expected_csv_headers = %i(
+      address address_number address_remarks alternate_name alternate_number
+      alternate_remarks alternate_type call_sign city country
+      date_liftedwaivedexpired effective_date entity_number
+      federal_register_notice gross_register_tonnage gross_tonnage
+      license_policy license_requirement name postal_code programs remarksnotes
+      sdn_type source_list standard_order stateprovince title vessel_flag
+      vessel_owner vessel_type web_link)
+
+    include ScreeningList::CanGroupRows
+    self.group_by = %i(name federal_register_notice effective_date)
 
     ENDPOINT = 'http://www.bis.doc.gov/index.php/forms-documents/doc_download/1072-el'
 
@@ -37,11 +47,13 @@ module ScreeningList
                        headers:           true,
                        header_converters: :symbol)
 
+      ensure_expected_headers(rows.first)
+
       docs = group_rows(rows).map do |id, grouped|
         process_grouped_rows(id, grouped)
       end
 
-      self.class.model_class.index(docs)
+      model_class.index(docs)
     end
 
     private
@@ -58,7 +70,7 @@ module ScreeningList
       doc[:addresses] = rows.map { |row| process_address(row) }.uniq
 
       doc[:start_date] &&= parse_american_date(doc[:start_date])
-      doc[:source] = self.class.model_class.source
+      doc[:source] = model_class.source
       doc[:source_list_url] =
         doc[:source_information_url] =
         'http://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/entity-list'

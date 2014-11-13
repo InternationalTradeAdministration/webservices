@@ -22,5 +22,21 @@ Webservices::Application.routes.draw do
         get "/#{source}/search", to: "screening_lists/#{source}#search"
       end
     end
+
+    scope '/tariff_rates' do
+      get '/search', to: 'tariff_rates/consolidated#search'
+      %w(australia costa_rica el_salvador guatemala korea).each do |source|
+        get "/#{source}/search", to: "tariff_rates/#{source}#search"
+      end
+    end
+
+    namespace :trade_events do
+      get 'search', to: 'consolidated#search'
+      get 'ita/search'
+      get 'sba/search'
+      get 'exim/search'
+      get 'dl/search'
+      get 'ustda/search'
+    end
   end
 end

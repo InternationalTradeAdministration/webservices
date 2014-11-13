@@ -5,9 +5,12 @@ require 'digest/md5'
 module ScreeningList
   class UvlData
     include ::Importer
-    include CanGroupRows
 
-    self.group_by = [:name]
+    include ::CanEnsureCsvHeaders
+    self.expected_csv_headers = %i(address country name)
+
+    include ScreeningList::CanGroupRows
+    self.group_by = %i(name)
 
     ENDPOINT = 'http://www.bis.doc.gov/index.php/forms-documents/doc_download/1053-unverified-list'
 
@@ -23,11 +26,13 @@ module ScreeningList
           address: row[2] }
       end
 
+      ensure_expected_headers(rows.first)
+
       docs = group_rows(rows).map do |id, grouped|
         process_grouped_rows(id, grouped)
       end
 
-      self.class.model_class.index(docs)
+      model_class.index(docs)
     end
 
     private
@@ -36,7 +41,7 @@ module ScreeningList
       doc = {
         name:                   rows.first[:name],
         id:                     id,
-        source:                 self.class.model_class.source,
+        source:                 model_class.source,
         source_list_url:        'http://www.bis.doc.gov/enforcement/unverifiedlist/unverified_parties.html',
         source_information_url: 'http://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/unverified-list',
       }
