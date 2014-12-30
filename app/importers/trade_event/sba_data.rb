@@ -6,7 +6,7 @@ module TradeEvent
 
     attr_accessor :html_entities_coder, :reject_if_ends_before
 
-    ENDPOINT = 'http://www.sba.gov/event-list/views/new_events_listing.xml?display_id=services_1&filters[event_topic][value]=6&limit=100&offset=0'
+    ENDPOINT = 'https://www.sba.gov/event-list/views/new_events_listing.xml?display_id=services_1&filters[event_topic][value]=6&limit=100&offset=0'
 
     def initialize(resource = ENDPOINT, options = {})
       @resource = resource
@@ -68,7 +68,7 @@ module TradeEvent
       doc.merge!(extract_date_and_time_fields(item))
 
       doc[:industries] = [doc[:industries]].compact
-      doc[:source] = model_class.source
+      doc[:source] = model_class.source[:code]
       doc[:contacts] = extract_contacts(item)
       doc[:venues] = extract_venues(item)
       doc[:id] = generate_id(doc)
@@ -103,7 +103,7 @@ module TradeEvent
       venue = extract_fields(item, VENUE_XPATHS)
       venue[:country] &&= lookup_country(venue[:country])
       venue[:state] &&= lookup_state(venue[:state]) rescue venue[:state]
-      [venue]
+      [sanitize_entry(venue)]
     end
 
     def generate_id(doc)

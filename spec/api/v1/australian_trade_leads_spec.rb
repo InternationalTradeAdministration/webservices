@@ -2,12 +2,13 @@ require 'spec_helper'
 
 describe 'Australian Trade Leads API V1', type: :request do
   before(:all) do
-    AustralianTradeLead.recreate_index
-    AustralianTradeLeadData.new("#{Rails.root}/spec/fixtures/australian_trade_leads/trade_leads.csv").import
+    TradeLead::Australia.recreate_index
+    TradeLead::AustraliaData.new(
+        "#{Rails.root}/spec/fixtures/trade_leads/australia/trade_leads.csv").import
   end
 
+  let(:expected_results) { JSON.parse Rails.root.join('spec/fixtures/trade_leads/australia/results_v1.json').read }
   let(:v1_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v1' } }
-  let(:expected_results) { JSON.parse Rails.root.join('spec/fixtures/australian_trade_leads/results.json').read }
 
   describe 'GET /australian_trade_leads/search.json' do
     context 'when search parameters are empty' do
@@ -29,7 +30,8 @@ describe 'Australian Trade Leads API V1', type: :request do
 
   describe 'GET /australian_trade_leads/search.json' do
     context 'when q is populated' do
-      before { get '/australian_trade_leads/search', { q: 'motor' }, v1_headers }
+      let(:params) { { q: 'motor' } }
+      before { get '/australian_trade_leads/search', params, v1_headers }
       subject { response }
 
       it_behaves_like 'a successful search request'
@@ -42,6 +44,7 @@ describe 'Australian Trade Leads API V1', type: :request do
         results = json_response['results']
         expect(results[0]).to eq(expected_results[1])
       end
+      it_behaves_like "an empty result when a query doesn't match any documents"
     end
   end
 end

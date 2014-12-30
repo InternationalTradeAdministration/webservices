@@ -2,21 +2,19 @@ require 'spec_helper'
 
 describe 'Trade Leads API V1', type: :request do
   before(:all) do
-    CanadaLead.recreate_index
-    CanadaLeadData.new("#{Rails.root}/spec/fixtures/canada_leads/canada_leads.csv").import
-
-    StateTradeLead.recreate_index
-    StateTradeLeadData.new("#{Rails.root}/spec/fixtures/state_trade_leads/state_trade_leads.json").import
-
-    UkTradeLead.recreate_index
-    UkTradeLeadData.new("#{Rails.root}/spec/fixtures/uk_trade_leads/uk_trade_leads.csv").import
-
-    FbopenLead.recreate_index
-    FbopenLeadData.new("#{Rails.root}/spec/fixtures/fbopen_leads/input_presol").import
+    TradeLead::Australia.recreate_index
+    TradeLead::Canada.recreate_index
+    TradeLead::Fbopen.recreate_index
+    TradeLead::State.recreate_index
+    TradeLead::Uk.recreate_index
+    TradeLead::FbopenData.new("#{Rails.root}/spec/fixtures/trade_leads/fbopen/input_presol").import
+    TradeLead::CanadaData.new("#{Rails.root}/spec/fixtures/trade_leads/canada/canada_leads.csv").import
+    TradeLead::UkData.new("#{Rails.root}/spec/fixtures/trade_leads/uk/uk_trade_leads.csv").import
+    TradeLead::StateData.new("#{Rails.root}/spec/fixtures/trade_leads/state/state_trade_leads.json").import
   end
 
   let(:v1_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v1' } }
-  let(:expected_results) { JSON.parse Rails.root.join('spec/fixtures/trade_leads/expected_results.json').read }
+  let(:expected_results) { JSON.parse Rails.root.join('spec/fixtures/trade_leads/expected_results_v1.json').read }
 
   describe 'GET /trade_leads/search.json' do
     context 'when search parameters are empty' do
@@ -31,7 +29,7 @@ describe 'Trade Leads API V1', type: :request do
         expect(json_response['offset']).to eq(0)
 
         results = json_response['results']
-        expect(results).to eq(expected_results.first(10))
+        expect(results).to match_array(expected_results.first(10))
       end
     end
 
@@ -52,7 +50,8 @@ describe 'Trade Leads API V1', type: :request do
     end
 
     context 'when countries is populated' do
-      before { get '/trade_leads/search', { countries: 'GB' }, v1_headers }
+      let(:params) { { countries: 'GB' } }
+      before { get '/trade_leads/search', params, v1_headers }
       subject { response }
 
       it_behaves_like 'a successful search request'
@@ -67,10 +66,12 @@ describe 'Trade Leads API V1', type: :request do
         expect(results[1]).to eq(expected_results[2])
         expect(results[2]).to eq(expected_results[3])
       end
+      it_behaves_like "an empty result when a countries search doesn't match any documents"
     end
 
     context 'when q matches a title' do
-      before { get '/trade_leads/search', { q: 'physician service' }, v1_headers }
+      let(:params) { { q: 'physician service' } }
+      before { get '/trade_leads/search', params, v1_headers }
       subject { response }
 
       it_behaves_like 'a successful search request'
@@ -83,6 +84,7 @@ describe 'Trade Leads API V1', type: :request do
         results = json_response['results']
         expect(results[0]).to eq(expected_results[0])
       end
+      it_behaves_like "an empty result when a query doesn't match any documents"
     end
 
     context 'when q matches a description' do

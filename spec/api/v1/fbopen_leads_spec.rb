@@ -2,13 +2,17 @@ require 'spec_helper'
 
 describe 'Fbopen Leads API V1', type: :request do
   before(:all) do
-    FbopenLead.recreate_index
-    FbopenLeadData.new("#{Rails.root}/spec/fixtures/fbopen_leads/short_input").import
+    TradeLead::Fbopen.recreate_index
+    TradeLead::FbopenData.new(
+        "#{Rails.root}/spec/fixtures/trade_leads/fbopen/short_input").import
   end
 
   let(:search_path) { '/fbopen_leads/search' }
   let(:v1_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v1' } }
-  let(:expected_results) { JSON.parse open("#{Rails.root}/spec/fixtures/fbopen_leads/results.json").read }
+  let(:expected_results) do
+    JSON.parse(open(
+                   "#{Rails.root}/spec/fixtures/trade_leads/fbopen/results_v1.json").read)
+  end
 
   describe 'GET /fbopen_leads/search.json' do
     context 'when search parameters are empty' do
@@ -28,7 +32,8 @@ describe 'Fbopen Leads API V1', type: :request do
     end
 
     context 'when q is specified' do
-      before { get search_path, { q: 'toilETs' }, v1_headers }
+      let(:params) { { q: 'toilETs' } }
+      before { get search_path, params, v1_headers }
       subject { response }
 
       it_behaves_like 'a successful search request'
@@ -41,10 +46,12 @@ describe 'Fbopen Leads API V1', type: :request do
         results = json_response['results']
         expect(results[0]).to eq(expected_results[5])
       end
+      it_behaves_like "an empty result when a query doesn't match any documents"
     end
 
     context 'when industry is specified' do
-      before { get search_path, { industry: '337920' }, v1_headers }
+      let(:params) { { industries: '337920' } }
+      before { get search_path, params, v1_headers }
       subject { response }
 
       it_behaves_like 'a successful search request'
@@ -58,24 +65,7 @@ describe 'Fbopen Leads API V1', type: :request do
         expect(results).to include(expected_results[1])
         expect(results).to include(expected_results[2])
       end
-    end
-
-    context 'when specific_location is specified' do
-      before { get search_path, { specific_location: 'BR' }, v1_headers }
-      subject { response }
-
-      it_behaves_like 'a successful search request'
-
-      it 'returns matching leads' do
-        json_response = JSON.parse(response.body)
-        expect(json_response['total']).to eq(3)
-        expect(json_response['offset']).to eq(0)
-
-        results = json_response['results']
-        expect(results[0]).to eq(expected_results[0])
-        expect(results[1]).to eq(expected_results[4])
-        expect(results[2]).to eq(expected_results[5])
-      end
+      it_behaves_like "an empty result when an industries search doesn't match any documents"
     end
   end
 end
