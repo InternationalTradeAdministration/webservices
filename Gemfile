@@ -5,6 +5,7 @@ gem 'rails', '4.0.1'
 gem 'rails-api'
 
 gem 'airbrake'
+gem 'aws-sdk-core'
 gem 'elasticsearch'
 gem 'iso_country_codes'
 gem 'jbuilder'
@@ -16,6 +17,10 @@ gem 'rake'
 gem 'sanitize', '~> 2.0.6'
 gem 'htmlentities'
 gem 'us_states', git: 'git://github.com/GSA-OCSIT/us_states.git'
+gem 'git'
+gem 'rdiscount'
+
+gem 'industry_mapping_client', git: 'git://github.com/GovWizely/industry_mapping_client.git'
 
 group :production do
   gem 'newrelic_rpm'
@@ -36,6 +41,8 @@ group :development do
 end
 
 group :test do
+  gem 'webmock'
+  gem 'vcr'
   gem 'codeclimate-test-reporter', require: false
   gem 'simplecov', require: false
 end

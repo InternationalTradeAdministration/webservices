@@ -17,19 +17,24 @@ class MarketResearch
   }.freeze
 
   self.mappings = {
-    market_research: {
+    name.typeize => {
       properties: {
         countries:   { type: 'string', analyzer: 'keyword' },
         description: { type: 'string', analyzer: 'custom_analyzer' },
         industries:  { type: 'string', analyzer: 'custom_analyzer' },
-        title:       {
-          type:   'multi_field',
-          fields: {
-            title:   { type: 'string', analyzer: 'custom_analyzer' },
-            keyword: { type: 'string', analyzer: 'title_keyword_analyzer' },
+        industries:  {
+          type:       'nested',
+          properties: {
+            original: { type: 'string', analyzer: 'custom_analyzer' },
+            mapped:   { type: 'string', analyzer: 'custom_analyzer' },
           },
         },
-        id:          { type: 'string', index: :not_analyzed, include_in_all: false },
+        title:       {
+          type: 'string', analyzer: 'custom_analyzer',
+          fields: {
+            keyword: { type: 'string', analyzer: 'title_keyword_analyzer' },
+          }
+        },
       },
     },
   }.freeze

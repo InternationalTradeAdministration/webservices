@@ -27,6 +27,7 @@ module Webservices
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
 
     require 'ext/string'
+    require 'ext/hash'
 
     # Disable the asset pipeline.
     config.assets.enabled = false
@@ -40,5 +41,25 @@ module Webservices
     config.i18n.enforce_available_locales = false
 
     config.exceptions_app = routes
+
+    config.cache_store = :memory_store
+
+    def model_classes
+      Dir[Rails.root.join('app/models/**/*.rb').to_s].map do |filename|
+        klass = filename.gsub(/(^.+models\/|\.rb$)/, '').camelize.constantize
+        klass.is_a?(Indexable) ? klass : nil
+      end.compact
+    end
+
+    config.sharepoint_trade_article = {
+      aws: {
+        region:            ENV['AWS_REGION'],
+        access_key_id:     ENV['SHAREPOINT_TRADE_ARTICLE_AWS_ACCESS_KEY_ID'],
+        secret_access_key: ENV['SHAREPOINT_TRADE_ARTICLE_AWS_SECRET_ACCESS_KEY'] } }
+    config.tariff_rate = {
+      aws: {
+        region:            ENV['AWS_REGION'],
+        access_key_id:     ENV['TARIFF_RATE_AWS_ACCESS_KEY_ID'],
+        secret_access_key: ENV['TARIFF_RATE_AWS_SECRET_ACCESS_KEY'] } }
   end
 end
