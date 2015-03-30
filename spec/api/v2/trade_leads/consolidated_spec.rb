@@ -1,12 +1,12 @@
 require 'spec_helper'
 
 describe 'Consolidated Trade Leads API V2', type: :request do
+  include_context 'V2 headers'
   include_context 'all Trade Leads fixture data'
-  let(:v2_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v2' } }
 
   describe 'GET /trade_leads/search' do
     let(:params) { { size: 100 } }
-    before { get '/trade_leads/search', params, v2_headers }
+    before { get '/trade_leads/search', params, @v2_headers }
 
     context 'when search parameters are empty' do
       subject { response }
@@ -98,7 +98,7 @@ describe 'Consolidated Trade Leads API V2', type: :request do
     end
 
     context "when industries is set to 'Medical'" do
-      let(:params) { { industries: 'health care medical' } }
+      let(:params) { { industries: 'Health Care and Social Assistance,G009E: Medical/Dental Clinic Services' } }
       it_behaves_like 'it contains all TradeLead::Australia results that match industries "Health Care Medical"'
       it_behaves_like 'it contains all TradeLead::Fbopen results that match industries "Health Care Medical"'
       it_behaves_like 'it contains all TradeLead::State results that match industries "Health Care Medical"'
@@ -116,6 +116,27 @@ describe 'Consolidated Trade Leads API V2', type: :request do
     context "when contries is set to 'CA'" do
       let(:params) { { countries: 'CA' } }
       it_behaves_like 'it contains all TradeLead::Canada results'
+    end
+
+    context 'when publish_date_amended_start or publish_date_amended_end is specified' do
+      subject { response }
+      let(:params) { { sources: 'Australia', publish_date_amended: '2013-01-04 TO 2013-01-04' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all TradeLead::Australia results where publish_date_amended is 2013-01-04'
+    end
+
+    context 'when publish_date_start or publish_date_end is specified' do
+      subject { response }
+      let(:params) { { sources: 'Canada', publish_date: '2014-03-20 TO 2014-03-20' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all TradeLead::Canada results where publish_date is 2014-03-20'
+    end
+
+    context 'when end_date_start or end_date_end is specified' do
+      subject { response }
+      let(:params) { { sources: 'State', end_date: '2014-03-06 TO 2014-03-06' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all TradeLead::State results where end_date is 2014-03-06'
     end
 
   end

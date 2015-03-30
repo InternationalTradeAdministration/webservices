@@ -36,6 +36,12 @@ shared_examples 'it contains all TradeLead::Australia results that match industr
   it_behaves_like 'it contains all expected results of source'
 end
 
+shared_examples 'it contains all TradeLead::Australia results where publish_date_amended is 2013-01-04' do
+  let(:source) { TradeLead::Australia }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
 shared_context 'TradeLead::Canada data' do
   before(:all) do
     TradeLead::Canada.recreate_index
@@ -78,11 +84,17 @@ shared_examples 'it contains all TradeLead::Canada results that match industries
   it_behaves_like 'it contains all expected results of source'
 end
 
+shared_examples 'it contains all TradeLead::Canada results where publish_date is 2014-03-20' do
+  let(:source) { TradeLead::Canada }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
 shared_context 'TradeLead::Fbopen data' do
   before(:all) do
     TradeLead::Fbopen.recreate_index
-    TradeLead::FbopenData.new(
-        "#{Rails.root}/spec/fixtures/trade_leads/fbopen/short_input").import
+    TradeLead::FbopenImporter::PatchData.new(
+        "#{Rails.root}/spec/fixtures/trade_leads/fbopen/patch_source_short_input").import
 
     @all_possible_full_results ||= {}
     @all_possible_full_results[TradeLead::Fbopen] = JSON.parse(open(
@@ -92,13 +104,13 @@ end
 
 shared_examples 'it contains all TradeLead::Fbopen results' do
   let(:source) { TradeLead::Fbopen }
-  let(:expected) { [0, 1, 2, 3, 4, 5] }
+  let(:expected) { [0, 1, 2] }
   it_behaves_like 'it contains all expected results of source'
 end
 
 shared_examples 'it contains all TradeLead::Fbopen results that match "equipment"' do
   let(:source) { TradeLead::Fbopen }
-  let(:expected) { [4] }
+  let(:expected) { [1] }
   it_behaves_like 'it contains all expected results of source'
 end
 
@@ -159,6 +171,12 @@ end
 shared_examples 'it contains all TradeLead::State results that match country "QA"' do
   let(:source) { TradeLead::State }
   let(:expected) { [2] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all TradeLead::State results where end_date is 2014-03-06' do
+  let(:source) { TradeLead::State }
+  let(:expected) { [1] }
   it_behaves_like 'it contains all expected results of source'
 end
 

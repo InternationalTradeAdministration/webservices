@@ -7,7 +7,7 @@ describe 'Trade Leads API V1', type: :request do
     TradeLead::Fbopen.recreate_index
     TradeLead::State.recreate_index
     TradeLead::Uk.recreate_index
-    TradeLead::FbopenData.new("#{Rails.root}/spec/fixtures/trade_leads/fbopen/input_presol").import
+    TradeLead::FbopenImporter::PatchData.new("#{Rails.root}/spec/fixtures/trade_leads/fbopen/patch_source_input_presol").import
     TradeLead::CanadaData.new("#{Rails.root}/spec/fixtures/trade_leads/canada/canada_leads.csv").import
     TradeLead::UkData.new("#{Rails.root}/spec/fixtures/trade_leads/uk/uk_trade_leads.csv").import
     TradeLead::StateData.new("#{Rails.root}/spec/fixtures/trade_leads/state/state_trade_leads.json").import
@@ -67,6 +67,24 @@ describe 'Trade Leads API V1', type: :request do
         expect(results[2]).to eq(expected_results[3])
       end
       it_behaves_like "an empty result when a countries search doesn't match any documents"
+    end
+
+    context 'when industries is populated' do
+      let(:params) { { industries: 'dental' } }
+      before { get '/trade_leads/search', params, v1_headers }
+      subject { response }
+
+      it_behaves_like 'a successful search request'
+
+      it 'returns trade leads for matching industries' do
+        json_response = JSON.parse(response.body)
+        expect(json_response['total']).to eq(1)
+        expect(json_response['offset']).to eq(0)
+
+        results = json_response['results']
+        expect(results).to include *expected_results.values_at(0)
+      end
+      it_behaves_like "an empty result when an industries search doesn't match any documents"
     end
 
     context 'when q matches a title' do

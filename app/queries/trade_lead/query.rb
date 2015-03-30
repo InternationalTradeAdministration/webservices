@@ -4,11 +4,15 @@ module TradeLead
 
     def initialize(options = {})
       super
-      @q = options[:q] if options[:q].present?
-      @countries = options[:countries].upcase.split(',') if options[:countries].present?
-      @sources = options[:sources].present? ? options[:sources].upcase.split(',') : []
-      @industry = options[:industries] if options[:industries].present?
+      @countries = options[:countries].upcase.split(',') rescue nil
+      @sources   = options[:sources].upcase.split(',') rescue []
+      @industry  = options[:industries]
+      @q    = options[:q]
       @sort = @q ? '_score' : 'publish_date:desc,country:asc'
+
+      @publish_date = options[:publish_date] if options[:publish_date].present?
+      @end_date = options[:end_date] if options[:end_date].present?
+      @publish_date_amended = options[:publish_date_amended] if options[:publish_date_amended].present?
     end
 
     private
@@ -31,9 +35,12 @@ module TradeLead
           json.must do
             json.child! { json.terms { json.source @sources } } if @sources.any?
             json.child! { json.terms { json.country @countries } } if @countries
+            generate_date_range(json, 'publish_date', @publish_date) if @publish_date
+            generate_date_range(json, 'publish_date_amended', @publish_date_amended) if @publish_date_amended
+            generate_date_range(json, 'end_date', @end_date) if @end_date
           end
         end
-      end if @countries || @sources.any?
+      end if @countries || @sources.any? || @publish_date || @end_date || @publish_date_amended
     end
   end
 end

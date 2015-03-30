@@ -1,12 +1,12 @@
 require 'spec_helper'
 
 describe 'Palestinian Legislative Council List API V2', type: :request do
+  include_context 'V2 headers'
   include_context 'ScreeningList::Plc data'
-  let(:v2_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v2' } }
 
   describe 'GET /consolidated_screening_list/plc/search' do
     let(:params) { {} }
-    before { get '/consolidated_screening_list/plc/search', params, v2_headers }
+    before { get '/consolidated_screening_list/plc/search', params, @v2_headers }
 
     context 'when search parameters are empty' do
       subject { response }
@@ -30,7 +30,7 @@ describe 'Palestinian Legislative Council List API V2', type: :request do
 
     context 'when type is specified' do
       subject { response }
-      let(:params) { { nsp_type: 'Individual' } }
+      let(:params) { { type: 'Individual' } }
       it_behaves_like 'a successful search request'
       it_behaves_like 'it contains all ScreeningList::Plc results that match type "Individual"'
     end

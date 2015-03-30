@@ -1,12 +1,12 @@
 require 'spec_helper'
 
 describe 'Consolidated Trade Events API V2', type: :request do
+  include_context 'V2 headers'
   include_context 'all Trade Events v2 fixture data'
-  let(:v2_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v2' } }
 
   describe 'GET /trade_events/search' do
     let(:params) { { size: 100 } }
-    before { get '/trade_events/search', params, v2_headers }
+    before { get '/trade_events/search', params, @v2_headers }
     subject { response }
 
     context 'when search parameters are empty' do
@@ -110,14 +110,14 @@ describe 'Consolidated Trade Events API V2', type: :request do
     end
 
     context 'when industry is specified' do
-      let(:params) { { industry: 'DENTALS mining' } }
+      let(:params) { { industries: "Dental Eq.,Energy \u0026 Mining" } }
       it_behaves_like 'a successful search request'
       it_behaves_like 'it contains all TradeEvent::Ita results that match industry "DENTALS"'
       it_behaves_like 'it contains all TradeEvent::Ustda results that match industry "mining"'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) { [TradeEvent::Ita, TradeEvent::Ustda] }
       end
-      it_behaves_like "an empty result when an industry search doesn't match any documents"
+      it_behaves_like "an empty result when an industries search doesn't match any documents"
     end
 
     context 'when sources is specified' do
@@ -169,6 +169,24 @@ describe 'Consolidated Trade Events API V2', type: :request do
       it_behaves_like 'it contains all TradeEvent::Ita results that match "Sao"'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) { [TradeEvent::Ita] }
+      end
+    end
+
+    context 'when start_date is specified' do
+      let(:params) { { sources: 'ITA', start_date: '2020-10-10 TO 2020-12-31' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all TradeEvent::Ita results that match start_date [2020-10-10 TO 2020-12-31]'
+      it_behaves_like 'it contains only results with sources' do
+        let(:sources) { [TradeEvent::Ita] }
+      end
+    end
+
+    context 'when end_date is specified' do
+      let(:params) { { sources: 'SBA', end_date: '2014-01-08 TO 2014-01-08' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all TradeEvent::Sba results that match end_date [2014-01-08 TO 2014-01-08]'
+      it_behaves_like 'it contains only results with sources' do
+        let(:sources) { [TradeEvent::Sba] }
       end
     end
   end

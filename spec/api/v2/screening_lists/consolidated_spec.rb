@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe 'Consolidated Screening List API V2', type: :request do
   include_context 'all CSL fixture data'
-  let(:v2_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v2' } }
+  include_context 'V2 headers'
 
   describe 'GET /consolidated_screening_list/search' do
     let(:params) { { size: 100 } }
-    before { get '/consolidated_screening_list/search', params, v2_headers }
+    before { get '/consolidated_screening_list/search', params, @v2_headers }
 
     context 'when search parameters are empty' do
       subject { response }
@@ -306,6 +306,34 @@ describe 'Consolidated Screening List API V2', type: :request do
           expect(json_response['total']).to eq(0)
         end
       end
+    end
+
+    context 'when expiration_date is specified' do
+      subject { response }
+      let(:params) { { sources: 'SDN', expiration_date: '2010-01-01 TO 2011-01-23' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all ScreeningList::Sdn results that match expiration_date "2010-01-01 TO 2011-01-23"'
+    end
+
+    context 'when issue_date is specified' do
+      subject { response }
+      let(:params) { { sources: 'SDN', issue_date: '2001-12-25 TO 2002-12-31' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all ScreeningList::Sdn results that match issue_date "2001-12-25 TO 2002-12-31"'
+    end
+
+    context 'when start_date is specified' do
+      subject { response }
+      let(:params) { { sources: 'EL', start_date: '2011-11-21 TO 2011-11-21' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all ScreeningList::El results that match start_date "2011-11-21"'
+    end
+
+    context 'when end_date is specified' do
+      subject { response }
+      let(:params) { { sources: 'DPL', end_date: '2005-06-05 TO 2005-06-05' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all ScreeningList::Dpl results that match end_date "2005-06-05"'
     end
 
   end

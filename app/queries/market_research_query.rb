@@ -2,6 +2,7 @@ class MarketResearchQuery < CountryIndustryQuery
   def initialize(options = {})
     super
     @sort = @q ? nil : 'title.keyword'
+    @expiration_date = options[:expiration_date] if options[:expiration_date].present?
   end
 
   private
@@ -14,12 +15,7 @@ class MarketResearchQuery < CountryIndustryQuery
             generate_multi_match(json, %w(description title), @q)
           end if @q
           json.child! do
-            json.nested do
-              json.path 'industries'
-              json.query do
-                generate_multi_match(json, %w(industries.original industries.mapped), @industry)
-              end
-            end
+            generate_multi_match(json, %w(industries.original.tokenized industries.mapped.tokenized), @industry)
           end if @industry
         end
       end
@@ -30,9 +26,10 @@ class MarketResearchQuery < CountryIndustryQuery
     json.filter do
       json.bool do
         json.must do
-          json.child! { json.terms { json.countries @countries } }
+          json.child! { json.terms { json.countries @countries } } if @countries
+          generate_date_range(json, 'expiration_date', @expiration_date) if @expiration_date
         end
       end
-    end if @countries
+    end if @countries || @expiration_date
   end
 end

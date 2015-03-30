@@ -9,6 +9,7 @@ CodeClimate::TestReporter.start
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
+require 'shoulda/matchers'
 # require 'rspec/autorun'
 require 'vcr'
 VCR.configure do |c|
@@ -26,11 +27,16 @@ end
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
-# Checks for pending migrations before tests are run.
-# If you are not using ActiveRecord, you can remove this line.
-ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
-
 RSpec.configure do |config|
+
+  config.before(:suite) do
+    Webservices::Application.model_classes.each(&:recreate_index)
+    User.create_index!
+  end
+
+  config.after(:suite) do
+    User.gateway.delete_index!
+  end
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:

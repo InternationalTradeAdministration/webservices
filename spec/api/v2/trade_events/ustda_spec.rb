@@ -1,11 +1,11 @@
 require 'spec_helper'
 describe 'Trade Events API V2', type: :request do
+  include_context 'V2 headers'
   include_context 'TradeEvent::Ustda data v2'
 
   describe 'GET /trade_events/ustda/search.json' do
-    let(:v2_headers) { { 'Accept' => 'application/vnd.tradegov.webservices.v2' } }
     let(:params) { { size: 100 } }
-    before { get '/trade_events/ustda/search', params, v2_headers }
+    before { get '/trade_events/ustda/search', params, @v2_headers }
     subject { response }
 
     context 'when search parameters are empty' do
@@ -31,7 +31,7 @@ describe 'Trade Events API V2', type: :request do
       it_behaves_like 'it contains all TradeEvent::Ustda results that match countries "US"'
     end
     context 'when industry is specified' do
-      let(:params) { { industry: 'mining' } }
+      let(:params) { { industries: "Energy \u0026 Mining" } }
       it_behaves_like 'a successful search request'
       it_behaves_like 'it contains all TradeEvent::Ustda results that match industry "mining"'
     end
