@@ -16,7 +16,7 @@ We use bundler to manage gems. You can install bundler and other required gems l
 
 We're using [ElasticSearch](http://www.elasticsearch.org/) (>= 1.2.0) for fulltext search. On a Mac, it's easy to install with [Homebrew](http://mxcl.github.com/homebrew/).
 
-    $ brew install elasticsearch
+    brew install elasticsearch
 
 Otherwise, follow the [instructions](http://www.elasticsearch.org/download/) to download and run it.
 
@@ -24,7 +24,7 @@ Otherwise, follow the [instructions](http://www.elasticsearch.org/download/) to 
 
 Fire up a server and try it all out.
 
-    bundle exec rake ita:import[TradeEvent::Ita] ita:import[ItaOfficeLocation]
+    bundle exec rake ita:import[ScreeningList,MarketResearchData]
     bundle exec rails s
 
 <http://127.0.0.1:3000/trade_events/ita/search?size=5&offset=8>
@@ -45,7 +45,7 @@ Fire up a server and try it all out.
 
 These require an [ElasticSearch](http://www.elasticsearch.org/) server to be running.
 
-    bundle exec rake
+    bundle exec rspec
 
 ### Code Coverage
 
@@ -55,9 +55,19 @@ After running your tests, view the report by opening `coverage/index.html`.
 
 Click around on the files that have < 100% coverage to see what lines weren't exercised.
 
+### Mailcatcher
+
+We use [Mailcatcher](http://mailcatcher.me/) to test emails sent from dev environments. Their advice is not to add the gem to your Gemfile, so in order
+to use it please do:
+
+    gem install mailcatcher
+    mailcatcher
+
+If you use [RVM](https://rvm.io/), you should follow their [specific instructions](http://mailcatcher.me/) (search for "RVM") on how to install the gem.
+
 ### Code Status
 
-* [![Build Status](https://travis-ci.org/ita/webservices.svg?branch=master)](https://travis-ci.org/ita/webservices/)
-* [![Test Coverage](https://codeclimate.com/github/ita/webservices/badges/coverage.svg)](https://codeclimate.com/github/ita/webservices)
-* [![Code Climate](https://codeclimate.com/github/ita/webservices/badges/gpa.svg)](https://codeclimate.com/github/ita/webservices)
+* [![Build Status](https://travis-ci.org/GovWizely/webservices.svg?branch=master)](https://travis-ci.org/GovWizely/webservices/)
+* [![Test Coverage](https://codeclimate.com/github/GovWizely/webservices/badges/coverage.svg)](https://codeclimate.com/github/GovWizely/webservices)
+* [![Code Climate](https://codeclimate.com/github/GovWizely/webservices/badges/gpa.svg)](https://codeclimate.com/github/GovWizely/webservices)
 
