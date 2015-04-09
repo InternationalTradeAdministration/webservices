@@ -55,9 +55,3 @@ After running your tests, view the report by opening `coverage/index.html`.
 
 Click around on the files that have < 100% coverage to see what lines weren't exercised.
 
-### Code Status
-
-* [![Build Status](https://travis-ci.org/ita/webservices.svg?branch=master)](https://travis-ci.org/ita/webservices/)
-* [![Test Coverage](https://codeclimate.com/github/ita/webservices/badges/coverage.svg)](https://codeclimate.com/github/ita/webservices)
-* [![Code Climate](https://codeclimate.com/github/ita/webservices/badges/gpa.svg)](https://codeclimate.com/github/ita/webservices)
-
