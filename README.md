@@ -1,6 +1,19 @@
 trade.gov Webservices
 ==============
 
+## I Can Haz Docker?
+
+If you have [Docker](http://docker.io/) and [Docker Compose](https://docs.docker.com/compose/), all you have to do is
+
+    $ docker-compose up
+
+And it should automatically bring up the ElasticSearch container and the rails app,
+correctly linking them.
+
+Otherwise, follow the standard setup instructions.
+
+## Standard setup
+
 ### Ruby
 
 You'll need [Ruby 2.1](http://www.ruby-lang.org/en/downloads/).
