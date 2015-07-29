@@ -30,4 +30,18 @@ describe ItaZipCodeQuery do
       end
     end
   end
+
+  context 'sorts results by zip_code' do
+    it 'includes zip_code on the sort order' do
+      # Not a great test. Just to document the sorting as a requirement.
+      expect(ItaZipCodeQuery.new({}).sort).to eq('_score,zip_code:asc')
+    end
+
+    it 'uses global IDF on queries' do
+      # Minimal differences in the local IDF and sorting first by relevance makes the whole
+      # thing useless (only relevance, no zip_code ordering), so we force this index to
+      # calculate global IDF
+      expect(ItaZipCodeQuery.new({}).search_type).to eq(:dfs_query_then_fetch)
+    end
+  end
 end

@@ -59,9 +59,9 @@ Webservices::Application.routes.draw do
              'country_commercial_guides'  => 'country_commercial_guides',
              'business_service_providers' => 'business_service_providers',
              'ita_zip_codes'              => 'ita_zipcode_to_post',
+             'ita_taxonomy'               => 'ita_taxonomies',
      }
     path['eccn'] = 'eccns' unless Rails.env.production?
-    path['environmental_solution'] = 'environmental_solutions' unless Rails.env.production?
 
     path.each do |controller, path|
       get "/#{path}/search(.json)" => "#{controller}#search", format: false
@@ -82,6 +82,10 @@ Webservices::Application.routes.draw do
     namespace :trade_events do
       get 'search', to: 'consolidated#search'
     end
+
+    namespace :envirotech do
+      get ':sources/search', to: 'consolidated#search'
+    end unless Rails.env.production?
   end
 
   scope 'v2', module: 'api/v2', defaults: { format: :json } do
