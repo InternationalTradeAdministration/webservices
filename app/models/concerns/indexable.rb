@@ -7,8 +7,14 @@ module Indexable
 
   included do
     class << self
-      attr_accessor :mappings, :settings
+      attr_accessor :mappings, :settings, :source
     end
+
+    # If the model class doesn't define the source full_name,
+    # default to the class name. This gets used when reporting
+    # which sources were used in a search and when was that
+    # source last updated.
+    self.source = { full_name: name, code: name }
   end
 
   module ClassMethods
@@ -30,19 +36,36 @@ module Indexable
         body:  { settings: settings, mappings: mappings })
     end
 
-    def update_metadata(version)
+    def update_metadata(version, time = DateTime.now.utc)
+      _update_metadata(version: version, last_updated: time, last_imported: time)
+    end
+
+    def touch_metadata(import_time = DateTime.now.utc)
+      _update_metadata(stored_metadata.merge(last_imported: import_time))
+    end
+
+    def _update_metadata(body)
       ES.client.index(
         index: index_name,
         type:  'metadata',
         id:    0,
-        body:  { version: version, time: DateTime.now.utc })
+        body:  body)
     end
 
     def stored_metadata
-      ES.client.search(
+      stored = ES.client.get(
         index: index_name,
         type:  'metadata',
-        body:  { query: { match: { _id: 0 } } })['hits']['hits'][0]['_source'].symbolize_keys rescue {}
+        id:    0,
+      )['_source'].symbolize_keys rescue {}
+
+      if stored[:time] && !stored[:last_updated]
+        stored[:last_updated] = stored.delete(:time)
+        _update_metadata(stored)
+        stored_metadata
+      else
+        stored
+      end
     end
 
     def index_exists?
@@ -101,12 +124,6 @@ module Indexable
       prepared.merge!(ttl: record[:ttl]) if record[:ttl]
       prepared.merge!(timestamp: record[:timestamp]) if record[:timestamp]
       prepared
-    end
-
-    # This overwrites index_names in Searchable, making searches by classes
-    # which include Indexable focus only on the index defined by the class.
-    def index_names(_sources = nil)
-      [index_name]
     end
   end
 end
