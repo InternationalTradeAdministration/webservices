@@ -8,11 +8,24 @@ class ItaTaxonomyQuery < Query
   private
 
   def generate_filter(json)
-    terms_filter_from_field_mapping(json, taxonomies: @taxonomies)
+    json.filter do
+      json.bool do
+        json.must do
+          json.child! { json.terms { json.taxonomies @taxonomies } } if @taxonomies
+        end
+      end
+    end if @taxonomies
   end
 
   def generate_query(json)
-    multi_fields = %i(name broader_terms narrower_terms)
-    generate_multi_match_query(json, multi_fields, @q)
+    json.query do
+      json.bool do
+        json.must do
+          json.child! do
+            generate_multi_match(json, %w(name broader_terms narrower_terms), @q)
+          end if @q
+        end
+      end
+    end if @q
   end
 end

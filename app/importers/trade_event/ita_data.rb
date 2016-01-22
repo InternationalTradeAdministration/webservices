@@ -1,9 +1,9 @@
 require 'open-uri'
 
 module TradeEvent
-  class ItaData < BaseData
+  class ItaData
     include Importable
-    include VersionableResource
+    include ::VersionableResource
 
     ENDPOINT = "http://emenuapps.ita.doc.gov/ePublic/GetEventXML?StartDT=#{Date.tomorrow.strftime('%m/%d/%Y')}&EndDT=01/01/2020"
 
@@ -37,7 +37,12 @@ module TradeEvent
     }.freeze
 
     def import
-      Ita.index(trade_events('//EVENTINFO'))
+      doc = Nokogiri::XML(loaded_resource)
+      trade_events = doc.xpath('//EVENTINFO').map do |event_info|
+        trade_event = process_event_info(event_info)
+        trade_event
+      end.compact
+      Ita.index(trade_events)
     end
 
     private

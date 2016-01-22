@@ -9,10 +9,22 @@ class ItaZipCodeQuery < Query
 
   def generate_query(json)
     multi_fields = %i(post office_name zip_city)
-    generate_multi_match_query(json, multi_fields, @q)
+    json.query do
+      json.bool do
+        json.must do |must_json|
+          must_json.child! { generate_multi_match(must_json, multi_fields, @q) } if @q
+        end
+      end
+    end if @q
   end
 
   def generate_filter(json)
-    terms_filter_from_field_mapping(json, zip_code: @zip_codes)
+    json.filter do
+      json.bool do
+        json.must do
+          json.child! { json.terms { json.zip_code @zip_codes } } if @zip_codes
+        end
+      end
+    end if @zip_codes
   end
 end

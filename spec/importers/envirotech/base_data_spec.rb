@@ -6,7 +6,7 @@ describe Envirotech::BaseData do
   end
 
   subject do
-    base = described_class.new('some endpoint URL')
+    base = described_class.new
     base.instance_variable_set('@resource', 'http://example.com')
     base
   end

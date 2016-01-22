@@ -1,5 +1,9 @@
 module ScreeningList
-  class Part561Data < BaseData
+  class Part561Data
+    include Importable
+    include VersionableResource
+    include ScreeningList::TreasuryListImporter
+    include ScreeningList::MakeNameVariants
     self.default_endpoint =
       'https://www.treasury.gov/ofac/downloads/consolidated/consolidated.xml'
     self.source_information_url =

@@ -1,14 +1,20 @@
 {
-  "query": {
-    "multi_match": {
-      "fields": [
-        "subheading_description",
-        "tariff_rate_quota_note",
-        "rule_text",
-        "tariff_line"
-      ],
-      "operator": "and",
-      "query": "horses"
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "multi_match": {
+                        "fields": [
+                            "subheading_description",
+                            "tariff_rate_quota_note",
+                            "rule_text",
+                            "tariff_line"
+                        ],
+                        "operator": "and",
+                        "query": "horses"
+                    }
+                }
+            ]
+        }
     }
-  }
 }
