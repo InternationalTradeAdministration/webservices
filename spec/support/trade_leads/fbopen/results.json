@@ -1,5 +1,6 @@
 [
   {
+    "id": "W15QKN-14-T-1174",
     "notice_type": "PRESOL",
     "publish_date": "2014-03-07",
     "procurement_organization": "Department of the Army",
@@ -18,9 +19,19 @@
     "url": "http://1.usa.gov/1Z1NZrw",
     "country": "BR",
     "specific_address": "Central Receiving Point DOL Supply IPBO Warehouse, Buidg 3574, 12 Feinber Devens MA",
-    "source": "FBO"
+    "source": "FBO",
+    "trade_regions": [
+        "Southern Common Market",
+        "Global System of Trade Preferences among Developing Countries"
+    ],
+    "world_regions": [
+        "South America",
+        "Western Hemisphere",
+        "Latin America"
+    ]
   },
   {
+    "id": "W15QKN14R1053",
     "notice_type": "PRESOL",
     "publish_date": "2014-07-26",
     "procurement_organization": "Department of the Army",
@@ -39,9 +50,19 @@
     "url": "http://1.usa.gov/1Z1NYnn",
     "country": "BR",
     "specific_address": "TBD TBD TBD NH",
-    "source": "FBO"
+    "source": "FBO",
+    "trade_regions": [
+        "Southern Common Market",
+        "Global System of Trade Preferences among Developing Countries"
+    ],
+    "world_regions": [
+        "South America",
+        "Western Hemisphere",
+        "Latin America"
+    ]
   },
   {
+    "id": "FA4620-14-Q-A011",
     "notice_type": "PRESOL",
     "publish_date": "2014-07-26",
     "procurement_organization": "Department of the Air Force",
@@ -60,6 +81,15 @@
     "url": "http://1.usa.gov/1Z1NZru",
     "country": "BR",
     "specific_address": "Fairchild AFB, WA",
-    "source": "FBO"
+    "source": "FBO",
+    "trade_regions": [
+        "Southern Common Market",
+        "Global System of Trade Preferences among Developing Countries"
+    ],
+    "world_regions": [
+        "South America",
+        "Western Hemisphere",
+        "Latin America"
+    ]
   }
 ]
