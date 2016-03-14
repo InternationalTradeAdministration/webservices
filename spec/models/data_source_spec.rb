@@ -171,7 +171,7 @@ describe DataSource do
 
     before do
       DataSource.create(_id: 'freshen_api:v1', published: true, version_number: 1, name: 'test', description: 'test API', api: 'freshen_api', data: "foo,bar\n1,2", url: 'http://some.url.gov/data.csv')
-      expect(DataSource).to receive(:find_published).with('freshen_api', 2).and_return data_source
+      expect(DataSource).to receive(:find_published).with('freshen_api', 2, false).and_return data_source
       DataSource.refresh_index!
     end
 
@@ -222,7 +222,6 @@ describe DataSource do
         sleep(1.1)
         data_source.dictionary = "---\r\n:f1:\r\n  :source: f1\r\n  :description: Description of f1\r\n  :indexed: true\r\n  :plural: true\r\n  :type: enum\r\n:f2:\r\n  :source: f2\r\n  :description: Description of f2\r\n  :indexed: true\r\n  :plural: true\r\n  :type: enum\r\n"
         data_source.freshen
-        DataSource.refresh_index!
         data_source.with_api_model do |klass|
           expect(klass.count).to eq(2)
           query = ApiModelQuery.new(data_source.metadata, ActionController::Parameters.new(f1: 'one,three'))
