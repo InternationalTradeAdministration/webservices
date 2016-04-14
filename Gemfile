@@ -7,6 +7,7 @@ gem 'aws-sdk-core'
 gem 'devise', '~> 3.4.0' # https://github.com/plataformatec/devise/issues/3624
 gem 'elasticsearch'
 gem 'elasticsearch-persistence'
+gem 'elasticsearch-model'
 gem 'iso_country_codes'
 gem 'jbuilder'
 gem 'monetize'
@@ -39,7 +40,7 @@ gem 'taxonomy_parser', github: 'GovWizely/taxonomy_parser'
 
 gem 'restforce'
 
-group :staging, :staging2, :production do
+group :production do
   gem 'airbrake'
   gem 'newrelic_rpm'
 end
