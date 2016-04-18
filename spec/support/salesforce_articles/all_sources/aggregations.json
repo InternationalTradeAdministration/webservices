@@ -5,49 +5,29 @@
       "doc_count": 1
     },
     {
-      "key": "Latin America",
-      "doc_count": 1
-    },
-    {
       "key": "Middle East",
       "doc_count": 1
     },
     {
       "key": "Persian Gulf Region",
       "doc_count": 1
-    },
-    {
-      "key": "South America",
-      "doc_count": 1
-    },
-    {
-      "key": "Western Hemisphere",
-      "doc_count": 1
     }
   ],
   "trade_regions": [
-    {
-      "key": "Global System of Trade Preferences among Developing Countries",
-      "doc_count": 2
-    },
     {
       "key": "European Union - 28",
       "doc_count": 1
     },
     {
-      "key": "Organization of the Petroleum Exporting Countries",
+      "key": "Global System of Trade Preferences among Developing Countries",
       "doc_count": 1
     },
     {
-      "key": "Southern Common Market",
+      "key": "Organization of the Petroleum Exporting Countries",
       "doc_count": 1
     }
   ],
   "countries": [
-    {
-      "key": "BR",
-      "doc_count": 1
-    },
     {
       "key": "IQ",
       "doc_count": 1
@@ -64,14 +44,6 @@
     },
     {
       "key": "MARKET_INSIGHT",
-      "doc_count": 1
-    },
-    {
-      "key": "STATE_REPORT",
-      "doc_count": 1
-    },
-    {
-      "key": "TOP_MARKETS",
       "doc_count": 1
     }
   ]

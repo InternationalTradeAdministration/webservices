@@ -4,7 +4,6 @@ source_fields = [
   :summary,
   :first_published_date,
   :last_published_date,
-  :atom,
   :public_url,
   :references,
   :url_name,

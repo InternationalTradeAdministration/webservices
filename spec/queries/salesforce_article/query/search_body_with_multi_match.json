@@ -7,11 +7,7 @@
             {
               "multi_match": {
                 "fields": [ 
-                  "atom", 
-                  "business_unit", 
-                  "chapter", 
                   "references", 
-                  "section", 
                   "summary",
                   "title"
                 ],
