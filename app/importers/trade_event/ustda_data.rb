@@ -49,7 +49,7 @@ module TradeEvent
     end
 
     def import
-      Ustda.index(trade_events('//node'))
+      Ustda.index(trade_events('//node', 'UTF-8'))
     end
 
     private
@@ -69,9 +69,14 @@ module TradeEvent
       event[:source] = model_class.source[:code]
       event[:id] = Utils.generate_id(event, %i(event_name start_date
                                                event_time end_date end_time time_zone),)
-      event[:industries] = [event[:industries]]
+      extract_industries(event)
 
       event
+    end
+
+    def extract_industries(event)
+      event[:industries] = [event[:industries]]
+      event[:ita_industries] = event[:industries].empty? ? [] : get_mapper_terms_from_array(event[:industries])
     end
 
     def process_dates_and_times(event)
