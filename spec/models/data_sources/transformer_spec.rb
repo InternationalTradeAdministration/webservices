@@ -18,6 +18,14 @@ describe DataSources::Transformer do
     end
   end
 
+  context 'squishing' do
+    let(:transformer) { DataSources::Transformer.new(metadata.merge(transformations: %w(squish))) }
+
+    it 'returns the value squished' do
+      expect(transformer.transform(' foo  bar ')).to eq('foo bar')
+    end
+  end
+
   context 'downcasing and titleizing' do
     let(:transformer) { DataSources::Transformer.new(metadata.merge(transformations: %w(downcase titleize))) }
 
@@ -34,6 +42,28 @@ describe DataSources::Transformer do
 
     it 'returns the appropriate substring' do
       expect(transformer.transform('0123456789abcdefg')).to eq('ab')
+    end
+  end
+
+  context 'splitting into array' do
+    let(:transformer) do
+      transformation_array = [{ split: ', ' }]
+      DataSources::Transformer.new(metadata.merge(transformations: transformation_array))
+    end
+
+    it 'returns the appropriate array' do
+      expect(transformer.transform('val1 with commas, another')).to eq(['val1 with commas', 'another'])
+    end
+  end
+
+  context 'operating on array' do
+    let(:transformer) do
+      transformation_array = [{ split: ',' }, { first: 2 }]
+      DataSources::Transformer.new(metadata.merge(transformations: transformation_array))
+    end
+
+    it 'returns the appropriately modified array' do
+      expect(transformer.transform('efgh,abcd')).to eq(%w(ab ef))
     end
   end
 
