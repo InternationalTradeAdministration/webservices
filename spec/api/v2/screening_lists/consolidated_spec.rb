@@ -5,7 +5,7 @@ describe 'Consolidated Screening List API V2', type: :request do
   include_context 'V2 headers'
 
   describe 'GET /consolidated_screening_list/search' do
-    let(:params) { { size: 100 } }
+    let(:params) { { size: -1 } }
     before { get '/v2/consolidated_screening_list/search', params, @v2_headers }
 
     context 'when search parameters are empty' do
@@ -352,7 +352,7 @@ describe 'Consolidated Screening List API V2', type: :request do
         end
 
         def last_modified
-          return DateTime.parse('2017-01-28')
+          DateTime.parse('2017-01-28')
         end
       end
     end
@@ -365,7 +365,7 @@ describe 'Consolidated Screening List API V2', type: :request do
       it 'is a CSV' do
         expect(response.status).to eq(200)
         expect(response.content_type.symbol).to eq(:csv)
-        expect(response.header['Content-Disposition']).to eq("attachment; filename=screening_list/consolidated_2017-01-28.csv")
+        expect(response.header['Content-Disposition']).to eq('attachment; filename=screening_list/consolidated_2017-01-28.csv')
       end
     end
 
@@ -377,8 +377,65 @@ describe 'Consolidated Screening List API V2', type: :request do
       it 'is a TSV' do
         expect(response.status).to eq(200)
         expect(response.content_type.symbol).to eq(:tsv)
-        expect(response.header['Content-Disposition']).to eq("attachment; filename=screening_list/consolidated_2017-01-28.tsv")
+        expect(response.header['Content-Disposition']).to eq('attachment; filename=screening_list/consolidated_2017-01-28.tsv')
       end
+    end
+  end
+
+  context 'when countries is specified' do
+    let(:params) {
+      {
+        countries: 'DE'
+      }
+    }
+
+    before { get '/v2/consolidated_screening_list/search', params, @v2_headers }
+    subject { response }
+    it_behaves_like 'a successful search request'
+
+    it 'returns only matching response' do
+      results = JSON.parse(subject.body)['results']
+      expect(results.count).to eq(2)
+    end
+  end
+
+  context 'when fuzzy_name=true and countries are specified' do
+    let(:params) {
+      {
+        name: 'abd',
+        fuzzy_name: 'true',
+        countries: 'DE'
+      }
+    }
+
+    before { get '/v2/consolidated_screening_list/search', params, @v2_headers }
+    subject { response }
+    it_behaves_like 'a successful search request'
+
+    it 'returns only matching response' do
+      results = JSON.parse(subject.body)['results']
+      expect(results.count).to eq(1)
+      expect(results.first['name']).to eq('ADT ANALOG AND DIGITAL TECHNIK')
+    end
+  end
+
+  context 'when name is multi word string and fuzzy_name=true' do
+    let(:params) {
+      {
+        name: 'qazi abdallha',
+        fuzzy_name: 'true'
+      }
+    }
+
+    before { get '/v2/consolidated_screening_list/search', params, @v2_headers }
+    subject { response }
+    it_behaves_like 'a successful search request'
+
+    it 'returns only matching response' do
+      results = JSON.parse(subject.body)['results']
+      expect(results.count).to eq(3)
+      names = results.map { |r| r['name'] }.uniq
+      expect(names).to eq(['Qazi Abdallah'])
     end
   end
 end
