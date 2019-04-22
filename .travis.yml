@@ -1,7 +1,21 @@
-bundler_args: --without development production
+bundler_args: --without development staging production
 language: ruby
 rvm:
-  - 2.1.0
+  - 2.3.4
+sudo: true
+
+addons:
+  code_climate:
+    repo_token: 25b6e0bb746cbfd95a442c8e71df503a62be7e7539dc90f30e65d7f81a2e2b11
+  apt:
+    packages:
+      - oracle-java8-set-default
+
 before_install:
-  - wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.1.deb && sudo dpkg -i --force-confnew elasticsearch-1.2.1.deb && true
-  - sudo service elasticsearch start
+  - curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.6.0.deb && sudo dpkg -i --force-confnew elasticsearch-6.6.0.deb && env && sudo service elasticsearch start
+
+notifications:
+  slack: govwizely:R9Nhshn0NO7eRh4ThXaMKqWw
+
+after_success:
+  - bundle exec codeclimate-test-reporter

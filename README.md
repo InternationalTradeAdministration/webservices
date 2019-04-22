@@ -128,7 +128,7 @@ If you want to run this app on AWS Opsworks, you may find [this guide](https://g
 
 ### Code Status
 
-* [![Build Status](https://travis-ci.org/GovWizely/webservices.svg?branch=master)](https://travis-ci.org/GovWizely/webservices/)
-* [![Test Coverage](https://codeclimate.com/github/GovWizely/webservices/badges/coverage.svg)](https://codeclimate.com/github/GovWizely/webservices)
-* [![Code Climate](https://codeclimate.com/github/GovWizely/webservices/badges/gpa.svg)](https://codeclimate.com/github/GovWizely/webservices)
+* [![Build Status](https://travis-ci.org/InternationalTradeAdministration/webservices.svg?branch=master)](https://travis-ci.org/InternationalTradeAdministration/webservices/)
+* [![Test Coverage](https://codeclimate.com/github/InternationalTradeAdministration/webservices/badges/coverage.svg)](https://codeclimate.com/github/InternationalTradeAdministration/webservices)
+* [![Code Climate](https://codeclimate.com/github/InternationalTradeAdministration/webservices/badges/gpa.svg)](https://codeclimate.com/github/InternationalTradeAdministration/webservices)
 
