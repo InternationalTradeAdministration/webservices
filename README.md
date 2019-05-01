@@ -56,7 +56,11 @@ Generate the default admin user with username `admin@example.co` and password `1
 
 Fire up a server:
 
-    bundle exec rails s thin
+    bundle exec rails s thin ss -p 3001
+
+We're running it on port 3001 b/c we also need the APIs backing this application to run on port 3000:
+
+    https://github.com/GovWizely/endpointme
     
 Import some data:
 
@@ -68,15 +72,15 @@ Admin users can log in and monitor the progress of the Sidekiq import jobs via `
 
 Since v2 of the API, an authentication token is required for every request. Pass it on the query string:
 
-<http://localhost:3000/consolidated_screening_list/search?api_key=devkey&size=5&offset=8>
+<http://localhost:3001/consolidated_screening_list/search?api_key=devkey&size=5&offset=8>
 
-<http://localhost:3000/consolidated_screening_list/search?api_key=devkey&q=john>
+<http://localhost:3001/consolidated_screening_list/search?api_key=devkey&q=john>
 
-<http://localhost:3000/consolidated_screening_list/search?api_key=devkey&sources=SDN,EL>
+<http://localhost:3001/consolidated_screening_list/search?api_key=devkey&sources=SDN,EL>
 
 Or using http headers:
 
-    curl -H'Api-Key: devkey' 'http://localhost:3000/v2/consolidated_screening_list/search'
+    curl -H'Api-Key: devkey' 'http://localhost:3001/v2/consolidated_screening_list/search'
 
 ### Dynamic APIs
 
