@@ -18,7 +18,7 @@ module ScreeningList
 
     include ScreeningList::MakeNameVariants
 
-    ENDPOINT = "#{Rails.root}/data/screening_lists/dtc/itar_debarred_party_list_01242018.csv"
+    ENDPOINT = "#{Rails.root}/data/screening_lists/dtc/itar_debarred_party_list_05022019.csv"
 
     def import
       @source_information_url = UrlMapper.get_bitly_url('https://www.pmddtc.state.gov/?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0', model_class)
