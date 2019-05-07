@@ -61,6 +61,13 @@ Fire up a server:
 We're running it on port 3001 b/c we also need the APIs backing this application to run on port 3000:
 
     https://github.com/GovWizely/endpointme
+
+Spin up the Developer Portal:
+
+    https://github.com/InternationalTradeAdministration/developerportal 
+
+    - bundle install
+    - bundle exec jekyll serve --baseurl '/developerportal'
     
 Import some data:
 
