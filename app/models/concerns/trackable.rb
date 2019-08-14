@@ -10,7 +10,7 @@ module Trackable
                                 import_rate: import_rate,
                                 source: source[:full_name] || source[:code]
         MetadataRepository.save metadata
-        ES.client.indices.refresh index: index_name
+        ES.client.indices.refresh index: MetadataRepository.index_name
         metadata
       end
     end

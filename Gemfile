@@ -26,7 +26,7 @@ gem 'sass'
 gem 'jquery-rails'
 
 gem 'industry_mapping_client', git: 'https://github.com/GovWizely/industry_mapping_client.git'
-gem 'taxonomy_parser', git: 'https://github.com/GovWizely/taxonomy_parser.git', ref: '6a1eb4'
+gem 'taxonomy_parser', git: 'https://github.com/InternationalTradeAdministration/taxonomy_parser.git', ref: 'a23fb1'
 
 gem 'restforce'
 
