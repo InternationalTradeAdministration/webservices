@@ -4,7 +4,7 @@ gem 'rails', '~> 4.2.11.1'
 
 gem 'activeresource'
 gem 'aws-sdk-core', '~> 2.9' # https://github.com/aws/aws-sdk-ruby/issues/1041
-gem 'devise', '~> 3.4.0' # https://github.com/plataformatec/devise/issues/3624
+gem 'devise', '~> 4.6.2' # https://github.com/plataformatec/devise/issues/3624
 gem 'elasticsearch', github: 'elastic/elasticsearch-ruby', branch: '5.x'
 gem 'elasticsearch-persistence', github: 'elastic/elasticsearch-rails', branch: '5.x'
 gem 'elasticsearch-model', github: 'elastic/elasticsearch-rails', branch: '5.x'
