@@ -1,711 +1,1940 @@
 ---
-- :annotations:
-    :source: ITA
-    :alt_label: Defense Industry
-    :pref_label: Aerospace and Defense
-  :sub_class_of: []
+- :id: R8CoATsjiZSLAZF4Aaz6kK6
   :label: Aerospace and Defense
-  :datatype_properties: {}
+  :annotations:
+    :source:
+    - ITA
+    :alt_label:
+    - Aerospace Industry
+    - Defense Industry
+    :pref_label:
+    - Aerospace and Defense
   :object_properties:
-    :member_of:
-    - :id: R79uIjoQaQ9KzvJfyB1H7Ru
-      :label: Industries
     :has_narrower:
-    - :id: R9lHhOo010EPhoajnKC2Lvg
     - :id: RDBsKPGzqliWT5godmR5PDV
       :label: Aviation
+    - :id: R9lHhOo010EPhoajnKC2Lvg
+      :label: Defense Equipment
     - :id: R3anJjpDBXy092dEyJ0nXU
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: R79uIjoQaQ9KzvJfyB1H7Ru
+      :label: Industries
   :type:
   - Industries
-  :id: R8CoATsjiZSLAZF4Aaz6kK6
   :related_terms: {}
   :label_suggest:
     :input: Aerospace and Defense
-    :weight: 21
-- :annotations:
-    :pref_label: Afghanistan
-    :source: ISO 3166
-    :iso_alpha_2: AF
-    :iso_alpha_3: AFG
-    :iso_numeric: 4
-    :iso_short_name: Afghanistan
-  :sub_class_of: []
-  :label: Afghanistan
-  :datatype_properties:
-    :country_code_un_numeric3:
-    - '4'
-    :country_name_iso3166_short:
-    - Afghanistan
-    :country_code_iso3166_alpha3:
-    - AFG
-    :country_code_iso3166_alpha2:
-    - AF
+    :weight: 29
+- :id: RYpfofeF7tAALNfD2cMbaP
+  :label: Africa
+  :annotations:
+    :pref_label:
+    - Africa
+    :source:
+    - ITA
   :object_properties:
-    :has_broader:
-    - :id: RDrX1xLUDh7oA05RQ3JXshC
-      :label: Economic Cooperation Organization
-    - :id: R9pQ9NO7LyXj7vL7WbTAVVA
-      :label: Central Asia
-    - :id: RGHFvv0EAkgVEEklFu0O23
-    - :id: RDkKRunNIRFsKUYmLHwIMyM
-    :member_of:
-    - :id: R8W91u35GBegWcXXFflYE4
-      :label: Countries
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-  :type:
-  - Countries
-  :id: RDzjXT0GYF9ecQbq6oyxewD
-  :related_terms:
-    :trade_regions:
-    - Economic Cooperation Organization
-    :world_regions:
-    - Central Asia
-    - Asia
-  :label_suggest:
-    :input: Afghanistan
-    :weight: 20
-- :annotations:
-    :pref_label: Asia
-    :source: ITA
-  :sub_class_of: []
-  :label: Asia
-  :datatype_properties: {}
-  :object_properties:
+    :has_narrower:
+    - :id: RPAxEt4cHXZPPJ587s5tlG
+      :label: missing term
+    - :id: R8DdIMDFzHvwLDKQu30RRmN
+      :label: Sub-Saharan Africa
+    - :id: R7q9jrGbpXPRPccAu33iNNU
+      :label: missing term
     :has_related:
-    - :id: R4Tyoniw0wZl3t7In4gVGW
-    - :id: R8jA4PYXwc54qC4JAPsIPAS
-    - :id: RXTomSBCCC8TOjYuMKCB8p
-    :member_of:
+    - :id: RDkqAkKpM7hCxY84UQAuLaj
+      :label: missing term
+    :is_main_concept_in_collection:
     - :id: R8cndKa2D8NuNg7djwJcXxB
       :label: World Regions
-    :has_narrower:
-    - :id: RCS37S95UoFr6hEWf8oRfQs
-    - :id: RDAklO0LFVtjIoIUYj4Dg4M
-      :label: East Asia
-    - :id: R9pQ9NO7LyXj7vL7WbTAVVA
-      :label: Central Asia
-    - :id: RDkKRunNIRFsKUYmLHwIMyM
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
   :type:
+  - Geographic Locations
   - World Regions
-  :id: R91fGuW6GPOnb7XSylIPwR5
   :related_terms: {}
   :label_suggest:
-    :input: Asia
-    :weight: 19
-- :annotations:
-    :alt_label: APEC
-    :source: ITA
-    :pref_label: Asia Pacific Economic Cooperation
-  :sub_class_of:
-  - :id: RBb72pZnfGSZApKbgfMfARC
-    :label: Regional Organizations
-  :label: Asia Pacific Economic Cooperation
-  :datatype_properties: {}
+    :input: Africa
+    :weight: 28
+- :id: RBYST5TkMsG3aOT9QMbCYFF
+  :label: African Growth and Opportunity Act
+  :annotations:
+    :pref_label:
+    - African Growth and Opportunity Act
+    :alt_label:
+    - AGOA
+    :definition:
+    - The African Growth and Opportunity Act (AGOA) legislation that establishes a
+      a nonreciprocal trade preference program providing duty-free treatment to U.S.
+      imports of certain products from eligible Sub- Saharan African countries.
   :object_properties:
-    :has_related:
-    - :id: RXTomSBCCC8TOjYuMKCB8p
-    :has_narrower:
-    - :id: RC89POWcmFspXvpRIOHvjB9
-    - :id: R8fTGfwFBERSngpANw3HP8a
-    - :id: R8wg4JegCG36uQR9LuomLFg
-    - :id: RC4HD9CwKjvgX8dSybAp3Sk
-      :label: United States
-    - :id: R6OsGHPcOskVYbghdvcPiw
-    - :id: RCFeONxXFzHO4GMg16HylOc
-      :label: China
-    - :id: ReBrW4erCA9bTkbUVAjWbG
-    - :id: R8sDBgF7EMZhgZUjx5EUhwi
-    - :id: RCQ11kK8mK2T6LWNJc1S0Dg
-    - :id: RBjxUaSQ4rQJHg0p6rppxuI
-    - :id: R8UBTJoenDbXjYBjcyr1LXc
-    - :id: RBTBNP5i0kFGFdhQ82AFali
-    - :id: RCMieQgqQN1unvmV8pUQ5Op
-    - :id: RDmEnPaeDKHRTMgjbarbJVz
-    - :id: R91qpLTTbKuO9oI9geGqQhv
-    - :id: RDWGCNborzo2DRbNKplJ7gb
-    - :id: R8CwJ8K2v1OQmxDmOcHfgSj
-    - :id: RDfDY0ur68lqxEDkatxoedV
-    - :id: RCnNAAeMPteY7EWU1GUOdvN
-    - :id: R8oFX2wzpWfwf8vvoBkN9wJ
-    - :id: RCi9wQpuzOAexRndBnKzfj0
-    :member_of:
+    :has_broader:
+    - :id: Rt8hC8B97usWz6X1JOhP32
+      :label: Trade Preference Programs
+    :is_main_concept_in_collection:
     - :id: R7ySyiNxcfeZ6bfNjhocNun
       :label: Trade Regions
+    :has_related:
+    - :id: R8DdIMDFzHvwLDKQu30RRmN
+      :label: Sub-Saharan Africa
+    - :id: RDkR6Coi999FtjJzavA1ytE
+      :label: missing term
     :is_in_scheme:
     - :id: RC7BwiZbq5uJvqujC7p9NAy
-    :has_broader:
-    - :id: RBb72pZnfGSZApKbgfMfARC
-      :label: Regional Organizations
+      :label: Thesaurus of International Trade and Investment Terms
   :type:
+  - Geographic Locations
   - Trade Regions
-  :id: R7YQAlNP4iXuBJLBhgPAcIO
   :related_terms: {}
   :label_suggest:
-    :input: Asia Pacific Economic Cooperation
-    :weight: 18
-- :annotations:
-    :alt_label: Aviation Industry
-    :definition: The industry involved in the operation of commercial, non-military
-      passenger and cargo transportation by air. The category features aviation transport
-      businesses and organizations, as well as those providing supplies and services
-      to this industry.
-    :pref_label: Aviation
-  :sub_class_of:
-  - :id: R8CoATsjiZSLAZF4Aaz6kK6
-    :label: Aerospace and Defense
+    :input: African Growth and Opportunity Act
+    :weight: 27
+- :id: RDBsKPGzqliWT5godmR5PDV
   :label: Aviation
-  :datatype_properties: {}
+  :annotations:
+    :alt_label:
+    - Passenger Flights
+    - Air Transportation
+    - Aviation Services
+    - Aviation Industry
+    :source:
+    - ITA
+    :definition:
+    - The industry involved in the operation of commercial, non-military passenger
+      and cargo transportation by air. The category features aviation transport businesses
+      and organizations, as well as those providing supplies and services to this
+      industry.
+    :pref_label:
+    - Aviation
   :object_properties:
-    :is_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
     :has_narrower:
-    - :id: R635cvqm6BBP8Jzu7yW6oh
-    - :id: R83KkvcNAEbR5GIN8ALouQW
-    - :id: R8AFRGW0gBQe3oP4WiY3o9s
-    - :id: RBs1GcA7YB0XYJPwBZgk5xR
     - :id: R9sYmPzKkdKVRi2X3oObIyM
+      :label: missing term
+    - :id: R635cvqm6BBP8Jzu7yW6oh
+      :label: missing term
     - :id: RvXfDHB5h5CSXPVpkb2gUJ
-    :member_of:
-    - :id: RwdbpCsGlOI2iwaG4UqDl0
-      :label: Sector
+      :label: missing term
+    - :id: R83KkvcNAEbR5GIN8ALouQW
+      :label: missing term
+    - :id: RBs1GcA7YB0XYJPwBZgk5xR
+      :label: missing term
+    - :id: RB5EzH3O2Hn4aqHGmKIXaJb
+      :label: missing term
+    - :id: R8AFRGW0gBQe3oP4WiY3o9s
+      :label: missing term
     :has_broader:
     - :id: R8CoATsjiZSLAZF4Aaz6kK6
       :label: Aerospace and Defense
+    :is_in_scheme:
+    - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
   :type:
   - Industries
-  :id: RDBsKPGzqliWT5godmR5PDV
   :related_terms: {}
   :label_suggest:
     :input: Aviation
-    :weight: 17
-- :annotations:
-    :pref_label: Cape Verde
-    :source: ISO 3166
-    :iso_alpha_2: CV
-    :iso_alpha_3: CPV
-    :iso_numeric: 132
-    :iso_short_name: Cabo Verde
-  :sub_class_of: []
-  :label: Cape Verde
-  :datatype_properties: {}
-  :object_properties:
-    :member_of:
-    - :id: R8W91u35GBegWcXXFflYE4
-      :label: Countries
-    :has_broader:
-    - :id: R8DdIMDFzHvwLDKQu30RRmN
-    - :id: R7q9jrGbpXPRPccAu33iNNU
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-    :has_related:
-    - :id: RBYST5TkMsG3aOT9QMbCYFF
-  :type:
-  - Countries
-  :id: R5cLr1RomklAFGRkvK3Bh8
-  :related_terms:
-    :trade_regions: []
-    :world_regions: []
-  :label_suggest:
-    :input: Cape Verde
-    :weight: 16
-- :annotations:
-    :pref_label: Central Asia
-    :source: ITA
-  :sub_class_of:
-  - :id: R91fGuW6GPOnb7XSylIPwR5
-    :label: Asia
-  :label: Central Asia
-  :datatype_properties: {}
-  :object_properties:
-    :has_related:
-    - :id: RDrX1xLUDh7oA05RQ3JXshC
-      :label: Economic Cooperation Organization
-    - :id: RBVtSvNA1oiRIdyxG4yQW2U
-    :has_narrower:
-    - :id: RBw8ndgL3iXtxxTP560v6yZ
-    - :id: RDzjXT0GYF9ecQbq6oyxewD
-      :label: Afghanistan
-    - :id: RCYYmdELCU9mt8R3RdlNys5
-    - :id: RCfB9gXWAQMhJ9dvN4Fk23V
-    - :id: RDWMuIZgkJ15oLm2YFfp3cD
-    - :id: RCJNAo9QHRdLFOVe3bV0HyH
-    :member_of:
-    - :id: R8cndKa2D8NuNg7djwJcXxB
-      :label: World Regions
-    :has_broader:
-    - :id: R91fGuW6GPOnb7XSylIPwR5
-      :label: Asia
-    :is_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-  :type:
-  - World Regions
-  :id: R9pQ9NO7LyXj7vL7WbTAVVA
-  :related_terms: {}
-  :label_suggest:
-    :input: Central Asia
-    :weight: 15
-- :annotations:
-    :source: ISO 3166
-    :pref_label: China
-    :iso_alpha_2: CN
-    :iso_alpha_3: CHN
-    :iso_numeric: 156
-    :iso_short_name: China
-  :sub_class_of: []
-  :label: China
-  :datatype_properties: {}
-  :object_properties:
-    :has_related:
-    - :id: R7YQAlNP4iXuBJLBhgPAcIO
-      :label: Asia Pacific Economic Cooperation
-    :has_broader:
-    - :id: RXTomSBCCC8TOjYuMKCB8p
-    - :id: RDAklO0LFVtjIoIUYj4Dg4M
-      :label: East Asia
-    :challenges_sovereignty_of:
-    - :id: R8UBTJoenDbXjYBjcyr1LXc
-    :has_dependent_territory:
-    - :id: RDlckOaeEMnijVCOZyb9ljp
-    - :id: ReBrW4erCA9bTkbUVAjWbG
-    :member_of:
-    - :id: R8W91u35GBegWcXXFflYE4
-      :label: Countries
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-  :type:
-  - Countries
-  :id: RCFeONxXFzHO4GMg16HylOc
-  :related_terms:
-    :trade_regions:
-    - Asia Pacific Economic Cooperation
-    :world_regions:
-    - East Asia
-    - Asia
-  :label_suggest:
-    :input: China
-    :weight: 14
-- :annotations:
-    :alt_label: Cote d'Ivoire
-    :source: ISO 3166
-    :pref_label: Côte d'Ivoire
-    :iso_alpha_2: CI
-    :iso_alpha_3: CIV
-    :iso_numeric: 384
-    :iso_short_name: Côte d'Ivoire
-  :sub_class_of: []
-  :label: Côte d'Ivoire
-  :datatype_properties: {}
-  :object_properties:
-    :has_broader:
-    - :id: R8DdIMDFzHvwLDKQu30RRmN
-    - :id: R7q9jrGbpXPRPccAu33iNNU
-    :has_related:
-    - :id: RBYST5TkMsG3aOT9QMbCYFF
-    - :id: RFLXc4pqxjgrJXHW7QlWRS
-    :member_of:
-    - :id: R8W91u35GBegWcXXFflYE4
-      :label: Countries
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-  :type:
-  - Countries
-  :id: R72Vq8tvj233V96ZX6FnbkI
-  :related_terms:
-    :trade_regions: []
-    :world_regions: []
-  :label_suggest:
-    :input: Côte d'Ivoire
-    :weight: 13
-- :annotations:
-    :comment: The International Standards Organization (ISO) maintains a list of country
-      codes since 1974. Other standards bodies have adopted the ISO 3166 code list.
-    :source: ISO 3166
-    :pref_label: Countries
-  :sub_class_of: []
+    :weight: 26
+- :id: R8W91u35GBegWcXXFflYE4
   :label: Countries
-  :datatype_properties: {}
-  :object_properties: {}
+  :annotations:
+    :source:
+    - ISO 3166
+    :comment:
+    - The International Standards Organization (ISO) maintains a list of country codes
+      since 1974. Other standards bodies have adopted the ISO 3166 code list.
+    :pref_label:
+    - Countries
+  :object_properties:
+    :has_main_concept:
+    - :id: R8Qtz5gNpYmXe1HCkYn5PSI
+      :label: missing term
+    - :id: R4jB3XDFF8xKmSt8mqRMNY
+      :label: missing term
+    - :id: R9C7cCcgAygyf72km3kQtgH
+      :label: missing term
+    - :id: RlX503VC9INjKngnUW279O
+      :label: missing term
+    - :id: R7PoccKticMChFTX3PadnBL
+      :label: missing term
+    - :id: R9ZT5LLJf5byfiLViWe4t6f
+      :label: missing term
+    - :id: RFGAtVISMZtYzsQZMJHuTA
+      :label: missing term
+    - :id: RB7yUrEq8fdQIprSvFraYIg
+      :label: missing term
+    - :id: RCFeONxXFzHO4GMg16HylOc
+      :label: missing term
+    - :id: RCnNAAeMPteY7EWU1GUOdvN
+      :label: missing term
+    - :id: R762SLDFJ5WfJI48KUhLQq7
+      :label: missing term
+    - :id: RMiPvxUj7AK8KDXPkSSTlb
+      :label: missing term
+    - :id: R7veGbn8GhVQXpxzaXwjXkW
+      :label: missing term
+    - :id: R9DFwPx5wirkI29JDccLcyb
+      :label: missing term
+    - :id: RePmJPALYkhooeQ2wBSlN7
+      :label: missing term
+    - :id: R6OsGHPcOskVYbghdvcPiw
+      :label: missing term
+    - :id: REUvZKSmFk7Siz6txnDMET
+      :label: missing term
+    - :id: RWu76sk22Q9pELyys2NKCE
+      :label: missing term
+    - :id: RL6IQk2dPIC5jv4I3vL0G
+      :label: missing term
+    - :id: R91s4wjlHdZS1dGDo3iW97V
+      :label: missing term
+    - :id: R8fTGfwFBERSngpANw3HP8a
+      :label: missing term
+    - :id: RQcVVe7gpJwOXKdZTbjsZ1
+      :label: missing term
+    - :id: RBAkAbT8o3s5MdAnwqzUSfB
+      :label: missing term
+    - :id: R8wg4JegCG36uQR9LuomLFg
+      :label: missing term
+    - :id: RBAQIDzP6yuHpyVOi7mTOad
+      :label: missing term
+    - :id: RCtSs2hsQx9TdF9CfSUHytB
+      :label: missing term
+    - :id: R90YTY2Vg46dJOeTdBr34kn
+      :label: missing term
+    - :id: RCYYmdELCU9mt8R3RdlNys5
+      :label: missing term
+    - :id: RCLWOSEkzZVJv5r09ls8i9A
+      :label: missing term
+    - :id: R7m9slx6ONSwPRXEIXxOUiA
+      :label: missing term
+    - :id: R59GuwQvYSPrfN4Sspq7J5
+      :label: missing term
+    - :id: RdnQTB8Nj3DMWYP21jyvb2
+      :label: missing term
+    - :id: R75rqUe0eciCtNILDVfD2gL
+      :label: missing term
+    - :id: Rwh1Ks6Wk3q5GsSLRVaX4Q
+      :label: missing term
+    - :id: R84nw4WNc0fumIPTJgoezSE
+      :label: missing term
+    - :id: RO7EbjKKfZ1R3mA0ERU0oQ
+      :label: missing term
+    - :id: R8FUKsMCIQ8LqFhPh5GAUHa
+      :label: missing term
+    - :id: RsLniMx9a5oKHxfCkGazF5
+      :label: missing term
+    - :id: RiNaueyJ4af69Stu9VRWaR
+      :label: missing term
+    - :id: RB3H5524QSrToKpT38qyZVb
+      :label: missing term
+    - :id: R7zZQn8uVCa1ZTM1wLina6i
+      :label: missing term
+    - :id: RDFP2YrvV7b1gJy0iw9zRK8
+      :label: missing term
+    - :id: Rp13pw0RkLoyvm8ySc6Loo
+      :label: missing term
+    - :id: R7uh1gteNin2ik0peVpg4Cq
+      :label: missing term
+    - :id: RBDe6zGbApwu0lkV1z5aycp
+      :label: missing term
+    - :id: R6tX31lokqkABm9HOYhRKK
+      :label: missing term
+    - :id: R91qpLTTbKuO9oI9geGqQhv
+      :label: missing term
+    - :id: RDPe5kwyEchbPHn3bZiemHC
+      :label: missing term
+    - :id: RBoMWwBkm6NcT5SqEjqFsbg
+      :label: missing term
+    - :id: R9WFz3qsZWXbKpmEYXE5AOJ
+      :label: missing term
+    - :id: RDydxr4mwiekMUnDQpunNaX
+      :label: missing term
+    - :id: R8YK1KsZR58hwks0ItoTewJ
+      :label: missing term
+    - :id: R9fhgPYIx7PUi4vDOZUcjKB
+      :label: missing term
+    - :id: R8YEdzraPqQu4AYoZI4A9SS
+      :label: missing term
+    - :id: R7tAfn5WOKgOPGoU8fXB1ba
+      :label: missing term
+    - :id: R7vNVyPoXK033ovmABOlGyI
+      :label: missing term
+    - :id: RCJ03zgj2yqIKEhwx1oKd9I
+      :label: missing term
+    - :id: Rw7Hekma7kZuaIFsa9CoDI
+      :label: missing term
+    - :id: RCMieQgqQN1unvmV8pUQ5Op
+      :label: missing term
+    - :id: RDpNXGdITZHQxuUWOG2zNRc
+      :label: missing term
+    - :id: RCNTy7vuXjv63jQIKyTl9rQ
+      :label: missing term
+    - :id: R76AYlil1RKwCEwpWhrfuc
+      :label: missing term
+    - :id: R8gYR68Qt9xYey7AT63m6yX
+      :label: missing term
+    - :id: RDxZvpKHZS9YgghvpJw1ftL
+      :label: missing term
+    - :id: RBq6N25HFNZqb0wmSVIDr90
+      :label: missing term
+    - :id: R8GDAW6Psd3q9iqwPYcN43m
+      :label: missing term
+    - :id: RDY6RJrEOlJsgDA5f15Um5k
+      :label: missing term
+    - :id: RGaokBKPwCXFwDq7NAVt5e
+      :label: missing term
+    - :id: RDWCqOouYpdAQbMAf1gJe8o
+      :label: missing term
+    - :id: RBjxUaSQ4rQJHg0p6rppxuI
+      :label: missing term
+    - :id: RBszX0U6TGg6P1vYxcho8GX
+      :label: missing term
+    - :id: RL7MjTu8xoASOkoXft8G2E
+      :label: missing term
+    - :id: RDjGw17VBjBm1pfdtbcTiu7
+      :label: missing term
+    - :id: R7wvBhExXvlfil8gIxuhT1A
+      :label: missing term
+    - :id: RDFbgSy3LZrH6PRhU3Ah9FK
+      :label: South Africa
+    - :id: RCPHtbEUDBS78KsYdixLKQb
+      :label: missing term
+    - :id: RldqiuO40OoJDLS1vbWU6a
+      :label: missing term
+    - :id: R8c1pzK1REf00r9nM0kswIj
+      :label: missing term
+    - :id: RDfDY0ur68lqxEDkatxoedV
+      :label: missing term
+    - :id: R8UBTJoenDbXjYBjcyr1LXc
+      :label: missing term
+    - :id: RCs75GXTuLFQAa5lGsmBtpi
+      :label: missing term
+    - :id: R83drkmUclnyx0hMT21sFID
+      :label: missing term
+    - :id: RhrxH7WnVM0otO9bi1RR7P
+      :label: missing term
+    - :id: RDwmDb245nBhbjmW9OUf14i
+      :label: missing term
+    - :id: R7TGeyus9EJBjfh6BTH3eaC
+      :label: missing term
+    - :id: R8Kjt2UlwrHRliUmGWx7dtW
+      :label: missing term
+    - :id: RCN2spts7emRf83rPF2KbQw
+      :label: missing term
+    - :id: R8q2Ky1xZLQT27BUPjjaSxj
+      :label: missing term
+    - :id: R80bgRjdTG1heyjPL3Oe2zr
+      :label: missing term
+    - :id: RBCZfwcQSXKcWyaEC0hn62L
+      :label: missing term
+    - :id: RBZ0PhAPQIWcnmCnUxf8pOE
+      :label: missing term
+    - :id: RoiP295qzjzTwDOzRFJdMU
+      :label: missing term
+    - :id: RCXcA3MyPBYPb1z5krWN4s9
+      :label: missing term
+    - :id: RjX9UvV4HBCZZDj3GYchVL
+      :label: missing term
+    - :id: R8PABBaUsSz3PW2TjjoRow5
+      :label: missing term
+    - :id: RBrLMfyIQS6WaDBWEPSZyzJ
+      :label: missing term
+    - :id: R9nHCrUvk1zAfw2LwLGfNPs
+      :label: missing term
+    - :id: RCJNAo9QHRdLFOVe3bV0HyH
+      :label: missing term
+    - :id: RbYFSx2IpeERenf8qTisQr
+      :label: missing term
+    - :id: R8O5bG19BDFwm4TdNc7Qqsv
+      :label: missing term
+    - :id: R8SuwKujvS5KvRYIsG0kyvi
+      :label: missing term
+    - :id: R84vd2fSNWZmsinYehOK6aG
+      :label: missing term
+    - :id: RDzjXT0GYF9ecQbq6oyxewD
+      :label: missing term
+    - :id: R7vMoSE3hBWRU2Mk4C7MHWl
+      :label: missing term
+    - :id: R72Vq8tvj233V96ZX6FnbkI
+      :label: missing term
+    - :id: RGToHhlWH16JOtsTbBjGkJ
+      :label: missing term
+    - :id: R8oFX2wzpWfwf8vvoBkN9wJ
+      :label: missing term
+    - :id: R78yOOm7zRFUaNsmD2hxTa3
+      :label: missing term
+    - :id: R8S7wmqghjfsTyamBlkqtPn
+      :label: missing term
+    - :id: RCQCch6j3ONOsMzuTaTo3rQ
+      :label: missing term
+    - :id: R9rVGUHUgufNHYqigEuH1Y1
+      :label: missing term
+    - :id: R9m3IjtfdhzMj2CRE5IqXLw
+      :label: missing term
+    - :id: R7XuvrK5VfzMdy4GGbCkakw
+      :label: missing term
+    - :id: RDNHjl0ys3bI18phepcvXSJ
+      :label: missing term
+    - :id: R8gUoxNgfn27HtwjzHl2Qql
+      :label: missing term
+    - :id: R8WEHAxTjAtnbKlMxoPcmwN
+      :label: missing term
+    - :id: RCYhjezkcxoy0cLdnLxYOAq
+      :label: missing term
+    - :id: RBQchbiL0gYuuBJC0Y23rrG
+      :label: missing term
+    - :id: R9a1XBPv2yihr1FhKYEROjR
+      :label: missing term
+    - :id: R7S2g1SgmUdzf3pFQmrsR0C
+      :label: missing term
+    - :id: RB7ignnZUDxiR47exACJSZ3
+      :label: missing term
+    - :id: RDGDAFENxW2wbu7M91LTJPe
+      :label: missing term
+    - :id: R8wGcinPPozP0iTxbVwGkCz
+      :label: missing term
+    - :id: R7y7TyOqyAc5ezFEJuQXLS
+      :label: missing term
+    - :id: R8YjT1k5LI01tKofBXDMOlW
+      :label: missing term
+    - :id: RC4HD9CwKjvgX8dSybAp3Sk
+      :label: United States
+    - :id: R1kyDEAN6yuDq9vHIzWt3Z
+      :label: missing term
+    - :id: RhpOZSa8doskNp2XnNNA1X
+      :label: missing term
+    - :id: RBAVlisida7HGDpQBhwirCd
+      :label: missing term
+    - :id: RUaniez9VTk4Dhk74OgTLc
+      :label: missing term
+    - :id: R98iSAeS5TdinsKQ3uhLWYr
+      :label: missing term
+    - :id: RBtOmYVtZzWV1z2e7AJzGwC
+      :label: missing term
+    - :id: R9xQtgJ353gaKE7qCdIDWNH
+      :label: missing term
+    - :id: R86RlZHwKbp2UCKARvDh9s0
+      :label: missing term
+    - :id: RTzZNSWvKS91jbBZ63A0bs
+      :label: missing term
+    - :id: RBL5iAGuoJ3YVTWqtPDpjUQ
+      :label: missing term
+    - :id: R9XUpyPonBxZAbkMTdCw6wJ
+      :label: missing term
+    - :id: R9NI1UPySaTXU7rTIQCDwW7
+      :label: missing term
+    - :id: RcoC6hxvjY1WRMKV6cW3US
+      :label: missing term
+    - :id: RDf5WqjTEy5LQfo27FVNARN
+      :label: missing term
+    - :id: ReBrW4erCA9bTkbUVAjWbG
+      :label: missing term
+    - :id: R5PHA6xVBLvJgQcDWlHFLx
+      :label: missing term
+    - :id: RCmoTnq3LUdBURmzkowDPn3
+      :label: missing term
+    - :id: RCpcXB0auhaO45pz8v4h5OT
+      :label: missing term
+    - :id: RfxpAK7Sx2uspzUqK7lzip
+      :label: missing term
+    - :id: RC8osZdeMm2ZJwrziPN80xG
+      :label: missing term
+    - :id: R9CtFIsnErVXieIeyj8WCFu
+      :label: missing term
+    - :id: RDWMuIZgkJ15oLm2YFfp3cD
+      :label: missing term
+    - :id: RnI46ug00TBBy8VIl65MTw
+      :label: missing term
+    - :id: R8YgscX6GjzSIJRBsyOvC4G
+      :label: missing term
+    - :id: R83RBxX91o3z1pt0cXjXvgN
+      :label: missing term
+    - :id: RC2kPbFaay664IRdHYfk5rK
+      :label: missing term
+    - :id: Rl94QwB1HNGz6e2R8PX4Re
+      :label: missing term
+    - :id: R9mwgkbba3kSDktKpuU76OV
+      :label: missing term
+    - :id: RCHQeOnfT0xfDPZJqmPxA8B
+      :label: missing term
+    - :id: R7maTidaiMMeu6GMYE85z8m
+      :label: missing term
+    - :id: RCdtaZpf8FFT2evaJuWr9Lx
+      :label: missing term
+    - :id: RC88gcQj9C5qKRAgVRLOUBn
+      :label: missing term
+    - :id: RCfB9gXWAQMhJ9dvN4Fk23V
+      :label: missing term
+    - :id: R8CEoc8Dnb3VQWUNMTMKvS7
+      :label: missing term
+    - :id: RDXjKihUhEKJOVRkiX3V0xz
+      :label: missing term
+    - :id: R8h5mFnkBFA9y99Ri6YJsbl
+      :label: missing term
+    - :id: RTCfFG5Oyu3L7ch8KtFJ19
+      :label: missing term
+    - :id: R9B8sYWHJEwlzgvFJsbRyOu
+      :label: missing term
+    - :id: RBw8ndgL3iXtxxTP560v6yZ
+      :label: missing term
+    - :id: RDgLWVpEOxJQaDV8kvJ5UlO
+      :label: missing term
+    - :id: RCW5Lj0I9gMRAQdOoUiT1Th
+      :label: missing term
+    - :id: R9ujJECmPDkHsneDYFybxMa
+      :label: missing term
+    - :id: Rj8HH2U7635ZL772rrJTIp
+      :label: missing term
+    - :id: RB00ZwsHRu4SZ30ipWZOIfg
+      :label: missing term
+    - :id: RWiuUJ5jZPXZvYmM38pwtV
+      :label: missing term
+    - :id: RDNdhI1BcyjPXdt9Lz1o1yS
+      :label: missing term
+    - :id: RDQgpGpIwkyrDvpcP502ud2
+      :label: missing term
+    - :id: R7XGr6wjaA0tBmR9Ng2t5Bt
+      :label: missing term
+    - :id: R8HaQNQWHM8w0QKkUn2Fzxb
+      :label: missing term
+    - :id: RUXeWvtXzfnZOcThs5oRWn
+      :label: missing term
+    - :id: RDHGkVtWRlfjWr8PfahIFic
+      :label: missing term
+    - :id: R8FuN4KWIKHtZBivuLXCad9
+      :label: missing term
+    - :id: RZeaZ7bPfl1AYseVBURnsq
+      :label: missing term
+    - :id: RBFvvyOf0cyqZwuO8ItekQ2
+      :label: missing term
+    - :id: RlPRhWsXZGGS1cRKKUnwj4
+      :label: missing term
+    - :id: R7QvmP6sAzVlggq7oMhG2fh
+      :label: missing term
+    - :id: RBzym60YIh9lLp8dQYmn66B
+      :label: missing term
+    - :id: R7bSWMvny6QiHS4juSkcCc0
+      :label: missing term
+    - :id: R7i61kUBJ6JzONSuFUU55Sb
+      :label: missing term
+    - :id: R93WzzvUmKbe50yyZwfHJNZ
+      :label: missing term
+    - :id: Rk7YeUMMH0RZggunBDxoWg
+      :label: missing term
+    - :id: RDjZWxpKrbJhv9TUZdq6p2q
+      :label: missing term
+    - :id: RBqV2ISEKykhw27B5uwrHo
+      :label: missing term
+    - :id: RBaHgxjRq1CoqqOli4iXE5t
+      :label: missing term
+    - :id: RCWSPtOT4fygNsXAGGx2Miq
+      :label: missing term
+    - :id: Rzb6FwyhEbIthzTTtaIfrd
+      :label: missing term
+    - :id: R9Y3aEXJBcPwvBA8HPd2PbY
+      :label: missing term
+    - :id: RDfWkx5I0dL3PTBl19wcaRe
+      :label: missing term
+    - :id: RDmEnPaeDKHRTMgjbarbJVz
+      :label: missing term
+    - :id: R9hrHJqhOp9lbi97bq4q1th
+      :label: missing term
+    - :id: R9Zxnfzwd0znkbst2evmiEH
+      :label: missing term
+    - :id: RCQ11kK8mK2T6LWNJc1S0Dg
+      :label: missing term
+    - :id: RC198pPnsSx6N3eRmsBONn8
+      :label: missing term
+    - :id: R7oGDoaxnOGm5Km8kttuaVJ
+      :label: missing term
+    - :id: RgQUcgf5oVmt7SY8fTPT6Q
+      :label: missing term
+    - :id: R8QG05CJoVwkPok7N6Roz1V
+      :label: missing term
+    - :id: R7aF0P8k19Yjgqx01edA2b5
+      :label: missing term
+    - :id: R8Ej741whxQgjGSm96YKKbA
+      :label: missing term
+    - :id: RDcPCaHm5yHaI3T2BN46SHl
+      :label: missing term
+    - :id: R9i2WoeLmbDaHtDNCyjBY24
+      :label: missing term
+    - :id: R83S6Ct7roENgeokxqgsgc6
+      :label: missing term
+    - :id: R7Tt3LGkpoNyU6AIOvyhTVF
+      :label: missing term
+    - :id: RjArdMipwFnxJuz6LuJxwK
+      :label: missing term
+    - :id: RB1lLvsuTCcxxkyOA7ZqHv2
+      :label: missing term
+    - :id: R8sDBgF7EMZhgZUjx5EUhwi
+      :label: Peru
+    - :id: RH0aplekawMbqRamY2zHPx
+      :label: missing term
+    - :id: RC89POWcmFspXvpRIOHvjB9
+      :label: missing term
+    - :id: RBPxtBToM2v2kOpsL8Gaifx
+      :label: missing term
+    - :id: RUtBoSE3VZchBze1rQYCYF
+      :label: missing term
+    - :id: RBn7U4nuqEQqKyIqAUzYkZx
+      :label: missing term
+    - :id: RD1J4X0UzBKHP5ew30Kwx0t
+      :label: missing term
+    - :id: RDlckOaeEMnijVCOZyb9ljp
+      :label: missing term
+    - :id: RDHEnKcygc3BhrTi0lCku2l
+      :label: missing term
+    - :id: RBQjtZAMfrlFftSrRJK8LQQ
+      :label: missing term
+    - :id: RDWGCNborzo2DRbNKplJ7gb
+      :label: missing term
+    - :id: RCi9wQpuzOAexRndBnKzfj0
+      :label: missing term
+    - :id: R7QPQeZqeYEzhyDojPQP9fj
+      :label: missing term
+    - :id: R5cLr1RomklAFGRkvK3Bh8
+      :label: missing term
+    - :id: RIAp7oIkmdpdfQE0H6FiVG
+      :label: missing term
+    - :id: RBTBNP5i0kFGFdhQ82AFali
+      :label: missing term
+    - :id: RDAnDd52MXF3rnlUx3OoOGx
+      :label: missing term
+    - :id: R4xJx4A80SVrtzqB9CTOnE
+      :label: missing term
+    - :id: R8CwJ8K2v1OQmxDmOcHfgSj
+      :label: missing term
+    - :id: RDjKltimjLU3Bt2imAOOMpz
+      :label: missing term
+    - :id: RCHnGGZ8oROz1NPBYEs8ldE
+      :label: missing term
+    - :id: R8YAOM56ZC5G6VQ9Y8HVXUu
+      :label: missing term
+    - :id: R9trpZrU6PQBfnlotvQyAEC
+      :label: missing term
+    - :id: R9bmRjeWnoKTfArlEY0ZlVh
+      :label: missing term
+    - :id: RB6ARrKUqqClwfBGNR8YLLc
+      :label: missing term
+    - :id: RqMAEkSI4XmgpCxPe9BlgG
+      :label: missing term
+    - :id: R95rkgXqig6WlNrWUq0J3GU
+      :label: missing term
+    - :id: RCcV2jUTW6HqBTUJXNWsQJq
+      :label: missing term
+    - :id: R4hFpPEfwFix7LcYu1r4NZ
+      :label: missing term
+    - :id: RLNkCTY2cc77k9Y1jOW6Xv
+      :label: missing term
+    - :id: R9TP1SSeixUvUGZdM6a4bOa
+      :label: missing term
+    :iso_thes:super_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
   :type: []
-  :id: R8W91u35GBegWcXXFflYE4
   :related_terms: {}
   :label_suggest:
     :input: Countries
-    :weight: 12
-- :annotations:
-    :source: ITA
-    :pref_label: East Asia
-  :sub_class_of:
-  - :id: R91fGuW6GPOnb7XSylIPwR5
-    :label: Asia
-  :label: East Asia
-  :datatype_properties: {}
+    :weight: 25
+- :id: R9lHhOo010EPhoajnKC2Lvg
+  :label: Defense Equipment
+  :annotations:
+    :definition:
+    - The industry sector that manufactures and supplies equipment to the military
+      and defense industries
+    :alt_label:
+    - Defense Equipment Machinery
+    :source:
+    - ITA
+    :pref_label:
+    - Defense Equipment
   :object_properties:
-    :has_narrower:
-    - :id: RDlckOaeEMnijVCOZyb9ljp
-    - :id: R9ZT5LLJf5byfiLViWe4t6f
-    - :id: R8UBTJoenDbXjYBjcyr1LXc
-    - :id: R8oFX2wzpWfwf8vvoBkN9wJ
-    - :id: RCmoTnq3LUdBURmzkowDPn3
-    - :id: ReBrW4erCA9bTkbUVAjWbG
-    - :id: RDfDY0ur68lqxEDkatxoedV
-    - :id: RCFeONxXFzHO4GMg16HylOc
-      :label: China
-    :member_of:
-    - :id: R8cndKa2D8NuNg7djwJcXxB
-      :label: World Regions
     :has_broader:
-    - :id: R91fGuW6GPOnb7XSylIPwR5
-      :label: Asia
+    - :id: R8CoATsjiZSLAZF4Aaz6kK6
+      :label: Aerospace and Defense
     :is_in_scheme:
     - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
   :type:
-  - World Regions
-  :id: RDAklO0LFVtjIoIUYj4Dg4M
+  - Industries
   :related_terms: {}
   :label_suggest:
-    :input: East Asia
-    :weight: 11
-- :annotations:
-    :pref_label: Economic Cooperation Organization
-    :source: UNCTAD/WTO
-    :alt_label: ECO
-  :sub_class_of:
-  - :id: RBb72pZnfGSZApKbgfMfARC
-    :label: Regional Organizations
-  :label: Economic Cooperation Organization
-  :datatype_properties: {}
+    :input: Defense Equipment
+    :weight: 24
+- :id: R8EQ1rTm3YaOBhcjtH1NGt6
+  :label: District of Columbia
+  :annotations:
+    :source:
+    - ISO 3166
+    :alt_label:
+    - Washington, DC
+    :pref_label:
+    - District of Columbia
   :object_properties:
-    :has_related:
-    - :id: R9pQ9NO7LyXj7vL7WbTAVVA
-      :label: Central Asia
-    :has_narrower:
-    - :id: RCfB9gXWAQMhJ9dvN4Fk23V
-    - :id: RDzjXT0GYF9ecQbq6oyxewD
-      :label: Afghanistan
-    - :id: RDf5WqjTEy5LQfo27FVNARN
-    - :id: R8Ej741whxQgjGSm96YKKbA
-    - :id: RCYYmdELCU9mt8R3RdlNys5
-    - :id: RBn7U4nuqEQqKyIqAUzYkZx
-    - :id: RfxpAK7Sx2uspzUqK7lzip
-    - :id: RCJNAo9QHRdLFOVe3bV0HyH
-    - :id: RBw8ndgL3iXtxxTP560v6yZ
-    - :id: RDWMuIZgkJ15oLm2YFfp3cD
-    :member_of:
+    :has_broader:
+    - :id: RC4HD9CwKjvgX8dSybAp3Sk
+      :label: United States
+    :is_main_concept_in_collection:
+    - :id: Rqdpj5QSp8PxZGtrXuOpdK
+      :label: U.S. States and Territories
+  :type:
+  - Geographic Locations
+  - U.S. States and Territories
+  :related_terms: {}
+  :label_suggest:
+    :input: District of Columbia
+    :weight: 23
+- :id: RNy7fDXpMAmlGj4e5mLIeO
+  :label: Foreign Trade Remedies
+  :annotations:
+    :pref_label:
+    - Foreign Trade Remedies
+    :source:
+    - ITA
+  :object_properties:
+    :has_main_concept:
+    - :id: RwFX5vZdCI78etIjiBtQ19
+      :label: missing term
+    - :id: RBhuB31Zfas2NUBW3y3G9CC
+      :label: missing term
+    - :id: RCi51S9bucjjV1FGpkDyMhq
+      :label: Safeguards
+    :iso_thes:super_group:
+    - :id: RnMRx1ORiHCryGG8eYoLRy
+      :label: Market Access
+    :has_member:
+    - :id: RCi51S9bucjjV1FGpkDyMhq
+      :label: Safeguards
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Foreign Trade Remedies
+    :weight: 22
+- :id: RCM1PE2jExQ27PUY0a2WdxD
+  :label: Geographic Locations
+  :annotations:
+    :pref_label:
+    - Geographic Locations
+    :source:
+    - ITA
+  :object_properties:
+    :sub_group:
+    - :id: RCzwUJdLiYabKMRXxVGNvf8
+      :label: U.S. Free Trade Agreement Partner Countries
     - :id: R7ySyiNxcfeZ6bfNjhocNun
       :label: Trade Regions
-    :is_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-    :has_broader:
-    - :id: RBb72pZnfGSZApKbgfMfARC
-      :label: Regional Organizations
-  :type:
-  - Trade Regions
-  :id: RDrX1xLUDh7oA05RQ3JXshC
-  :related_terms: {}
-  :label_suggest:
-    :input: Economic Cooperation Organization
-    :weight: 10
-- :annotations:
-    :source: ITA
-    :pref_label: Industries
-  :sub_class_of: []
-  :label: Industries
-  :datatype_properties: {}
-  :object_properties:
+    - :id: R8W91u35GBegWcXXFflYE4
+      :label: Countries
+    - :id: Rqdpj5QSp8PxZGtrXuOpdK
+      :label: U.S. States and Territories
+    - :id: R8cndKa2D8NuNg7djwJcXxB
+      :label: World Regions
     :micro_thesaurus_of:
     - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
   :type: []
-  :id: R79uIjoQaQ9KzvJfyB1H7Ru
+  :related_terms: {}
+  :label_suggest:
+    :input: Geographic Locations
+    :weight: 21
+- :id: R79uIjoQaQ9KzvJfyB1H7Ru
+  :label: Industries
+  :annotations:
+    :source:
+    - ITA
+    :pref_label:
+    - Industries
+  :object_properties:
+    :has_main_concept:
+    - :id: RDe7w1uWBJKRO0S1z5j0yMa
+      :label: missing term
+    - :id: R70ud2xUGmsLz7LIxxSQ5B0
+      :label: missing term
+    - :id: R9zaGPZ9yjWv1UeRtk8gzKh
+      :label: missing term
+    - :id: RWew4WD4YTj3Kkv5aTpN5e
+      :label: missing term
+    - :id: R9HvvsELVcu8mEDwMsvKaSg
+      :label: missing term
+    - :id: R8CoATsjiZSLAZF4Aaz6kK6
+      :label: Aerospace and Defense
+    - :id: R8lDshhZ30qQxTEDQTALxvb
+      :label: missing term
+    - :id: R931063KTJDmZzB8UFcU4RE
+      :label: missing term
+    - :id: R7fKcF3Y1oc2rV1XkQf5jo8
+      :label: missing term
+    - :id: R9U7S8NbizdHDvOWGk6YIH2
+      :label: missing term
+    - :id: RPxUK7R9Y5t6XxoUOapJut
+      :label: missing term
+    - :id: R9u5vLXS4JNQFPMdjGHghE3
+      :label: missing term
+    - :id: RXNklYQyXhTgvl1opDfECS
+      :label: missing term
+    - :id: R8FTTB2AJ9DoSpvx9H2Pc5k
+      :label: missing term
+    - :id: RCn8ngxUpyUpCDQ4QEv3ecn
+      :label: missing term
+    - :id: RB09qLH5aNGPju1PBmmetXL
+      :label: missing term
+    - :id: R8EUGBr6eW4UdRXRY2HpE49
+      :label: missing term
+    - :id: RCdX9tmNWXCfJuuQYeAAAJs
+      :label: missing term
+    - :id: R7jKFUb3Wkm5WHoXcVe7PI7
+      :label: missing term
+    - :id: RRtZ3Nz5qiadJCD7ymQoKI
+      :label: missing term
+    - :id: RcLCin3PUe26tSDvI7dXDh
+      :label: missing term
+    - :id: R8avQ7EVuRt7SLthCF7e4Lq
+      :label: missing term
+    - :id: RYjn03izDTAkhWQLNxqJaJ
+      :label: missing term
+    - :id: RPKCOizTu2M4Qr7uMv8DsE
+      :label: missing term
+    - :id: R8FMWDa8xtTFM7PYVPAHNRo
+      :label: missing term
+    - :id: RuR88TU55jqds0r58R9jJK
+      :label: missing term
+    - :id: Rr5qeVAB4hyFgHYSrNYxSs
+      :label: missing term
+    :micro_thesaurus_of:
+    - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
+  :type: []
   :related_terms: {}
   :label_suggest:
     :input: Industries
-    :weight: 9
-- :annotations:
-    :pref_label: International Cooperation
-    :alt_label: International Relations
-  :sub_class_of: []
-  :label: International Cooperation
-  :datatype_properties: {}
+    :weight: 20
+- :id: RnMRx1ORiHCryGG8eYoLRy
+  :label: Market Access
+  :annotations:
+    :source:
+    - UNCTAD/WTO
+    :definition:
+    - Market access for goods means the conditions, tariff and non-tariff measures,
+      set by countries for the entry of specific goods into their markets.
+    :pref_label:
+    - Market Access
   :object_properties:
-    :has_narrower:
-    - :id: RBb72pZnfGSZApKbgfMfARC
-      :label: Regional Organizations
-    - :id: Rk5pCWf2G0cRCXVFbX6Mpe
-    - :id: RDqvYT0w0McaR3ztDo7GTiN
-    - :id: R9qZhnMIZ6hKNPtnEtcfbom
-    - :id: R9sXmBia7HVpVIzX0B5IERQ
-    - :id: R2w8WnA9A8a2TiSmJRb9EA
-    - :id: RuW8uQVPaBKxWpRKcxpAQp
-    - :id: RB8F5rHCO4KieuMqXcGADpP
-    - :id: R70kvzy3dISjqdDrBuHHKTZ
-    - :id: RC6O6Jo0GbVJz0TIihSBUgg
-    - :id: Rf92Yc4Y7bzuhqK3hHHQG3
-    - :id: RCLdxEaPNHghdQxWQXbmu74
-    - :id: RtpjDyoaB0na0aWRn6EKd7
-    - :id: R7dGSypy8jhFXWffiHjotDI
-    - :id: RDu5TsRmw1pLWvBxPEJKECR
-    - :id: RCkkcX2iPKAlS58m9zcWv8Q
-    - :id: R8GeJ9HV5NWitlhQtNu5TLG
-    - :id: RDHA9zT6LXQYJveXoKXYU68
-    :member_of:
+    :has_main_concept:
+    - :id: RCHUDByB9fyPPODUpttFI6C
+      :label: missing term
+    - :id: R7hOd0SHgWpJV0kBwX5XPaj
+      :label: missing term
+    - :id: RCUnaFH0wmNFllh16IfScFv
+      :label: missing term
+    - :id: RDVa80dMMb6rrFIW5Ljtqzc
+      :label: missing term
+    - :id: RDOcLkCLolijnhfJWPqoZOa
+      :label: missing term
+    - :id: RBq6Gm4HmZJsGeQ5XJDrWMa
+      :label: missing term
+    - :id: R8UD9ofnVwgC6V5VeBimktW
+      :label: missing term
+    - :id: Rxe6uQeredRAyMxXbswm89
+      :label: Trade Barriers
+    - :id: R7AZ2czaqeRhdUM2f8ijvdD
+      :label: missing term
+    - :id: RDtoKt7c9gZkXLz97Kcakum
+      :label: missing term
+    - :id: R97mXdgY4h46z0PhqIMuRB4
+      :label: missing term
+    - :id: RDyYQAF2daia6EOVTt6yLlV
+      :label: missing term
+    - :id: R8rpJ3tvHseZ8D50Fgs3hcD
+      :label: missing term
+    - :id: RCRJEm0IfL7uMJTgXrmt9YZ
+      :label: missing term
+    - :id: RzpEH9xDpau2VAG7KTuk2j
+      :label: missing term
+    - :id: RBzvXHnARzw89hyGfxvojGx
+      :label: missing term
+    - :id: RClEZAXQnANDtRLnrMa6GaR
+      :label: missing term
+    - :id: R74ZL6GUyfiKWVFg3goo6ct
+      :label: missing term
+    - :id: R7lmBYJXjzwUpPzJs2TR2wF
+      :label: missing term
+    - :id: R8RONthBuH8SZM1iQ1URGGM
+      :label: missing term
+    :sub_group:
+    - :id: R92L4rt1jx5tO860j6fMnFc
+      :label: missing term
+    - :id: R9pJyCE0HdzuSeWhsN7OMoL
+      :label: missing term
+    - :id: RdPEMRy13AfmhgeR1o3Wfu
+      :label: missing term
+    - :id: RNy7fDXpMAmlGj4e5mLIeO
+      :label: Foreign Trade Remedies
+    - :id: RBqcjYGI9l5UvM7fejtCzwz
+      :label: missing term
+    - :id: RuWhm5SIgpmVKC44iV3mWP
+      :label: missing term
+    - :id: Rl48OFcEq45EnAxPkj9vIN
+      :label: missing term
+    - :id: RGzeqA6kXjRGpXeiMANIGF
+      :label: missing term
+    - :id: RCCWW87ARkyC7fpDRiGHMAF
+      :label: missing term
+    :iso_thes:super_group:
     - :id: RBBed4Voz7iS3nUECA3yzNM
       :label: Trade Topics
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
   :type:
   - Trade Topics
-  :id: RBUhToH9SFoFVriuHfHzcvT
   :related_terms: {}
   :label_suggest:
-    :input: International Cooperation
-    :weight: 8
-- :annotations:
-    :pref_label: North America
-  :sub_class_of: []
-  :label: North America
-  :datatype_properties: {}
+    :input: Market Access
+    :weight: 19
+- :id: R4Tyoniw0wZl3t7In4gVGW
+  :label: Pacific Rim
+  :annotations:
+    :source:
+    - IA Trade Database
+    :pref_label:
+    - Pacific Rim
   :object_properties:
-    :is_top_concept_in_scheme:
+    :has_narrower:
+    - :id: R8QG05CJoVwkPok7N6Roz1V
+      :label: missing term
+    - :id: RTzZNSWvKS91jbBZ63A0bs
+      :label: missing term
+    - :id: RsLniMx9a5oKHxfCkGazF5
+      :label: missing term
+    - :id: RjX9UvV4HBCZZDj3GYchVL
+      :label: missing term
+    - :id: RC88gcQj9C5qKRAgVRLOUBn
+      :label: missing term
+    - :id: R8oFX2wzpWfwf8vvoBkN9wJ
+      :label: missing term
+    - :id: R91qpLTTbKuO9oI9geGqQhv
+      :label: missing term
+    - :id: RBszX0U6TGg6P1vYxcho8GX
+      :label: missing term
+    - :id: RCi9wQpuzOAexRndBnKzfj0
+      :label: missing term
+    - :id: RDfDY0ur68lqxEDkatxoedV
+      :label: missing term
+    - :id: RCnNAAeMPteY7EWU1GUOdvN
+      :label: missing term
+    - :id: RCQ11kK8mK2T6LWNJc1S0Dg
+      :label: missing term
+    - :id: RC4HD9CwKjvgX8dSybAp3Sk
+      :label: United States
+    - :id: RCmoTnq3LUdBURmzkowDPn3
+      :label: missing term
+    - :id: RDWGCNborzo2DRbNKplJ7gb
+      :label: missing term
+    - :id: RcoC6hxvjY1WRMKV6cW3US
+      :label: missing term
+    - :id: RCFeONxXFzHO4GMg16HylOc
+      :label: missing term
+    - :id: R8sDBgF7EMZhgZUjx5EUhwi
+      :label: Peru
+    - :id: ReBrW4erCA9bTkbUVAjWbG
+      :label: missing term
+    - :id: RC2kPbFaay664IRdHYfk5rK
+      :label: missing term
+    - :id: R8UBTJoenDbXjYBjcyr1LXc
+      :label: missing term
+    - :id: R8CwJ8K2v1OQmxDmOcHfgSj
+      :label: missing term
+    - :id: R83RBxX91o3z1pt0cXjXvgN
+      :label: missing term
+    - :id: RDmEnPaeDKHRTMgjbarbJVz
+      :label: missing term
+    - :id: RBQjtZAMfrlFftSrRJK8LQQ
+      :label: missing term
+    - :id: RBqV2ISEKykhw27B5uwrHo
+      :label: missing term
+    - :id: R8wg4JegCG36uQR9LuomLFg
+      :label: missing term
+    - :id: R8fTGfwFBERSngpANw3HP8a
+      :label: missing term
+    - :id: RDlckOaeEMnijVCOZyb9ljp
+      :label: missing term
+    - :id: RBTBNP5i0kFGFdhQ82AFali
+      :label: missing term
+    - :id: RZeaZ7bPfl1AYseVBURnsq
+      :label: missing term
+    - :id: RldqiuO40OoJDLS1vbWU6a
+      :label: missing term
+    - :id: RCMieQgqQN1unvmV8pUQ5Op
+      :label: missing term
+    - :id: RDHGkVtWRlfjWr8PfahIFic
+      :label: missing term
+    - :id: RdnQTB8Nj3DMWYP21jyvb2
+      :label: missing term
+    - :id: R7Tt3LGkpoNyU6AIOvyhTVF
+      :label: missing term
+    - :id: R6OsGHPcOskVYbghdvcPiw
+      :label: missing term
+    - :id: RBjxUaSQ4rQJHg0p6rppxuI
+      :label: missing term
+    - :id: RC89POWcmFspXvpRIOHvjB9
+      :label: missing term
+    :has_related:
+    - :id: RSdD0vStFEjovpmpaEuydN
+      :label: missing term
+    - :id: RXTomSBCCC8TOjYuMKCB8p
+      :label: missing term
+    - :id: RKn0x8BGb8udkb77NaE1ch
+      :label: missing term
+    - :id: RC7yMOkNtsKp6PxYXaWc3He
+      :label: missing term
+    - :id: R9jQGVCde409dLI33OeiaA2
+      :label: missing term
+    - :id: R91fGuW6GPOnb7XSylIPwR5
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: R8cndKa2D8NuNg7djwJcXxB
+      :label: World Regions
+  :type:
+  - Geographic Locations
+  - World Regions
+  :related_terms: {}
+  :label_suggest:
+    :input: Pacific Rim
+    :weight: 18
+- :id: R8sDBgF7EMZhgZUjx5EUhwi
+  :label: Peru
+  :annotations:
+    :source:
+    - ISO 3166
+    :pref_label:
+    - Peru
+    :iso_alpha_2: PE
+    :iso_alpha_3: PER
+    :iso_numeric: 604
+    :iso_short_name: Peru
+  :object_properties:
+    :has_broader:
+    - :id: R4Tyoniw0wZl3t7In4gVGW
+      :label: Pacific Rim
+    - :id: RBNzCOB6MPHkIcAr36FNe4Q
+      :label: missing term
+    - :id: RD1qG8h2SlYrcW9LSFriQ2d
+      :label: missing term
+    - :id: RC7yMOkNtsKp6PxYXaWc3He
+      :label: missing term
+    :has_related:
+    - :id: R8QeCXxFOyplkfg4SI30D6w
+      :label: missing term
+    - :id: RB53lPnm186ivFLEXmbWylT
+      :label: missing term
+    - :id: R7YQAlNP4iXuBJLBhgPAcIO
+      :label: missing term
+    - :id: R9H8fTryqnqoG9WBuzDGlGt
+      :label: missing term
+    - :id: RMWO1fpkJ5LvTSEZyAAl3K
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: RCzwUJdLiYabKMRXxVGNvf8
+      :label: U.S. Free Trade Agreement Partner Countries
+    - :id: R8W91u35GBegWcXXFflYE4
+      :label: Countries
+  :type:
+  - Geographic Locations
+  - Countries
+  :related_terms: {}
+  :label_suggest:
+    :input: Peru
+    :weight: 17
+- :id: RCi51S9bucjjV1FGpkDyMhq
+  :label: Safeguards
+  :annotations:
+    :pref_label:
+    - Safeguards
+    :source:
+    - UNCTAD/WTO
+  :object_properties:
+    :has_related:
+    - :id: RDkR6Coi999FtjJzavA1ytE
+      :label: missing term
+    - :id: RCRHog7jT4RwmJZVs4fvOq2
+      :label: missing term
+    - :id: Rxe6uQeredRAyMxXbswm89
+      :label: Trade Barriers
+    :is_main_concept_in_collection:
+    - :id: RNy7fDXpMAmlGj4e5mLIeO
+      :label: Foreign Trade Remedies
+    :member_of:
+    - :id: RNy7fDXpMAmlGj4e5mLIeO
+      :label: Foreign Trade Remedies
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Safeguards
+    :weight: 16
+- :id: RDFbgSy3LZrH6PRhU3Ah9FK
+  :label: South Africa
+  :annotations:
+    :source:
+    - ISO 3166
+    :pref_label:
+    - South Africa
+    :iso_alpha_2: ZA
+    :iso_alpha_3: ZAF
+    :iso_numeric: 710
+    :iso_short_name: South Africa
+  :object_properties:
+    :has_related:
+    - :id: RBYST5TkMsG3aOT9QMbCYFF
+      :label: African Growth and Opportunity Act
+    - :id: RDzPvl6rgNC4szHLAsCM13
+      :label: missing term
+    - :id: R2hRDhgUBIzDSqa22tDdHt
+      :label: South African Customs Union
+    :is_main_concept_in_collection:
+    - :id: R8W91u35GBegWcXXFflYE4
+      :label: Countries
+    :has_broader:
+    - :id: R8DdIMDFzHvwLDKQu30RRmN
+      :label: Sub-Saharan Africa
+  :type:
+  - Geographic Locations
+  - Countries
+  :related_terms: {}
+  :label_suggest:
+    :input: South Africa
+    :weight: 15
+- :id: R2hRDhgUBIzDSqa22tDdHt
+  :label: South African Customs Union
+  :annotations:
+    :alt_label:
+    - SACU
+    :source:
+    - ITA
+    :pref_label:
+    - South African Customs Union
+  :object_properties:
+    :is_in_scheme:
     - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
+    :has_narrower:
+    - :id: RDFbgSy3LZrH6PRhU3Ah9FK
+      :label: South Africa
+    - :id: RCYhjezkcxoy0cLdnLxYOAq
+      :label: missing term
+    - :id: RBtOmYVtZzWV1z2e7AJzGwC
+      :label: missing term
+    - :id: R90YTY2Vg46dJOeTdBr34kn
+      :label: missing term
+    - :id: Rzb6FwyhEbIthzTTtaIfrd
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: R7ySyiNxcfeZ6bfNjhocNun
+      :label: Trade Regions
+    :has_related:
+    - :id: R8DdIMDFzHvwLDKQu30RRmN
+      :label: Sub-Saharan Africa
+    :has_broader:
+    - :id: R8mOUThypdlmCFXV56BVvD5
+      :label: missing term
+  :type:
+  - Geographic Locations
+  - Trade Regions
+  :related_terms: {}
+  :label_suggest:
+    :input: South African Customs Union
+    :weight: 14
+- :id: R8DdIMDFzHvwLDKQu30RRmN
+  :label: Sub-Saharan Africa
+  :annotations:
+    :pref_label:
+    - Sub-Saharan Africa
+    :alt_label:
+    - SubSaharan Africa
+    - Sub Saharan Africa
+    :source:
+    - ITA
+  :object_properties:
+    :has_broader:
+    - :id: RYpfofeF7tAALNfD2cMbaP
+      :label: Africa
+    :has_narrower:
+    - :id: R84vd2fSNWZmsinYehOK6aG
+      :label: missing term
+    - :id: RBAVlisida7HGDpQBhwirCd
+      :label: missing term
+    - :id: RDFbgSy3LZrH6PRhU3Ah9FK
+      :label: South Africa
+    :has_related:
+    - :id: RDzPvl6rgNC4szHLAsCM13
+      :label: missing term
+    - :id: R2hRDhgUBIzDSqa22tDdHt
+      :label: South African Customs Union
+    - :id: RDUgllCOnvIkkxDg7dNcusj
+      :label: missing term
     :member_of:
     - :id: R8cndKa2D8NuNg7djwJcXxB
       :label: World Regions
-    :has_related:
-    - :id: RD1qG8h2SlYrcW9LSFriQ2d
-    - :id: R4Tyoniw0wZl3t7In4gVGW
-    :has_narrower:
-    - :id: R8CwJ8K2v1OQmxDmOcHfgSj
-    - :id: RBTBNP5i0kFGFdhQ82AFali
-    - :id: RC4HD9CwKjvgX8dSybAp3Sk
-      :label: United States
   :type:
+  - Geographic Locations
   - World Regions
-  :id: RKn0x8BGb8udkb77NaE1ch
   :related_terms: {}
   :label_suggest:
-    :input: North America
-    :weight: 7
-- :annotations:
-    :source: UNCTAD/WTO
-    :definition: An organization, the members of which are nations in the same geographical
-      region of the world; or a group of countries undergoing economic integration
-      according to international treaties.
-    :pref_label: Regional Organizations
-  :sub_class_of:
-  - :id: RBUhToH9SFoFVriuHfHzcvT
-    :label: International Cooperation
-  :label: Regional Organizations
-  :datatype_properties: {}
+    :input: Sub-Saharan Africa
+    :weight: 13
+- :id: RCT5JJbnQHlplbh7WIiAdLV
+  :label: Tariffs
+  :annotations:
+    :alt_label:
+    - Tariff Rates
+    - Duties
+    - Custom Duties
+    :pref_label:
+    - Tariffs
+    :scope_note:
+    - Customs duties on merchandise imports. Levied either on an ad valorem basis
+      (percentage of value) or on a specific basis (e.g. $7 per 100 kgs.). Tariffs
+      give price advantage to similar locally-produced goods and raise revenues for
+      the government.
+    :source:
+    - ITA
+    - UNCTAD/WTO
   :object_properties:
-    :has_narrower:
-    - :id: RGHFvv0EAkgVEEklFu0O23
-    - :id: RDrX1xLUDh7oA05RQ3JXshC
-      :label: Economic Cooperation Organization
-    - :id: R7YQAlNP4iXuBJLBhgPAcIO
-      :label: Asia Pacific Economic Cooperation
-    - :id: RBVtSvNA1oiRIdyxG4yQW2U
-    - :id: RDzPvl6rgNC4szHLAsCM13
-    - :id: R9nJqgMeNaqj7yvDxwmS9u
-    - :id: R8WJPOGeQPthekFDAgqfmfX
     :has_related:
-    - :id: R8oh8rResJWy4cRTQUcXrD0
-    - :id: RDGWO1whNroemSGzs1Q8kFj
-    - :id: R9sXmBia7HVpVIzX0B5IERQ
-    - :id: RC6O6Jo0GbVJz0TIihSBUgg
-    - :id: R70kvzy3dISjqdDrBuHHKTZ
-    - :id: R9qZhnMIZ6hKNPtnEtcfbom
-    - :id: R8mOUThypdlmCFXV56BVvD5
+    - :id: RBX1tvyst9KoSyMsntpFaew
+      :label: missing term
+    - :id: RBhuB31Zfas2NUBW3y3G9CC
+      :label: missing term
+    - :id: R8UPU3sSV2kc5jEL7Dp1lhM
+      :label: missing term
+    - :id: RDOcLkCLolijnhfJWPqoZOa
+      :label: missing term
+    - :id: RDkR6Coi999FtjJzavA1ytE
+      :label: missing term
+    :has_narrower:
+    - :id: R776sN8QyhogblLTup4vheR
+      :label: missing term
+    - :id: R9YR0bTwMzc0xQgemuE6ObF
+      :label: missing term
+    - :id: R8HCpBDzsiTD3M6aqNKa2Ko
+      :label: missing term
+    - :id: RTby1uENiG7GloLvTNhS18
+      :label: missing term
+    - :id: RBlZOpHdc0fEFdPaCF3qw5Y
+      :label: missing term
+    - :id: R9cAsXhhQdHEkyRziwyROoJ
+      :label: missing term
+    - :id: R7bT2xFmffGgb4k3LK5gP8K
+      :label: missing term
+    - :id: RH26UG6XlwMz5U93jvnGxo
+      :label: Value Added Taxes
+    - :id: RDslJXZQMerixo0NPyXe56n
+      :label: missing term
+    - :id: RBBSqCeIUtk2JTJJtcy4Gfb
+      :label: missing term
+    - :id: R7AMsRy0beiDfbPgJChfkSA
+      :label: missing term
+    - :id: RC1HWLxuzXO08uFWKFS7kXl
+      :label: missing term
+    - :id: R4OeTNxnWGUOORyxt4Ymwz
+      :label: missing term
+    - :id: RDzBJCqQhVpg3IdBMnNXQzv
+      :label: missing term
     :has_broader:
-    - :id: RBUhToH9SFoFVriuHfHzcvT
-      :label: International Cooperation
+    - :id: Rxe6uQeredRAyMxXbswm89
+      :label: Trade Barriers
+    :is_main_concept_in_collection:
+    - :id: RuWhm5SIgpmVKC44iV3mWP
+      :label: missing term
   :type:
   - Trade Topics
-  :id: RBb72pZnfGSZApKbgfMfARC
   :related_terms: {}
   :label_suggest:
-    :input: Regional Organizations
-    :weight: 6
-- :annotations:
-    :pref_label: Sector
-    :alt_label: Industry Sector
-    :source: ITA
-  :sub_class_of:
-  - :id: R79uIjoQaQ9KzvJfyB1H7Ru
-    :label: Industries
-  :label: Sector
-  :datatype_properties: {}
-  :object_properties: {}
-  :type: []
-  :id: RwdbpCsGlOI2iwaG4UqDl0
-  :related_terms: {}
-  :label_suggest:
-    :input: Sector
-    :weight: 5
-- :annotations:
-    :alt_label: Economic Groupings
-    :pref_label: Trade Regions
-    :comment: Trade regions as defined by the International Trade Administration
-  :sub_class_of: []
-  :label: Trade Regions
-  :datatype_properties: {}
+    :input: Tariffs
+    :weight: 12
+- :id: RC7BwiZbq5uJvqujC7p9NAy
+  :label: Thesaurus of International Trade and Investment Terms
+  :annotations:
+    :creator:
+    - International Trade Administration
+    :pref_label:
+    - Thesaurus of International Trade and Investment Terms
   :object_properties:
-    :micro_thesaurus_of:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
+    :has_microthesaurus:
+    - :id: RBBed4Voz7iS3nUECA3yzNM
+      :label: Trade Topics
+    - :id: RBqqOvJ9rXMcmc5SDhGjWTp
+      :label: missing term
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
+    - :id: R79uIjoQaQ9KzvJfyB1H7Ru
+      :label: Industries
   :type: []
-  :id: R7ySyiNxcfeZ6bfNjhocNun
+  :related_terms: {}
+  :label_suggest:
+    :input: Thesaurus of International Trade and Investment Terms
+    :weight: 11
+- :id: Rxe6uQeredRAyMxXbswm89
+  :label: Trade Barriers
+  :annotations:
+    :alt_label:
+    - Unfair Trade Practices
+    - Export Restrictions
+    - Restrictive Practices
+    - Import Restrictions
+    - Unfair Competition
+    - Trade Restrictions
+    - Discriminatory Practices
+    - Burdensome Procedures
+    - Protectionism
+    :pref_label:
+    - Trade Barriers
+    :source:
+    - UNCTAD/WTO
+  :object_properties:
+    :has_narrower:
+    - :id: RWVMCwiFp8QM4RdOKzQymP
+      :label: missing term
+    - :id: R72KV4QNEUzF3byghkpmpv4
+      :label: missing term
+    - :id: RDiz0MvqKgQKF7xKX5JdXv3
+      :label: missing term
+    - :id: RCe91H9t9Z1Bs8iVt6E1YWF
+      :label: missing term
+    - :id: R9Lbk8U0WTCsr7wnLDVA8Ky
+      :label: missing term
+    - :id: RDG12Fek5EgjdvFrbIny3e7
+      :label: missing term
+    - :id: RKGt0lnq86L9WZu7gHzENm
+      :label: missing term
+    - :id: RCIBSQedFKMfcyZ3x7Ez2S8
+      :label: missing term
+    - :id: R9lnBDsoknYH80nZ7kDJXye
+      :label: missing term
+    - :id: R7d2vNGVjATaI5P7JxEUUxw
+      :label: missing term
+    - :id: RBOpECNWfsbUCSWzCXCgbhN
+      :label: missing term
+    - :id: RBhuB31Zfas2NUBW3y3G9CC
+      :label: missing term
+    - :id: RCT5JJbnQHlplbh7WIiAdLV
+      :label: Tariffs
+    :has_related:
+    - :id: R8C72SSJTBkvAtfO7uwmAlX
+      :label: missing term
+    - :id: RCeoElWXoCXXncwl2uV8ltU
+      :label: missing term
+    - :id: RCi51S9bucjjV1FGpkDyMhq
+      :label: Safeguards
+    - :id: RDyYQAF2daia6EOVTt6yLlV
+      :label: missing term
+    - :id: RCHUDByB9fyPPODUpttFI6C
+      :label: missing term
+    - :id: RDkR6Coi999FtjJzavA1ytE
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: RnMRx1ORiHCryGG8eYoLRy
+      :label: Market Access
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Trade Barriers
+    :weight: 10
+- :id: RDlBzieEBJR6LAcbiT7mdYC
+  :label: Trade Policy and Agreements
+  :annotations:
+    :pref_label:
+    - Trade Policy and Agreements
+    :source:
+    - UNCTAD/WTO
+  :object_properties:
+    :has_main_concept:
+    - :id: RBZHUWKhVSV8PXPsz20Bl0l
+      :label: missing term
+    - :id: Rt8hC8B97usWz6X1JOhP32
+      :label: Trade Preference Programs
+    - :id: R985APZhv8SgxWz8SNSEfJg
+      :label: missing term
+    - :id: RDcjfJE0dW0SPRV1g7qkDC2
+      :label: missing term
+    - :id: R0KUwUeSv0EaeDdwRmaVbo
+      :label: missing term
+    - :id: R8mOUThypdlmCFXV56BVvD5
+      :label: missing term
+    - :id: RBfWI09JhP4wmbtGHA0BfAb
+      :label: missing term
+    - :id: RCuuUvdVPl4Y81is0lgZ7Cw
+      :label: missing term
+    - :id: RCQLTCOcke6LNujnRY8xAlb
+      :label: missing term
+    - :id: R8JTilO00OdzSYJvW66K2vP
+      :label: missing term
+    :iso_thes:super_group:
+    - :id: RBBed4Voz7iS3nUECA3yzNM
+      :label: Trade Topics
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Trade Policy and Agreements
+    :weight: 9
+- :id: Rt8hC8B97usWz6X1JOhP32
+  :label: Trade Preference Programs
+  :annotations:
+    :source:
+    - ITA
+    :definition:
+    - A Trade Preference Program is legislated by the U.S. Congress and provides duty-free
+      treatment to certain products from designated beneficiary countries that meet
+      the programs rules.
+    :pref_label:
+    - Trade Preference Programs
+    :alt_label:
+    - Trade Preferences
+  :object_properties:
+    :is_main_concept_in_collection:
+    - :id: RDlBzieEBJR6LAcbiT7mdYC
+      :label: Trade Policy and Agreements
+    :has_narrower:
+    - :id: RBYST5TkMsG3aOT9QMbCYFF
+      :label: African Growth and Opportunity Act
+    - :id: R8G6sSHw1tiYAx1glqZQrdN
+      :label: missing term
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Trade Preference Programs
+    :weight: 8
+- :id: R7ySyiNxcfeZ6bfNjhocNun
+  :label: Trade Regions
+  :annotations:
+    :pref_label:
+    - Trade Regions
+    :comment:
+    - Trade regions as defined by the International Trade Administration
+    :alt_label:
+    - Economic Regions
+    - Economic Groupings
+  :object_properties:
+    :has_main_concept:
+    - :id: RDkqAkKpM7hCxY84UQAuLaj
+      :label: missing term
+    - :id: RMWO1fpkJ5LvTSEZyAAl3K
+      :label: missing term
+    - :id: R8WJPOGeQPthekFDAgqfmfX
+      :label: missing term
+    - :id: R9H8fTryqnqoG9WBuzDGlGt
+      :label: missing term
+    - :id: R7YQAlNP4iXuBJLBhgPAcIO
+      :label: missing term
+    - :id: RBYST5TkMsG3aOT9QMbCYFF
+      :label: African Growth and Opportunity Act
+    - :id: R2hRDhgUBIzDSqa22tDdHt
+      :label: South African Customs Union
+    :iso_thes:super_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
+  :type: []
   :related_terms: {}
   :label_suggest:
     :input: Trade Regions
-    :weight: 4
-- :annotations:
-    :source: UNCTAD/WTO
-    :pref_label: Topics
-  :sub_class_of: []
+    :weight: 7
+- :id: RBBed4Voz7iS3nUECA3yzNM
   :label: Trade Topics
-  :datatype_properties: {}
+  :annotations:
+    :source:
+    - UNCTAD/WTO
+    :pref_label:
+    - Trade Topics
   :object_properties:
+    :sub_group:
+    - :id: RMvKLrg0FaSFb9QNIKHW9k
+      :label: missing term
+    - :id: RnMRx1ORiHCryGG8eYoLRy
+      :label: Market Access
+    - :id: RFQNjS4HC9yhTeAon1CklZ
+      :label: missing term
+    - :id: RBUhToH9SFoFVriuHfHzcvT
+      :label: missing term
+    - :id: R91Dng1U47EaYAk2N8v1S3K
+      :label: missing term
+    - :id: R8BLV1oE8xTUYdFwUggwygj
+      :label: missing term
+    - :id: R7XExh43yOqMbR9jM1CvjcJ
+      :label: missing term
+    - :id: R1Pqetus0zStszG5ac99uy
+      :label: missing term
+    - :id: RDlBzieEBJR6LAcbiT7mdYC
+      :label: Trade Policy and Agreements
+    - :id: RDggmJFvZyv9D2iYTnFSktH
+      :label: missing term
+    - :id: R9jLPKfWTh1Ahmu7TUPDD3r
+      :label: missing term
     :micro_thesaurus_of:
-      - :id: RC7BwiZbq5uJvqujC7p9NAy
+    - :id: RC7BwiZbq5uJvqujC7p9NAy
+      :label: Thesaurus of International Trade and Investment Terms
   :type: []
-  :id: RBBed4Voz7iS3nUECA3yzNM
   :related_terms: {}
   :label_suggest:
     :input: Trade Topics
-    :weight: 3
-- :annotations:
-    :source: ISO 3166
-    :alt_label: US
-    :pref_label: United States
+    :weight: 6
+- :id: RCzwUJdLiYabKMRXxVGNvf8
+  :label: U.S. Free Trade Agreement Partner Countries
+  :annotations:
+    :alt_label:
+    - U.S. FTA Partner Countries
+    - Free Trade Agreement Countries
+    :pref_label:
+    - U.S. Free Trade Agreement Partner Countries
+    :definition:
+    - List of countries that have free trade and trade promotion agreements with the
+      United States
+  :object_properties:
+    :has_main_concept:
+    - :id: RC2kPbFaay664IRdHYfk5rK
+      :label: missing term
+    - :id: RCi9wQpuzOAexRndBnKzfj0
+      :label: missing term
+    - :id: RLNkCTY2cc77k9Y1jOW6Xv
+      :label: missing term
+    - :id: RbYFSx2IpeERenf8qTisQr
+      :label: missing term
+    - :id: RDmEnPaeDKHRTMgjbarbJVz
+      :label: missing term
+    - :id: R8YK1KsZR58hwks0ItoTewJ
+      :label: missing term
+    - :id: RcoC6hxvjY1WRMKV6cW3US
+      :label: missing term
+    - :id: RBAQIDzP6yuHpyVOi7mTOad
+      :label: missing term
+    - :id: RCQ11kK8mK2T6LWNJc1S0Dg
+      :label: missing term
+    - :id: R8sDBgF7EMZhgZUjx5EUhwi
+      :label: Peru
+    - :id: RC88gcQj9C5qKRAgVRLOUBn
+      :label: missing term
+    - :id: RBTBNP5i0kFGFdhQ82AFali
+      :label: missing term
+    - :id: R8CwJ8K2v1OQmxDmOcHfgSj
+      :label: missing term
+    - :id: RdnQTB8Nj3DMWYP21jyvb2
+      :label: missing term
+    - :id: RBszX0U6TGg6P1vYxcho8GX
+      :label: missing term
+    - :id: R9nHCrUvk1zAfw2LwLGfNPs
+      :label: missing term
+    - :id: RCnNAAeMPteY7EWU1GUOdvN
+      :label: missing term
+    - :id: RDfDY0ur68lqxEDkatxoedV
+      :label: missing term
+    - :id: R4xJx4A80SVrtzqB9CTOnE
+      :label: missing term
+    - :id: R8oFX2wzpWfwf8vvoBkN9wJ
+      :label: missing term
+    - :id: R9m3IjtfdhzMj2CRE5IqXLw
+      :label: missing term
+    - :id: RBjxUaSQ4rQJHg0p6rppxuI
+      :label: missing term
+    - :id: RDWGCNborzo2DRbNKplJ7gb
+      :label: missing term
+    - :id: R6OsGHPcOskVYbghdvcPiw
+      :label: missing term
+    - :id: R83RBxX91o3z1pt0cXjXvgN
+      :label: missing term
+    :iso_thes:super_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
+  :type: []
+  :related_terms: {}
+  :label_suggest:
+    :input: U.S. Free Trade Agreement Partner Countries
+    :weight: 5
+- :id: Rqdpj5QSp8PxZGtrXuOpdK
+  :label: U.S. States and Territories
+  :annotations:
+    :pref_label:
+    - U.S. States and Territories
+  :object_properties:
+    :has_main_concept:
+    - :id: RDdcFnhcv9lGQIHZJCmqBdR
+      :label: missing term
+    - :id: RCVth8IJxKyunkoRlzGy164
+      :label: missing term
+    - :id: RBVYpMdVIHwiXfBnsNWkHa3
+      :label: missing term
+    - :id: R9cZYaFaBqxm8ElG2vBMTUC
+      :label: missing term
+    - :id: RCO3B0mg2acDEnlySAasR72
+      :label: missing term
+    - :id: RqgVrIsERq0qOXkbsiDZwH
+      :label: missing term
+    - :id: RDy3cEDcPTGFHBVzNuvnYA7
+      :label: missing term
+    - :id: RpDevSMYpEtSFQsZXQsI8m
+      :label: missing term
+    - :id: RCEGT0PiXdNuVfrw3f1ERBi
+      :label: missing term
+    - :id: R8tZf85jfPmnhZOkohkrRQL
+      :label: missing term
+    - :id: R9XMizyiKrMIzpu2oVret2p
+      :label: missing term
+    - :id: RCximi2A1Up7f9Qvbx72KVU
+      :label: missing term
+    - :id: RBw4hWqHHmpxWJAs3KDuNqV
+      :label: missing term
+    - :id: RrS3lqUJNn7CRXhk0qP5y9
+      :label: missing term
+    - :id: R7xYoDWxTRUtnLERz8qFkTy
+      :label: missing term
+    - :id: RPKxU5kM2mNTwTPVgNByBK
+      :label: missing term
+    - :id: RBfw0JZMcu38HcZLa0cYU8H
+      :label: missing term
+    - :id: R8ICjBw981pwx9uC98ESVv1
+      :label: missing term
+    - :id: R9zdMKg41CDoti1DI3VL551
+      :label: missing term
+    - :id: R9L1X4EunYf9up7wBkxb6sr
+      :label: missing term
+    - :id: R9bC3SLXKifhjRyVzMiqtwB
+      :label: missing term
+    - :id: R2kW06Azf1ppgK6VWKEY8A
+      :label: missing term
+    - :id: RDkx4OGtbfd3fTB5kgkBpER
+      :label: missing term
+    - :id: RRjGyMcXyBe3Hiicy69yOl
+      :label: missing term
+    - :id: RCExwWxbuNHAqPyTWW0Ad2w
+      :label: missing term
+    - :id: R97eevLboqj2tihEkHDaAGO
+      :label: missing term
+    - :id: RYRDi2AwoTdluEQNuRmKc2
+      :label: missing term
+    - :id: RLjWIq0LCuSWrZsOnpdStn
+      :label: missing term
+    - :id: R9xfNfpSGiiQ9Fag1dpOAWO
+      :label: missing term
+    - :id: RCpPSpr6dhC9W7NQIsSGBOW
+      :label: missing term
+    - :id: R9BPZQ0dnTd2PE6SMbFBzyl
+      :label: missing term
+    - :id: R78I1ZJgdi7hyvzxblDuEhk
+      :label: missing term
+    - :id: RDfOfLI1c2vRjt6T54qkdHN
+      :label: missing term
+    - :id: RCm2HiWDMSn7H0ToVgOAS1r
+      :label: missing term
+    - :id: R8LSZ0rDVQGqLQ0PGjIiUuK
+      :label: missing term
+    - :id: RL9sgdzwNKpiO2vXjCe8WZ
+      :label: missing term
+    - :id: R7XRDfRj4Aa6KQZgiOjQJkg
+      :label: missing term
+    - :id: R7N6OGRePaWPoIlyokdwPtj
+      :label: missing term
+    - :id: RCfFjlFOtGQubVFJHs69tVV
+      :label: missing term
+    - :id: R9bC779Bt9j92BCbJIJi9an
+      :label: missing term
+    - :id: R8tlqE5XLvrXkgdTg4rYxbM
+      :label: missing term
+    - :id: RP53vQyraTEBm84gQRymPa
+      :label: missing term
+    - :id: RBuWeR3G0rUKoGBr2yDaO6a
+      :label: missing term
+    - :id: RBZHK4q5uXwxJ8kEKrRjzso
+      :label: missing term
+    - :id: RB6VGCjRxhYofnyWJXxUUV
+      :label: missing term
+    - :id: R9V8iurJelp6Z6LDVtAmrge
+      :label: missing term
+    - :id: ROsEfuTTMhDB7CVTyhpPwQ
+      :label: missing term
+    - :id: R44D6VIx7PvKMqSBEykq4i
+      :label: missing term
+    - :id: R8o0I9D8VkL15AsMOG6il2F
+      :label: missing term
+    - :id: RDgjSF69TWKJM01r8HjeLEC
+      :label: missing term
+    - :id: R9dxsNu6X4oBU7KvJBsMxRD
+      :label: missing term
+    - :id: R8EQ1rTm3YaOBhcjtH1NGt6
+      :label: District of Columbia
+    - :id: R7I2NFnaSYAGX7XHzFs9JEW
+      :label: missing term
+    - :id: RLBzlQFAH3nKqqxEcHkJzx
+      :label: missing term
+    - :id: RCTcBFMi4MLVchI7AbZrmFu
+      :label: missing term
+    - :id: RhBywiBwlnrwjX9mmegngf
+      :label: missing term
+    :iso_thes:super_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
+  :type: []
+  :related_terms: {}
+  :label_suggest:
+    :input: U.S. States and Territories
+    :weight: 4
+- :id: RC4HD9CwKjvgX8dSybAp3Sk
+  :label: United States
+  :annotations:
+    :source:
+    - ISO 3166
+    :pref_label:
+    - United States
+    :alt_label:
+    - United States of America
+    - USA
+    - U.S.
+    - US
     :iso_alpha_2: US
     :iso_alpha_3: USA
     :iso_numeric: 840
     :iso_short_name: United States of America
-  :sub_class_of: []
-  :label: United States
-  :datatype_properties: {}
   :object_properties:
     :has_narrower:
-    - :id: RBVYpMdVIHwiXfBnsNWkHa3
-    - :id: RCm2HiWDMSn7H0ToVgOAS1r
-    - :id: R8o0I9D8VkL15AsMOG6il2F
-    - :id: RCximi2A1Up7f9Qvbx72KVU
-    - :id: RDdcFnhcv9lGQIHZJCmqBdR
-    - :id: RCfFjlFOtGQubVFJHs69tVV
-    - :id: R44D6VIx7PvKMqSBEykq4i
-    - :id: R9dxsNu6X4oBU7KvJBsMxRD
-    - :id: RDfOfLI1c2vRjt6T54qkdHN
-    - :id: R9bC3SLXKifhjRyVzMiqtwB
-    - :id: R8ICjBw981pwx9uC98ESVv1
-    - :id: RDgjSF69TWKJM01r8HjeLEC
-    - :id: RhBywiBwlnrwjX9mmegngf
-    - :id: RCEGT0PiXdNuVfrw3f1ERBi
-    - :id: RBfw0JZMcu38HcZLa0cYU8H
-    - :id: RBw4hWqHHmpxWJAs3KDuNqV
-    - :id: RRjGyMcXyBe3Hiicy69yOl
-    - :id: R7XRDfRj4Aa6KQZgiOjQJkg
-    - :id: R9V8iurJelp6Z6LDVtAmrge
-    - :id: RrS3lqUJNn7CRXhk0qP5y9
-    - :id: R9xfNfpSGiiQ9Fag1dpOAWO
-    - :id: RpDevSMYpEtSFQsZXQsI8m
-    - :id: R78I1ZJgdi7hyvzxblDuEhk
-    - :id: RYRDi2AwoTdluEQNuRmKc2
-    - :id: RP53vQyraTEBm84gQRymPa
-    - :id: RL9sgdzwNKpiO2vXjCe8WZ
-    - :id: RCpPSpr6dhC9W7NQIsSGBOW
-    - :id: RBZHK4q5uXwxJ8kEKrRjzso
-    - :id: R9cZYaFaBqxm8ElG2vBMTUC
-    - :id: RDkx4OGtbfd3fTB5kgkBpER
-    - :id: RCExwWxbuNHAqPyTWW0Ad2w
-    - :id: RCTcBFMi4MLVchI7AbZrmFu
-    - :id: R9bC779Bt9j92BCbJIJi9an
-    - :id: RLBzlQFAH3nKqqxEcHkJzx
-    - :id: ROsEfuTTMhDB7CVTyhpPwQ
-    - :id: R97eevLboqj2tihEkHDaAGO
-    - :id: R9XMizyiKrMIzpu2oVret2p
-    - :id: R9L1X4EunYf9up7wBkxb6sr
-    - :id: R8EQ1rTm3YaOBhcjtH1NGt6
-    - :id: R8LSZ0rDVQGqLQ0PGjIiUuK
-    - :id: RPKxU5kM2mNTwTPVgNByBK
-    - :id: R9BPZQ0dnTd2PE6SMbFBzyl
-    - :id: R7xYoDWxTRUtnLERz8qFkTy
     - :id: R7I2NFnaSYAGX7XHzFs9JEW
-    - :id: R2kW06Azf1ppgK6VWKEY8A
-    - :id: R8tlqE5XLvrXkgdTg4rYxbM
-    - :id: RqgVrIsERq0qOXkbsiDZwH
-    - :id: RB6VGCjRxhYofnyWJXxUUV
-    - :id: RDy3cEDcPTGFHBVzNuvnYA7
-    - :id: RBuWeR3G0rUKoGBr2yDaO6a
-    - :id: RCO3B0mg2acDEnlySAasR72
-    - :id: RLjWIq0LCuSWrZsOnpdStn
-    - :id: R9zdMKg41CDoti1DI3VL551
-    - :id: R7N6OGRePaWPoIlyokdwPtj
-    - :id: RCVth8IJxKyunkoRlzGy164
-    :has_dependent_territory:
+      :label: missing term
     - :id: RhBywiBwlnrwjX9mmegngf
-    - :id: RLBzlQFAH3nKqqxEcHkJzx
-    - :id: R7N6OGRePaWPoIlyokdwPtj
-    - :id: R44D6VIx7PvKMqSBEykq4i
+      :label: missing term
+    - :id: RCpPSpr6dhC9W7NQIsSGBOW
+      :label: missing term
+    - :id: R9xfNfpSGiiQ9Fag1dpOAWO
+      :label: missing term
+    - :id: R9bC779Bt9j92BCbJIJi9an
+      :label: missing term
+    - :id: R9dxsNu6X4oBU7KvJBsMxRD
+      :label: missing term
+    - :id: R2kW06Azf1ppgK6VWKEY8A
+      :label: missing term
+    - :id: R8tlqE5XLvrXkgdTg4rYxbM
+      :label: missing term
+    - :id: RYRDi2AwoTdluEQNuRmKc2
+      :label: missing term
     - :id: R8o0I9D8VkL15AsMOG6il2F
+      :label: missing term
+    - :id: R7N6OGRePaWPoIlyokdwPtj
+      :label: missing term
+    - :id: R97eevLboqj2tihEkHDaAGO
+      :label: missing term
+    - :id: R9L1X4EunYf9up7wBkxb6sr
+      :label: missing term
+    - :id: R8LSZ0rDVQGqLQ0PGjIiUuK
+      :label: missing term
+    - :id: R9V8iurJelp6Z6LDVtAmrge
+      :label: missing term
+    - :id: RP53vQyraTEBm84gQRymPa
+      :label: missing term
+    - :id: RPKxU5kM2mNTwTPVgNByBK
+      :label: missing term
+    - :id: RB6VGCjRxhYofnyWJXxUUV
+      :label: missing term
+    - :id: R9XMizyiKrMIzpu2oVret2p
+      :label: missing term
+    - :id: RCExwWxbuNHAqPyTWW0Ad2w
+      :label: missing term
+    - :id: RBfw0JZMcu38HcZLa0cYU8H
+      :label: missing term
+    - :id: RDdcFnhcv9lGQIHZJCmqBdR
+      :label: missing term
+    - :id: RDkx4OGtbfd3fTB5kgkBpER
+      :label: missing term
+    - :id: RCximi2A1Up7f9Qvbx72KVU
+      :label: missing term
+    - :id: RL9sgdzwNKpiO2vXjCe8WZ
+      :label: missing term
+    - :id: RBuWeR3G0rUKoGBr2yDaO6a
+      :label: missing term
+    - :id: RBVYpMdVIHwiXfBnsNWkHa3
+      :label: missing term
+    - :id: RDfOfLI1c2vRjt6T54qkdHN
+      :label: missing term
+    - :id: RDgjSF69TWKJM01r8HjeLEC
+      :label: missing term
+    - :id: ROsEfuTTMhDB7CVTyhpPwQ
+      :label: missing term
+    - :id: RCm2HiWDMSn7H0ToVgOAS1r
+      :label: missing term
+    - :id: R78I1ZJgdi7hyvzxblDuEhk
+      :label: missing term
+    - :id: RCEGT0PiXdNuVfrw3f1ERBi
+      :label: missing term
+    - :id: RBZHK4q5uXwxJ8kEKrRjzso
+      :label: missing term
+    - :id: R9zdMKg41CDoti1DI3VL551
+      :label: missing term
+    - :id: RDy3cEDcPTGFHBVzNuvnYA7
+      :label: missing term
+    - :id: R7XRDfRj4Aa6KQZgiOjQJkg
+      :label: missing term
+    - :id: R44D6VIx7PvKMqSBEykq4i
+      :label: missing term
+    - :id: RqgVrIsERq0qOXkbsiDZwH
+      :label: missing term
+    - :id: RBw4hWqHHmpxWJAs3KDuNqV
+      :label: missing term
+    - :id: RRjGyMcXyBe3Hiicy69yOl
+      :label: missing term
+    - :id: R7xYoDWxTRUtnLERz8qFkTy
+      :label: missing term
+    - :id: RLBzlQFAH3nKqqxEcHkJzx
+      :label: missing term
+    - :id: R8ICjBw981pwx9uC98ESVv1
+      :label: missing term
+    - :id: RpDevSMYpEtSFQsZXQsI8m
+      :label: missing term
+    - :id: R8EQ1rTm3YaOBhcjtH1NGt6
+      :label: District of Columbia
+    - :id: RCO3B0mg2acDEnlySAasR72
+      :label: missing term
+    - :id: RrS3lqUJNn7CRXhk0qP5y9
+      :label: missing term
+    - :id: RCfFjlFOtGQubVFJHs69tVV
+      :label: missing term
+    - :id: RCTcBFMi4MLVchI7AbZrmFu
+      :label: missing term
+    - :id: R9BPZQ0dnTd2PE6SMbFBzyl
+      :label: missing term
+    - :id: RCVth8IJxKyunkoRlzGy164
+      :label: missing term
+    - :id: RLjWIq0LCuSWrZsOnpdStn
+      :label: missing term
+    - :id: R9cZYaFaBqxm8ElG2vBMTUC
+      :label: missing term
+    - :id: R9bC3SLXKifhjRyVzMiqtwB
+      :label: missing term
     :has_related:
-    - :id: R7p7N70b7k0ouyvdI1kuBvA
-    - :id: RCgiJNHyAyc3v3EWbXkLwiC
-    - :id: R774vMJw26KCcNMyYG2w2cp
-    - :id: RIJ9QDqLBnZb8kAiGKqIyz
-    - :id: R9jSaucvJw69zgjpG1RSWT8
-    - :id: RDfC7Fbo4XNzwzwIPwNrugu
-    - :id: R9fqK8TUP7Fm02Q6JLgji6I
     - :id: R7gaNUzwDUUfgh6TB6PI8fR
-    - :id: RDDl6uP7sFEtxKuRM5LsQ2E
-    - :id: R8PPRoO2npbOfrttbpexuJh
-    - :id: RD2NstNISZuXoqY8pDT1AFN
+      :label: missing term
+    - :id: R774vMJw26KCcNMyYG2w2cp
+      :label: missing term
     - :id: RCv9Alwp4gohJ7ZYn4BejeG
-    - :id: RMWO1fpkJ5LvTSEZyAAl3K
-    - :id: RNZGitu3RBKIpasiwQxlpK
+      :label: missing term
+    - :id: R9jSaucvJw69zgjpG1RSWT8
+      :label: missing term
+    - :id: R6EEBheZmQKsAbUpx9RoCu
+      :label: missing term
+    - :id: RD2NstNISZuXoqY8pDT1AFN
+      :label: missing term
+    - :id: RIJ9QDqLBnZb8kAiGKqIyz
+      :label: missing term
+    - :id: R7YQAlNP4iXuBJLBhgPAcIO
+      :label: missing term
     - :id: RDNfMAr4j0BXC1dfLSMEWt4
+      :label: missing term
+    - :id: R7p7N70b7k0ouyvdI1kuBvA
+      :label: missing term
+    - :id: RDDl6uP7sFEtxKuRM5LsQ2E
+      :label: missing term
     - :id: R8QeCXxFOyplkfg4SI30D6w
-    :has_associated_state:
-    - :id: R9rVGUHUgufNHYqigEuH1Y1
-    - :id: R7aF0P8k19Yjgqx01edA2b5
-    - :id: RUtBoSE3VZchBze1rQYCYF
+      :label: missing term
+    - :id: RNZGitu3RBKIpasiwQxlpK
+      :label: missing term
+    - :id: RCgiJNHyAyc3v3EWbXkLwiC
+      :label: missing term
+    - :id: RDfC7Fbo4XNzwzwIPwNrugu
+      :label: missing term
+    - :id: R8PPRoO2npbOfrttbpexuJh
+      :label: missing term
+    - :id: RMWO1fpkJ5LvTSEZyAAl3K
+      :label: missing term
+    - :id: R9fqK8TUP7Fm02Q6JLgji6I
+      :label: missing term
     :has_broader:
     - :id: RD1qG8h2SlYrcW9LSFriQ2d
-    - :id: R4Tyoniw0wZl3t7In4gVGW
-    - :id: R7YQAlNP4iXuBJLBhgPAcIO
-      :label: Asia Pacific Economic Cooperation
+      :label: missing term
     - :id: RKn0x8BGb8udkb77NaE1ch
-      :label: North America
-    :is_top_concept_in_scheme:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
-    :member_of:
+      :label: missing term
+    - :id: R4Tyoniw0wZl3t7In4gVGW
+      :label: Pacific Rim
+    :has_dependent_territory:
+    - :id: R44D6VIx7PvKMqSBEykq4i
+      :label: missing term
+    - :id: RhBywiBwlnrwjX9mmegngf
+      :label: missing term
+    - :id: R8o0I9D8VkL15AsMOG6il2F
+      :label: missing term
+    - :id: RLBzlQFAH3nKqqxEcHkJzx
+      :label: missing term
+    - :id: R7N6OGRePaWPoIlyokdwPtj
+      :label: missing term
+    :is_main_concept_in_collection:
+    - :id: RCzwUJdLiYabKMRXxVGNvf8
+      :label: U.S. Free Trade Agreement Partner Countries
     - :id: R8W91u35GBegWcXXFflYE4
       :label: Countries
+    :has_associated_state:
+    - :id: R7aF0P8k19Yjgqx01edA2b5
+      :label: missing term
+    - :id: RUtBoSE3VZchBze1rQYCYF
+      :label: missing term
+    - :id: R9rVGUHUgufNHYqigEuH1Y1
+      :label: missing term
   :type:
+  - Geographic Locations
   - Countries
-  :id: RC4HD9CwKjvgX8dSybAp3Sk
-  :related_terms:
-    :trade_regions:
-    - Asia Pacific Economic Cooperation
-    :world_regions:
-    - North America
+  :related_terms: {}
   :label_suggest:
     :input: United States
-    :weight: 2
-- :annotations:
-    :source: ITA
-    :pref_label: World Regions
-  :sub_class_of: []
-  :label: World Regions
-  :datatype_properties: {}
+    :weight: 3
+- :id: RH26UG6XlwMz5U93jvnGxo
+  :label: Value Added Taxes
+  :annotations:
+    :pref_label:
+    - Value Added Taxes
+    :source:
+    - ITA
   :object_properties:
-    :micro_thesaurus_of:
-    - :id: RC7BwiZbq5uJvqujC7p9NAy
+    :has_broader:
+    - :id: RCT5JJbnQHlplbh7WIiAdLV
+      :label: Tariffs
+  :type:
+  - Trade Topics
+  :related_terms: {}
+  :label_suggest:
+    :input: Value Added Taxes
+    :weight: 2
+- :id: R8cndKa2D8NuNg7djwJcXxB
+  :label: World Regions
+  :annotations:
+    :pref_label:
+    - World Regions
+    :source:
+    - ITA
+  :object_properties:
+    :iso_thes:super_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
+    :has_main_concept:
+    - :id: RKn0x8BGb8udkb77NaE1ch
+      :label: missing term
+    - :id: RCfzc4dWuOqaPqi54K84IZi
+      :label: missing term
+    - :id: RSdD0vStFEjovpmpaEuydN
+      :label: missing term
+    - :id: R91fGuW6GPOnb7XSylIPwR5
+      :label: missing term
+    - :id: R8jA4PYXwc54qC4JAPsIPAS
+      :label: missing term
+    - :id: RD1qG8h2SlYrcW9LSFriQ2d
+      :label: missing term
+    - :id: RYpfofeF7tAALNfD2cMbaP
+      :label: Africa
+    - :id: RXTomSBCCC8TOjYuMKCB8p
+      :label: missing term
+    - :id: RBNzCOB6MPHkIcAr36FNe4Q
+      :label: missing term
+    - :id: R9jQGVCde409dLI33OeiaA2
+      :label: missing term
+    - :id: RC7yMOkNtsKp6PxYXaWc3He
+      :label: missing term
+    - :id: R4Tyoniw0wZl3t7In4gVGW
+      :label: Pacific Rim
+    - :id: RCdAtPyF8RRyB9AuFgtFJo
+      :label: missing term
+    :sub_group:
+    - :id: RCM1PE2jExQ27PUY0a2WdxD
+      :label: Geographic Locations
   :type: []
-  :id: R8cndKa2D8NuNg7djwJcXxB
   :related_terms: {}
   :label_suggest:
     :input: World Regions

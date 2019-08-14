@@ -19,19 +19,21 @@ class ItaTaxonomyData
 
   def initialize(resource = nil, pre_loaded_terms = nil)
     resource = Rails.configuration.protege_url if resource.nil?
-    @taxonomy_parser = TaxonomyParser.new(resource, pre_loaded_terms)
+    xml = OwlZipReader.read resource
+    @extractor = Extractors::ClassExtractor.new xml
+    # @taxonomy_parser = TaxonomyParser.new(resource, pre_loaded_terms)
   end
 
   def import
-    @taxonomy_parser.parse if @taxonomy_parser.terms.empty?
     ItaTaxonomy.index build_json_entries
   end
 
   private
 
   def build_json_entries
-    processed_entries = @taxonomy_parser.terms.map do |term|
+    processed_entries = @extractor.extract.values.map do |term|
       entry = term.deep_dup
+      entry[:related_terms] = {}
       process_entry(entry)
       entry
     end
@@ -40,10 +42,10 @@ class ItaTaxonomyData
   end
 
   def process_entry(entry)
-    entry[:type] = @taxonomy_parser.get_high_level_type(entry[:label])
-    process_ids(entry)
-    entry[:related_terms] = entry[:type].include?('Countries') ? add_geo_fields([entry[:label]]) : {}
-    process_country_fields(entry) if is_country_entry?(entry)
+    # entry[:type] = @taxonomy_parser.get_high_level_type(entry[:label])
+    # process_ids(entry)
+    # entry[:related_terms] = entry[:type].include?('Countries') ? add_geo_fields([entry[:label]]) : {}
+    process_country_fields(entry) if entry[:type].include?('Countries')
   end
 
   def process_country_fields(entry)
