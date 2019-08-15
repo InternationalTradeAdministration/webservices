@@ -1,23 +1,5 @@
 GIT
-  remote: https://github.com/GovWizely/industry_mapping_client.git
-  revision: 2c2b4bd4300f0b10b1e32bcf864c9e587b78e354
-  specs:
-    industry_mapping_client (0.1.1)
-      httparty
-
-GIT
-  remote: https://github.com/InternationalTradeAdministration/taxonomy_parser.git
-  revision: a23fb19cf7fd71608d91e36a455295c4e5611354
-  ref: a23fb1
-  specs:
-    taxonomy_parser (0.2.0)
-      activesupport (~> 4.2)
-      iso_country_codes (= 0.7.8)
-      nokogiri (>= 1.8.5)
-      rubyzip (= 1.2.2)
-
-GIT
-  remote: https://github.com/elastic/elasticsearch-rails.git
+  remote: git://github.com/elastic/elasticsearch-rails.git
   revision: bfdd2243f0de298547b2dc199e9a671cf72ccde6
   branch: 5.x
   specs:
@@ -34,7 +16,7 @@ GIT
       virtus
 
 GIT
-  remote: https://github.com/elastic/elasticsearch-ruby.git
+  remote: git://github.com/elastic/elasticsearch-ruby.git
   revision: 86a36ec0db704b2a62dd4d5fe9edf887625b1826
   branch: 5.x
   specs:
@@ -46,6 +28,24 @@ GIT
     elasticsearch-transport (5.0.5)
       faraday
       multi_json
+
+GIT
+  remote: https://github.com/GovWizely/industry_mapping_client.git
+  revision: 2c2b4bd4300f0b10b1e32bcf864c9e587b78e354
+  specs:
+    industry_mapping_client (0.1.1)
+      httparty
+
+GIT
+  remote: https://github.com/InternationalTradeAdministration/taxonomy_parser.git
+  revision: a23fb19cf7fd71608d91e36a455295c4e5611354
+  ref: a23fb1
+  specs:
+    taxonomy_parser (0.2.0)
+      activesupport (~> 4.2)
+      iso_country_codes (= 0.7.8)
+      nokogiri (>= 1.8.5)
+      rubyzip (= 1.2.2)
 
 GEM
   remote: https://rubygems.org/
