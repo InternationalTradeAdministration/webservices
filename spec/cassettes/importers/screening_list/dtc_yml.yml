@@ -111,4 +111,41 @@ http_interactions:
         "new_link": 0, "user_hash": "1Qi3IgB"}}, "status_txt": "LINK_ALREADY_EXISTS"}'
     http_version: 
   recorded_at: Thu, 28 Jun 2018 00:57:09 GMT
+- request:
+    method: get
+    uri: https://api-ssl.bitly.com/v3/user/link_save?access_token=<BITLY_API_TOKEN>&longUrl=https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page%26sys_id=c22d1833dbb8d300d0a370131f9619f0&title=ScreeningList::Dtc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 15 Aug 2019 17:16:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '300'
+      Connection:
+      - keep-alive
+      Etag:
+      - '"fd3eaa286a7088f7b5728cb459fe50058e9e3845"'
+    body:
+      encoding: UTF-8
+      string: '{"status_code": 200, "data": {"link_save": {"link": "http://bit.ly/307FuRQ",
+        "aggregate_link": "http://bit.ly/2YmA5ZM", "long_url": "https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0",
+        "new_link": 1, "user_hash": "307FuRQ"}}, "status_txt": "OK"}'
+    http_version: 
+  recorded_at: Thu, 15 Aug 2019 17:16:34 GMT
 recorded_with: VCR 4.0.0
