@@ -18,7 +18,7 @@ module ScreeningList
 
     include ScreeningList::MakeNameVariants
     
-    ENDPOINT = "https://www.pmddtc.state.gov/sys_attachment.do?sys_id=5a405236dbf1bb407ede365e7c96195e"
+    ENDPOINT = "https://www.pmddtc.state.gov/sys_attachment.do?sys_id=367b9dc8db637f005564ff1e0f96192e"
 
     def import
       @source_information_url = UrlMapper.get_bitly_url('https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0', model_class)
