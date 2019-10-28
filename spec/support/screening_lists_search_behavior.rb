@@ -10,8 +10,6 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Part561 data'
   include_context 'ScreeningList::Plc data'
   include_context 'ScreeningList::Ssi data'
-  include_context 'ScreeningList::Cap data'
-  include_context 'ScreeningList::Cap data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -48,44 +46,6 @@ end
 
 shared_examples 'it contains all ScreeningList::Part561 results that match type "Entity"' do
   let(:source) { ScreeningList::Part561 }
-  let(:expected) { [0] }
-  it_behaves_like 'it contains all expected results of source'
-end
-
-shared_context 'ScreeningList::Cap data' do
-  before(:all) do
-    ScreeningList::Cap.recreate_index
-    VCR.use_cassette('importers/screening_list/cap.yml', record: :once) do
-      ScreeningList::CapData.new(
-        "#{Rails.root}/spec/fixtures/screening_lists/treasury_consolidated/consolidated.xml",).import
-    end
-
-    @all_possible_full_results ||= {}
-    @all_possible_full_results[ScreeningList::Cap] = JSON.parse(open(
-        "#{File.dirname(__FILE__)}/screening_lists/cap/expected_results.json",).read,)
-  end
-end
-
-shared_examples 'it contains all ScreeningList::Cap results' do
-  let(:source) { ScreeningList::Cap }
-  let(:expected) { [0] }
-  it_behaves_like 'it contains all expected results of source'
-end
-
-shared_examples 'it contains all ScreeningList::Cap results that match "kunlun"' do
-  let(:source) { ScreeningList::Cap }
-  let(:expected) { [0] }
-  it_behaves_like 'it contains all expected results of source'
-end
-
-shared_examples 'it contains all ScreeningList::Cap results that match countries "CN"' do
-  let(:source) { ScreeningList::Cap }
-  let(:expected) { [0] }
-  it_behaves_like 'it contains all expected results of source'
-end
-
-shared_examples 'it contains all ScreeningList::Cap results that match type "Entity"' do
-  let(:source) { ScreeningList::Cap }
   let(:expected) { [0] }
   it_behaves_like 'it contains all expected results of source'
 end
