@@ -17,8 +17,8 @@ module ScreeningList
     self.group_by = %i(name start_date federal_register_notice)
 
     include ScreeningList::MakeNameVariants
-    
-    ENDPOINT = "https://www.pmddtc.state.gov/sys_attachment.do?sys_id=367b9dc8db637f005564ff1e0f96192e"
+
+    ENDPOINT = "https://www.pmddtc.state.gov/sys_attachment.do?sys_id=e44ae40fdbe8c0105564ff1e0f9619e6"
 
     def import
       @source_information_url = UrlMapper.get_bitly_url('https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0', model_class)
