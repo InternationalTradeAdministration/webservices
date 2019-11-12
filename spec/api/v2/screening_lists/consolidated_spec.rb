@@ -23,18 +23,21 @@ describe 'Consolidated Screening List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Part561 results'
       it_behaves_like 'it contains all ScreeningList::Plc results'
       it_behaves_like 'it contains all ScreeningList::Ssi results'
+      it_behaves_like 'it contains all ScreeningList::Cap results'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
-           ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,]
+           ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
+           ScreeningList::Cap,]
         end
       end
       it_behaves_like 'it contains sources_used' do
         let(:sources) do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
-           ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,]
+           ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
+           ScreeningList::Cap,]
         end
       end
     end
@@ -213,8 +216,9 @@ describe 'Consolidated Screening List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Ssi results that match type "Entity"'
       it_behaves_like 'it contains all ScreeningList::Eo13599 results that match type "Entity"'
       it_behaves_like 'it contains all ScreeningList::Part561 results that match type "Entity"'
+      it_behaves_like 'it contains all ScreeningList::Cap results that match type "Entity"'
       it_behaves_like 'it contains only results with sources' do
-        let(:sources) { [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::Ssi, ScreeningList::Eo13599, ScreeningList::Part561] }
+        let(:sources) { [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::Ssi, ScreeningList::Eo13599, ScreeningList::Part561, ScreeningList::Cap] }
       end
 
       context 'and is set to "Vessel"' do
@@ -255,6 +259,17 @@ describe 'Consolidated Screening List API V2', type: :request do
         end
         it_behaves_like 'it contains sources_used' do
           let(:sources) { [ScreeningList::Part561] }
+        end
+      end
+
+      context 'and is set to "CAP" source' do
+        let(:params) { { sources: 'CAP' } }
+        it_behaves_like 'it contains all ScreeningList::Cap results'
+        it_behaves_like 'it contains only results with sources' do
+          let(:sources) { [ScreeningList::Cap] }
+        end
+        it_behaves_like 'it contains sources_used' do
+          let(:sources) { [ScreeningList::Cap] }
         end
       end
 

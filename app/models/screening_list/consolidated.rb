@@ -1,7 +1,8 @@
 module ScreeningList
   class Consolidated
     include Searchable
-    self.model_classes = [ScreeningList::Dpl,
+    self.model_classes = [ScreeningList::Cap,
+                          ScreeningList::Dpl,
                           ScreeningList::Dtc,
                           ScreeningList::El,
                           ScreeningList::Eo13599,
