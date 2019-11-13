@@ -8,8 +8,8 @@ module ScreeningList
     include ::CanEnsureCsvHeaders
     self.expected_csv_headers = %i(
       corrected_notice corrected_notice_date
-      date_of_birth debarred_party_full_name_and_alias
-      notice notice_date)
+      date_of_birth federal_register_notice
+      notice_date party_name )
 
     # We don't group source entries in this importer, but we want
     # to use the generate_id method brought in by this module.
@@ -18,7 +18,7 @@ module ScreeningList
 
     include ScreeningList::MakeNameVariants
 
-    ENDPOINT = "#{Rails.root}/data/screening_lists/dtc/itar_debarred_party_list_05022019.csv"
+    ENDPOINT = "#{Rails.root}/data/screening_lists/dtc/itar_debarred_party_list_11062019.csv"
 
     def import
       @source_information_url = UrlMapper.get_bitly_url('https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0', model_class)
@@ -39,7 +39,7 @@ module ScreeningList
       doc = {
         name:                    extract_name(row),
         alt_names:               extract_alt_names(row),
-        federal_register_notice: (row[:corrected_notice] || row[:notice]),
+        federal_register_notice: (row[:corrected_notice] || row[:federal_register_notice]),
         source:                  model_class.source,
         source_information_url:  @source_information_url,
       }
@@ -53,7 +53,7 @@ module ScreeningList
     end
 
     def extract_name(row)
-      name = row[:debarred_party_full_name_and_alias]
+      name = row[:party_name]
       if name.include? 'Inc.'
         name
       else
@@ -62,7 +62,7 @@ module ScreeningList
     end
 
     def extract_alt_names(row)
-      name = row[:debarred_party_full_name_and_alias]
+      name = row[:party_name]
       if name.include? 'a.k.a.'
         name.sub(/.*(\(a.*\))/, '\1').sub('(a.k.a. ', '').sub(')', '').split('; ')
       else
