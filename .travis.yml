@@ -9,6 +9,7 @@ addons:
     repo_token: 25b6e0bb746cbfd95a442c8e71df503a62be7e7539dc90f30e65d7f81a2e2b11
 
 before_install:
+  - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
   - curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.6.0.deb && sudo dpkg -i --force-confnew elasticsearch-6.6.0.deb && env && sudo service elasticsearch start
 
 notifications:
