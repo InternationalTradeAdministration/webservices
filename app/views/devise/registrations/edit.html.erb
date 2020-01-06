@@ -49,3 +49,5 @@
 
 <h2>Close</h2>
 <p>No longer wish to use our API? <%= link_to "Close your account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>.</p>
+
+<%= render "devise/shared/notice" %>
