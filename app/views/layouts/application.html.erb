@@ -33,8 +33,7 @@
                 <%= link_to('Logout', main_app.destroy_user_session_path) %>
                 
               <% else %>
-                <%= current_page?(main_app.new_user_session_path) || current_page?(main_app.unauthenticated_root_path) ? 'Login' : link_to('Login', main_app.new_user_session_path) %> |
-                <%= current_page?(main_app.new_user_registration_path) ? 'Sign Up' : link_to('Sign Up', main_app.new_user_registration_path) %>
+                <%= current_page?(main_app.new_user_session_path) || current_page?(main_app.unauthenticated_root_path) ? 'Login' : link_to('Login', main_app.new_user_session_path) %>
               <% end %>
             </nav>
 
