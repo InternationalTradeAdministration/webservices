@@ -24,6 +24,7 @@
     :state:
     :country: DK
     :postal_code:
+    :full_address: BAGSVAERD HOVEDGADE 99 1 2880 BAGSVAERD, COPENHAGEN, DK
 - :name: KAL TEK LABS
   :start_date: '1988-08-26'
   :end_date: '2008-08-26'
@@ -44,6 +45,7 @@
     :state: CA
     :country: US
     :postal_code:
+    :full_address: '250 BONITA GLEN DRIVE, #3D, CHULA VISTA, CA, US'
 - :name: KATSUTA KEISUKE
   :start_date: '1993-08-02'
   :end_date: '2003-03-03'
@@ -64,6 +66,7 @@
     :state:
     :country: JP
     :postal_code:
+    :full_address: 1-25-4 MINAMI-AZABU, MINATOKU, TOKYO, JP
 - :name: KINTRACO
   :start_date: '1987-03-19'
   :end_date: '2007-03-19'
@@ -84,6 +87,7 @@
     :state:
     :country: NL
     :postal_code: 1822 BH
+    :full_address: BERENKOOG 29, ALKMAAR, 1822 BH, NL
 - :name: ABELAIRAS, AMANCIO J.
   :start_date: '1995-06-05'
   :end_date: '2005-06-05'
@@ -104,6 +108,7 @@
     :state: FL
     :country: US
     :postal_code: '33144'
+    :full_address: 6486 S.W. 9 STREET, MIAMI, FL, 33144, US
 - :name: ABRISHAMI, ELHAM
   :start_date: '1998-08-03'
   :end_date: '2007-08-29'
@@ -124,6 +129,7 @@
     :state: OH
     :country: US
     :postal_code: '43017'
+    :full_address: 271 MONSARRAT DRIVE, DUBLIN, OH, 43017, US
 - :name: ACE, IAN
   :start_date: '1997-08-08'
   :end_date: '2017-08-08'
@@ -144,6 +150,7 @@
     :state:
     :country: ZA
     :postal_code:
+    :full_address: 4 MIMOSA WAY, PINELANDS, ZA
 - :name: ADT ANALOG AND DIGITAL TECHNIK
   :start_date: '1981-09-10'
   :end_date:
@@ -164,6 +171,7 @@
     :state:
     :country: DE
     :postal_code:
+    :full_address: 8019 NIEDERSEEON, HOUSE 21, DE
 - :name: AGNESE, ANDREE
   :start_date: '1985-07-11'
   :end_date:
@@ -184,3 +192,4 @@
     :state:
     :country: FR
     :postal_code:
+    :full_address: 22 RUE DU 11 NOVEMBER 1918, PANTIN, FR
