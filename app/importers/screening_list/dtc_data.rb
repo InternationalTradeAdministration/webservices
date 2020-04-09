@@ -18,7 +18,12 @@ module ScreeningList
 
     include ScreeningList::MakeNameVariants
 
-    ENDPOINT = "#{Rails.root}/data/screening_lists/dtc/itar_debarred_party_list_11062019.csv"
+    # We are turning off SSL verification for this importer temporarily
+    # because the server is not currently (04/08/20) configured correctly,
+    # the certificate chain is incomplete. We've communicated with the data provider
+    # to correct this issue but they haven't fixed it yet.
+    OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+    ENDPOINT = "https://www.pmddtc.state.gov/sys_attachment.do?sys_id=a8c1d0c3db1e8c145564ff1e0f961982"
 
     def import
       @source_information_url = UrlMapper.get_bitly_url('https://www.pmddtc.state.gov/ddtc_public?id=ddtc_kb_article_page&sys_id=c22d1833dbb8d300d0a370131f9619f0', model_class)
