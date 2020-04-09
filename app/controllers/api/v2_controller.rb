@@ -1,6 +1,10 @@
-class Api::V2Controller < ApiController
-  before_action :authenticate_by_api_key
+# Note:
+# this branch is a temporary no-auth branch
+# auth has been removed here and from the relevant specs
+#
+# before_action :authenticate_by_api_key
 
+class Api::V2Controller < ApiController
   rescue_from(Exceptions::InvalidDateRangeFormat) do |_e|
     render json:   { error:  'Invalid Date Range Format' },
            status: :bad_request
