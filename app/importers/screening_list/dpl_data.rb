@@ -34,6 +34,7 @@ module ScreeningList
       state:          :state,
       country:        :country,
       postal_code:    :postal_code,
+      full_address:   :full_address,
     }
 
     def import
@@ -78,9 +79,18 @@ module ScreeningList
       end
 
       doc[:addresses] = rows.map do |row|
-        remap_keys(ADDRESS_HASH, row)
+        address = remap_keys(ADDRESS_HASH, row)
+        address[:full_address] = make_full_address(address)
+        address
       end
       doc
+    end
+
+    def make_full_address(row)
+      keys = %i[address city state postal_code country ]
+      keys.map do |field|
+        row[field].present? ? row[field] : nil
+      end.compact.join(', ').squish
     end
   end
 end

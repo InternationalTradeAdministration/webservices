@@ -18,11 +18,13 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: 'Microrayan 3rd Apt. 45, block #21, Kabul, AF'
   - :address: A2 Ground Floor, City Computer Plaza, Shar-e-Naw
     :city: Kabul
     :country: AF
     :postal_code:
     :state:
+    :full_address: A2 Ground Floor, City Computer Plaza, Shar-e-Naw, Kabul, AF
   :source: &1
     :full_name: Entity List (EL) - Bureau of Industry and Security
     :code: EL
@@ -52,6 +54,7 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: Wazir Akbar Khan, Road Number 10, In front of National Bank, District 10, Kabul, AF
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Fazel Khalil Construction
@@ -76,37 +79,43 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: House No. 319, 10th Street Wazeer Akbar Khan, Kabul, AF
   - :address: Wazir Akbar Khan, District 10, Apartment 319
     :city: Kabul
     :country: AF
     :postal_code:
     :state:
+    :full_address: Wazir Akbar Khan, District 10, Apartment 319, Kabul, AF
   - :address:
     :city: Tarin Cot City
     :country: AF
     :postal_code:
     :state:
+    :full_address: Tarin Cot City, AF
   - :address: Behind UNAMA Office, Pir Bagh Office
     :city: Gardez
     :country: AF
     :postal_code:
     :state:
-  - :address: House No. 01, Street No. 01, Muhaqeq Road (Behind Pakistan and Turkish
-      Embassies)
+    :full_address: Behind UNAMA Office, Pir Bagh Office, Gardez, AF
+  - :address: House No. 01, Street No. 01, Muhaqeq Road (Behind Pakistan and Turkish Embassies)
     :city: Mazar-e-Sharif
     :country: AF
     :postal_code:
     :state:
+    :full_address: House No. 01, Street No. 01, Muhaqeq Road (Behind Pakistan and Turkish Embassies), Mazar-e-Sharif, AF
   - :address: Hazratan Street (Behind Jalalalabad Teaching Hospital)
     :city: Jalalalabad
     :country: AF
     :postal_code:
     :state:
+    :full_address: Hazratan Street (Behind Jalalalabad Teaching Hospital), Jalalalabad, AF
   - :address: Aino Mena, Street No. 22 (Blue Color House Left Side of Road)
     :city: Kandahar
     :country: AF
     :postal_code:
     :state:
+    :full_address: Aino Mena, Street No. 22 (Blue Color House Left Side of Road), Kandahar, AF
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Zurmat Construction offices
@@ -131,6 +140,7 @@
     :country: TR
     :postal_code:
     :state:
+    :full_address: Mah. Idris Kosku Caddesi Kutu, Sokak No:1 Pierreloti/Eyup, Istanbul, TR
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Murat Peker
@@ -154,6 +164,7 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: 'Microrayan 3rd Apt. 45, block #21, Kabul, AF'
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Qazi Abdallah
@@ -181,6 +192,7 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: 'Microrayan 3rd Apt. 45, block #21, Kabul, AF'
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Qazi Abdallah
@@ -208,6 +220,7 @@
     :country: AF
     :postal_code:
     :state:
+    :full_address: 'Microrayan 3rd Apt. 45, block #21, Kabul, AF'
   :source: *1
   :source_information_url: http://1.usa.gov/1L47xrV
   :name_idx: Qazi Abdallah

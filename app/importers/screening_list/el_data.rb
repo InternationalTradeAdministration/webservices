@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'open-uri'
 require 'csv'
 require 'digest/md5'
@@ -8,17 +10,18 @@ module ScreeningList
     include ::VersionableResource
 
     include ::CanEnsureCsvHeaders
-    self.expected_csv_headers = %i(
+    self.expected_csv_headers = %i[
       address address_number address_remarks alternate_name alternate_number
       alternate_remarks alternate_type call_sign city country
       date_liftedwaivedexpired effective_date entity_number
       federal_register_notice gross_register_tonnage gross_tonnage
       license_policy license_requirement name postal_code programs remarksnotes
       sdn_type source_list standard_order stateprovince title vessel_flag
-      vessel_owner vessel_type web_link)
+      vessel_owner vessel_type web_link
+    ]
 
     include ScreeningList::CanGroupRows
-    self.group_by = %i(name federal_register_notice effective_date)
+    self.group_by = %i[name federal_register_notice effective_date]
 
     include ScreeningList::MakeNameVariants
 
@@ -36,8 +39,10 @@ module ScreeningList
     }
 
     def import
-      rows = CSV.parse(loaded_resource, headers: true, header_converters: [:symbol],
-                       encoding: 'UTF-8').delete_if { |row| row.to_hash.values.all?(&:blank?) }
+      rows = CSV.parse(loaded_resource,
+                       headers: true,
+                       header_converters: [:symbol],
+                       encoding: 'UTF-8',).delete_if { |row| row.to_hash.values.all?(&:blank?) }
       ensure_expected_headers(rows.first)
       @source_list_url = 'http://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/entity-list'
       docs = group_rows(rows).map { |id, grouped| process_grouped_rows(id, grouped) }
@@ -82,12 +87,21 @@ module ScreeningList
       country:       :country,
       postal_code:   :postal_code,
       stateprovince: :state,
+      full_address:  :full_address,
     }
 
     def process_address(row)
       address = remap_keys(ADDRESS_HASH, row.to_hash)
       address[:country] &&= lookup_country(address[:country])
+      address[:full_address] = make_full_address(address)
       address
+    end
+
+    def make_full_address(row)
+      keys = %i[address city state postal_code country]
+      keys.map do |field|
+        row[field].present? ? row[field] : nil
+      end.compact.join(', ').squish
     end
   end
 end
