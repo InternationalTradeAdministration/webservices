@@ -17,7 +17,6 @@ module ScreeningList
 
     include SeparatedValuesable
     self.separated_values_config = [
-      :_id,
       { source: [:full_name] },
       :entity_number,
       :type,
