@@ -52,6 +52,7 @@ module SeparatedValuesable
       CSV.generate(col_sep: col_sep) do |csv|
         csv << headers
         search_results.each do |result|
+          result[:_source][:_id] = result[:_id]
           csv << to_row(result[:_source])
         end
       end
