@@ -14,7 +14,7 @@ module ScreeningList
     end
 
     def rescored_hits
-      @hits.each { |hit| hit[:_adjusted_score] = adjusted_score(hit) }.sort_by { |hit| -hit[:_adjusted_score] }
+      @hits.each { |hit| hit[:_adjusted_score] = adjusted_score(hit) }
     end
 
     def adjusted_score(hit)
