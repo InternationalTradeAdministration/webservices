@@ -47,14 +47,5 @@ module ScreeningList
       :source_information_url,
       { ids: [:country, :expiration_date, :issue_date, :number, :type] }
     ]
-
-    def self.search_for(options)
-      result = super(options)
-      if options['fuzzy_name'].present? && options['name'].present?
-        score_adjuster = ScoreAdjuster.new(options['name'], result[:hits])
-        result[:hits] = score_adjuster.rescored_hits
-      end
-      result
-    end
   end
 end
