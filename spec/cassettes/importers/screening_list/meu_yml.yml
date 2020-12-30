@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-ssl.bitly.com/v3/user/link_save?access_token=<BITLY_API_TOKEN>&longUrl=https://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern&title=ScreeningList::Meu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 04 Jan 2021 20:44:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '274'
+      Etag:
+      - '"70ca1a13e9c48f629a6df72098405f430dce87fc"'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+    body:
+      encoding: UTF-8
+      string: '{"status_code": 200, "data": {"link_save": {"link": "https://bit.ly/2XaGPYw",
+        "aggregate_link": "http://bit.ly/1vbEBDt", "long_url": "https://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern",
+        "new_link": 1, "user_hash": "2XaGPYw"}}, "status_txt": "OK"}'
+    http_version:
+  recorded_at: Mon, 04 Jan 2021 20:44:35 GMT
+recorded_with: VCR 4.0.0

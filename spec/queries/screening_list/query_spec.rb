@@ -145,7 +145,7 @@ shared_examples 'a ScreeningList query' do
   end
 end
 
-%w(Dpl Dtc El Fse Isn Plc Sdn Ssi Uvl).each do |i|
+%w(Dpl Dtc El Fse Isn Meu Plc Sdn Ssi Uvl).each do |i|
   describe "ScreeningList::#{i}Query".constantize do
     it_behaves_like 'a ScreeningList query'
   end

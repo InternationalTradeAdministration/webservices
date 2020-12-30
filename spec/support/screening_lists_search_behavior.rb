@@ -11,7 +11,7 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Plc data'
   include_context 'ScreeningList::Ssi data'
   include_context 'ScreeningList::Cap data'
-  include_context 'ScreeningList::Cap data'
+  include_context 'ScreeningList::Meu data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -267,6 +267,32 @@ end
 
 shared_examples 'it contains all ScreeningList::El results that match start_date "2011-11-21"' do
   let(:source) { ScreeningList::El }
+  let(:expected) { [0, 3, 4] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_context 'ScreeningList::Meu data' do
+  before(:all) do
+    ScreeningList::Meu.recreate_index
+    VCR.use_cassette('importers/screening_list/meu.yml', record: :once) do
+      ScreeningList::MeuData.new(
+        "#{Rails.root}/spec/fixtures/screening_lists/meu/meu.csv",).import
+    end
+
+    @all_possible_full_results ||= {}
+    @all_possible_full_results[ScreeningList::Meu] = JSON.parse(open(
+                                                                 "#{File.dirname(__FILE__)}/screening_lists/meu/expected_results.json",).read,)
+  end
+end
+
+shared_examples 'it contains all ScreeningList::Meu results' do
+  let(:source) { ScreeningList::Meu }
+  let(:expected) { [0, 1, 2, 3, 4, 5, 6] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Meu results that match start_date "2011-11-21"' do
+  let(:source) { ScreeningList::Meu }
   let(:expected) { [0, 3, 4] }
   it_behaves_like 'it contains all expected results of source'
 end
