@@ -24,12 +24,13 @@ describe 'Consolidated Screening List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Plc results'
       it_behaves_like 'it contains all ScreeningList::Ssi results'
       it_behaves_like 'it contains all ScreeningList::Cap results'
+      it_behaves_like 'it contains all ScreeningList::Meu results'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
            ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
-           ScreeningList::Cap,]
+           ScreeningList::Cap, ScreeningList::Meu,]
         end
       end
       it_behaves_like 'it contains sources_used' do
@@ -37,7 +38,7 @@ describe 'Consolidated Screening List API V2', type: :request do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
            ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
-           ScreeningList::Cap,]
+           ScreeningList::Cap, ScreeningList::Meu,]
         end
       end
     end
@@ -306,6 +307,17 @@ describe 'Consolidated Screening List API V2', type: :request do
         end
       end
 
+      context 'and is set to "MEU" source' do
+        let(:params) { { sources: 'MEU' } }
+        it_behaves_like 'it contains all ScreeningList::Meu results'
+        it_behaves_like 'it contains only results with sources' do
+          let(:sources) { [ScreeningList::Meu] }
+        end
+        it_behaves_like 'it contains sources_used' do
+          let(:sources) { [ScreeningList::Meu] }
+        end
+      end
+
       context 'and is set to "DPL" source' do
         let(:params) { { sources: 'DPL' } }
         it_behaves_like 'it contains all ScreeningList::Dpl results'
@@ -378,6 +390,13 @@ describe 'Consolidated Screening List API V2', type: :request do
       let(:params) { { sources: 'EL', start_date: '2011-11-21 TO 2011-11-21' } }
       it_behaves_like 'a successful search request'
       it_behaves_like 'it contains all ScreeningList::El results that match start_date "2011-11-21"'
+    end
+
+    context 'when start_date is specified' do
+      subject { response }
+      let(:params) { { sources: 'MEU', start_date: '2011-11-21 TO 2011-11-21' } }
+      it_behaves_like 'a successful search request'
+      it_behaves_like 'it contains all ScreeningList::Meu results that match start_date "2011-11-21"'
     end
 
     context 'when end_date is specified' do
@@ -525,7 +544,7 @@ describe 'Consolidated Screening List API V2', type: :request do
 
     it 'returns only matching response' do
       results = JSON.parse(subject.body)['results']
-      expect(results.count).to eq(3)
+      expect(results.count).to eq(6)
       names = results.map { |r| r['name'] }.uniq
       expect(names).to eq(['Qazi Abdallah'])
     end
