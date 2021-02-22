@@ -937,4 +937,72 @@
       </citizenship>
     </citizenshipList>
   </sdnEntry>
+  <sdnEntry>
+    <uid>27016</uid>
+    <lastName>PRESIDENCY OF DEFENSE INDUSTRIES</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>CAATSA - RUSSIA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>131949</uid>
+        <idType>CAATSA Section 235 Information:</idType>
+        <idNumber>EXPORT-IMPORT BANK ASSISTANCE FOR EXPORTS TO SANCTIONED PERSONS. Sec. 235(a)(1)</idNumber>
+      </id>
+      <id>
+        <uid>131935</uid>
+        <idType>CAATSA Section 235 Information:</idType>
+        <idNumber>EXPORT SANCTIONS Sec. 235(a)(2)</idNumber>
+      </id>
+      <id>
+        <uid>131936</uid>
+        <idType>CAATSA Section 235 Information:</idType>
+        <idNumber>LOANS FROM UNITED STATES FINANCIAL INSTITUTIONS. Sec. 235(a)(3)</idNumber>
+      </id>
+      <id>
+        <uid>131937</uid>
+        <idType>CAATSA Section 235 Information:</idType>
+        <idNumber>LOANS FROM INTERNATIONAL FINANCIAL INSTITUTIONS. Sec. 235(a)(4)</idNumber>
+      </id>
+      <id>
+        <uid>131938</uid>
+        <idType>CAATSA Section 235 Information:</idType>
+        <idNumber>SANCTIONS ON PRINCIPAL EXECUTIVE OFFICERS. Sec 235(a)(12)</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>42778</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>DEFENSE INDUSTRIES PRESIDENCY</lastName>
+      </aka>
+      <aka>
+        <uid>42779</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>UNDERSECRETARIAT FOR DEFENSE INDUSTRIES</lastName>
+      </aka>
+      <aka>
+        <uid>48267</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>SSB</lastName>
+      </aka>
+      <aka>
+        <uid>48268</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>SSM</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>41053</uid>
+        <city>Ankara</city>
+        <country>Turkey</country>
+      </address>
+    </addressList>
+  </sdnEntry>
 </sdnList>

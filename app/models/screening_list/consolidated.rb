@@ -8,6 +8,7 @@ module ScreeningList
                           ScreeningList::Eo13599,
                           ScreeningList::Fse,
                           ScreeningList::Isn,
+                          ScreeningList::Mbs,
                           ScreeningList::Meu,
                           ScreeningList::Part561,
                           ScreeningList::Plc,
