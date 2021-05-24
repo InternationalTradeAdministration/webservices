@@ -12,6 +12,7 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Ssi data'
   include_context 'ScreeningList::Cap data'
   include_context 'ScreeningList::Meu data'
+  include_context 'ScreeningList::Mbs data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -86,6 +87,44 @@ end
 
 shared_examples 'it contains all ScreeningList::Cap results that match type "Entity"' do
   let(:source) { ScreeningList::Cap }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_context 'ScreeningList::Mbs data' do
+  before(:all) do
+    ScreeningList::Mbs.recreate_index
+    VCR.use_cassette('importers/screening_list/mbs.yml', record: :once) do
+      ScreeningList::MbsData.new(
+        "#{Rails.root}/spec/fixtures/screening_lists/treasury_consolidated/consolidated.xml",).import
+    end
+
+    @all_possible_full_results ||= {}
+    @all_possible_full_results[ScreeningList::Mbs] = JSON.parse(open(
+        "#{File.dirname(__FILE__)}/screening_lists/mbs/expected_results.json",).read,)
+  end
+end
+
+shared_examples 'it contains all ScreeningList::Mbs results' do
+  let(:source) { ScreeningList::Mbs }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Mbs results that match "PRESIDENCY OF DEFENSE INDUSTRIES"' do
+  let(:source) { ScreeningList::Mbs }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Mbs results that match countries "TR"' do
+  let(:source) { ScreeningList::Mbs }
+  let(:expected) { [0] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Mbs results that match type "Entity"' do
+  let(:source) { ScreeningList::Mbs }
   let(:expected) { [0] }
   it_behaves_like 'it contains all expected results of source'
 end
@@ -515,7 +554,7 @@ end
 
 shared_examples 'it contains all ScreeningList::Ssi results that match type "Entity"' do
   let(:source) { ScreeningList::Ssi }
-  let(:expected) { (0..3).to_a }
+  let(:expected) { [0,2,3] }
   it_behaves_like 'it contains all expected results of source'
 end
 

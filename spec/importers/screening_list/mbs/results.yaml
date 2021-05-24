@@ -1,0 +1,87 @@
+---
+- :entity_number: '27016'
+  :title:
+  :call_sign:
+  :vessel_type:
+  :gross_tonnage:
+  :gross_registered_tonnage:
+  :vessel_flag:
+  :vessel_owner:
+  :remarks:
+  :id: '27016'
+  :source:
+    :full_name: Non-SDN Menu-Based Sanctions List (NS-MBS List) - Treasury Department
+    :code: MBS
+  :source_list_url:
+  :source_information_url: https://bit.ly/2MbsybU
+  :name: PRESIDENCY OF DEFENSE INDUSTRIES
+  :type: Entity
+  :alt_names:
+    - DEFENSE INDUSTRIES PRESIDENCY
+    - UNDERSECRETARIAT FOR DEFENSE INDUSTRIES
+    - SSB
+    - SSM
+  :programs:
+    - CAATSA - RUSSIA
+  :nationalities: []
+  :citizenships: []
+  :dates_of_birth: []
+  :places_of_birth: []
+  :addresses:
+    - :city: Ankara
+      :country: TR
+      :postal_code:
+      :state:
+      :address:
+      :full_address: Ankara, TR
+  :ids:
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: EXPORT-IMPORT BANK ASSISTANCE FOR EXPORTS TO SANCTIONED PERSONS. Sec.
+        235(a)(1)
+      :type: 'CAATSA Section 235 Information:'
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: EXPORT SANCTIONS Sec. 235(a)(2)
+      :type: 'CAATSA Section 235 Information:'
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: LOANS FROM UNITED STATES FINANCIAL INSTITUTIONS. Sec. 235(a)(3)
+      :type: 'CAATSA Section 235 Information:'
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: LOANS FROM INTERNATIONAL FINANCIAL INSTITUTIONS. Sec. 235(a)(4)
+      :type: 'CAATSA Section 235 Information:'
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: SANCTIONS ON PRINCIPAL EXECUTIVE OFFICERS. Sec 235(a)(12)
+      :type: 'CAATSA Section 235 Information:'
+  :name_idx: PRESIDENCY OF DEFENSE INDUSTRIES
+  :name_rev: INDUSTRIES DEFENSE OF PRESIDENCY
+  :name_no_ws: PRESIDENCYOFDEFENSEINDUSTRIES
+  :name_no_ws_rev: INDUSTRIESDEFENSEOFPRESIDENCY
+  :alt_idx:
+    - DEFENSE INDUSTRIES PRESIDENCY
+    - UNDERSECRETARIAT FOR DEFENSE INDUSTRIES
+    - SSB
+    - SSM
+  :alt_rev:
+    - PRESIDENCY INDUSTRIES DEFENSE
+    - INDUSTRIES DEFENSE FOR UNDERSECRETARIAT
+    - SSB
+    - SSM
+  :alt_no_ws:
+    - DEFENSEINDUSTRIESPRESIDENCY
+    - UNDERSECRETARIATFORDEFENSEINDUSTRIES
+    - SSB
+    - SSM
+  :alt_no_ws_rev:
+    - PRESIDENCYINDUSTRIESDEFENSE
+    - INDUSTRIESDEFENSEFORUNDERSECRETARIAT
+    - SSB
+    - SSM

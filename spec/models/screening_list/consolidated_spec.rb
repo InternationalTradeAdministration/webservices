@@ -2,10 +2,11 @@ require 'spec_helper'
 
 describe ScreeningList::Consolidated, type: :model do
   describe '.index_names' do
-    subject { described_class.index_names(sources) }
+    subject { described_class.index_names(sources)
+    }
 
     let(:all_index_names) do
-      %w(cap dpl dtc el eo13599 fse isn meu part561 plc sdn ssi uvl)
+      %w(cap dpl dtc el eo13599 fse isn mbs meu part561 plc sdn ssi uvl)
         .map { |x| "test:webservices:screening_list:#{x}s" }
     end
 
@@ -17,7 +18,12 @@ describe ScreeningList::Consolidated, type: :model do
 
       context 'which is not included in the list of models' do
         let(:sources) { ['Foo'] }
-        it { is_expected.to eq all_index_names }
+        it {
+          # This is to correct for the way "mbs" is being handled. Since it ends in "s" an extra "s" is not being appended
+          # to the index name.
+          all_index_names.map! { |x| x == 'test:webservices:screening_list:mbss' ?
+                                          'test:webservices:screening_list:mbs' : x }
+          is_expected.to eq all_index_names }
       end
     end
 
@@ -38,7 +44,12 @@ describe ScreeningList::Consolidated, type: :model do
 
       context 'some of which are included in the list of models' do
         let(:sources) { %w(Foo Bar) }
-        it { is_expected.to eq all_index_names }
+        it {
+          # This is to correct for the way "mbs" is being handled. Since it ends in "s" an extra "s" is not being appended
+          # to the index name.
+          all_index_names.map! { |x| x == 'test:webservices:screening_list:mbss' ?
+                                          'test:webservices:screening_list:mbs' : x }
+          is_expected.to eq all_index_names }
       end
     end
   end

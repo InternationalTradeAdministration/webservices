@@ -1,0 +1,80 @@
+[
+  {
+    "id": "27016",
+    "addresses": [
+      {
+        "address": null,
+        "city": "Ankara",
+        "state": null,
+        "postal_code": null,
+        "country": "TR"
+      }
+    ],
+    "alt_names": [
+      "DEFENSE INDUSTRIES PRESIDENCY",
+      "UNDERSECRETARIAT FOR DEFENSE INDUSTRIES",
+      "SSB",
+      "SSM"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "27016",
+    "ids": [
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "EXPORT-IMPORT BANK ASSISTANCE FOR EXPORTS TO SANCTIONED PERSONS. Sec. 235(a)(1)",
+        "type": "CAATSA Section 235 Information:"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "EXPORT SANCTIONS Sec. 235(a)(2)",
+        "type": "CAATSA Section 235 Information:"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "LOANS FROM UNITED STATES FINANCIAL INSTITUTIONS. Sec. 235(a)(3)",
+        "type": "CAATSA Section 235 Information:"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "LOANS FROM INTERNATIONAL FINANCIAL INSTITUTIONS. Sec. 235(a)(4)",
+        "type": "CAATSA Section 235 Information:"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "SANCTIONS ON PRINCIPAL EXECUTIVE OFFICERS. Sec 235(a)(12)",
+        "type": "CAATSA Section 235 Information:"
+      }
+    ],
+    "name": "PRESIDENCY OF DEFENSE INDUSTRIES",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CAATSA - RUSSIA"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Menu-Based Sanctions List (NS-MBS List) - Treasury Department",
+    "source_information_url": "https://bit.ly/2MbsybU",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  }
+]
