@@ -6,7 +6,7 @@ describe ScreeningList::Consolidated, type: :model do
     }
 
     let(:all_index_names) do
-      %w(cap dpl dtc el eo13599 fse isn mbs meu part561 plc sdn ssi uvl)
+      %w(cap dpl dtc el eo13599 eo13959 fse isn mbs meu part561 plc sdn ssi uvl)
         .map { |x| "test:webservices:screening_list:#{x}s" }
     end
 

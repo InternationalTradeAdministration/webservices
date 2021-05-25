@@ -13,6 +13,7 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Cap data'
   include_context 'ScreeningList::Meu data'
   include_context 'ScreeningList::Mbs data'
+  include_context 'ScreeningList::Eo13959 data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -373,6 +374,37 @@ shared_examples 'it contains all ScreeningList::Eo13599 results that match type 
   let(:expected) { [0, 1] }
   it_behaves_like 'it contains all expected results of source'
 end
+shared_context 'ScreeningList::Eo13959 data' do
+  before(:all) do
+    ScreeningList::Eo13959.recreate_index
+    VCR.use_cassette('importers/screening_list/eo13959.yml', record: :once) do
+      ScreeningList::Eo13959Data.new(
+        "#{Rails.root}/spec/fixtures/screening_lists/treasury_consolidated/consolidated.xml",).import
+    end
+
+    @all_possible_full_results ||= {}
+    @all_possible_full_results[ScreeningList::Eo13959] = JSON.parse(open(
+      "#{File.dirname(__FILE__)}/screening_lists/eo13959/expected_results.json",).read,)
+  end
+end
+
+shared_examples 'it contains all ScreeningList::Eo13959 results' do
+  let(:source) { ScreeningList::Eo13959 }
+  let(:expected) { [0, 1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Eo13959 results that match "China Telecom"' do
+  let(:source) { ScreeningList::Eo13959 }
+  let(:expected) { [1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Eo13959 results that match type "Entity"' do
+  let(:source) { ScreeningList::Eo13959 }
+  let(:expected) { [0, 1] }
+  it_behaves_like 'it contains all expected results of source'
+end
 
 shared_context 'ScreeningList::Dpl data' do
   before(:all) do
@@ -554,7 +586,7 @@ end
 
 shared_examples 'it contains all ScreeningList::Ssi results that match type "Entity"' do
   let(:source) { ScreeningList::Ssi }
-  let(:expected) { [0,2,3] }
+  let(:expected) { [0,3] }
   it_behaves_like 'it contains all expected results of source'
 end
 

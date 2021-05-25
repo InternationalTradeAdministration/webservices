@@ -6,6 +6,7 @@ module ScreeningList
                           ScreeningList::Dtc,
                           ScreeningList::El,
                           ScreeningList::Eo13599,
+                          ScreeningList::Eo13959,
                           ScreeningList::Fse,
                           ScreeningList::Isn,
                           ScreeningList::Mbs,
