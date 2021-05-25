@@ -13,6 +13,7 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Cap data'
   include_context 'ScreeningList::Meu data'
   include_context 'ScreeningList::Mbs data'
+  include_context 'ScreeningList::Ccmc data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -373,6 +374,37 @@ shared_examples 'it contains all ScreeningList::Eo13599 results that match type 
   let(:expected) { [0, 1] }
   it_behaves_like 'it contains all expected results of source'
 end
+shared_context 'ScreeningList::Ccmc data' do
+  before(:all) do
+    ScreeningList::Ccmc.recreate_index
+    VCR.use_cassette('importers/screening_list/ccmc.yml', record: :once) do
+      ScreeningList::CcmcData.new(
+        "#{Rails.root}/spec/fixtures/screening_lists/treasury_consolidated/consolidated.xml",).import
+    end
+
+    @all_possible_full_results ||= {}
+    @all_possible_full_results[ScreeningList::Ccmc] = JSON.parse(open(
+      "#{File.dirname(__FILE__)}/screening_lists/ccmc/expected_results.json",).read,)
+  end
+end
+
+shared_examples 'it contains all ScreeningList::Ccmc results' do
+  let(:source) { ScreeningList::Ccmc }
+  let(:expected) { [0, 1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Ccmc results that match "China Telecom"' do
+  let(:source) { ScreeningList::Ccmc }
+  let(:expected) { [1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Ccmc results that match type "Entity"' do
+  let(:source) { ScreeningList::Ccmc }
+  let(:expected) { [0, 1] }
+  it_behaves_like 'it contains all expected results of source'
+end
 
 shared_context 'ScreeningList::Dpl data' do
   before(:all) do
@@ -554,7 +586,7 @@ end
 
 shared_examples 'it contains all ScreeningList::Ssi results that match type "Entity"' do
   let(:source) { ScreeningList::Ssi }
-  let(:expected) { [0,2,3] }
+  let(:expected) { [0,3] }
   it_behaves_like 'it contains all expected results of source'
 end
 

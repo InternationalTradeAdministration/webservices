@@ -1,0 +1,147 @@
+[
+  {
+    "id": "30902",
+    "addresses": [
+
+    ],
+    "alt_names": [
+      "AERO ENGINE CORP OF CHINA"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "30902",
+    "ids": [
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "1546063D CN",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Aero Engine Corp of China",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "12 Nov 2021",
+        "type": "Divestment Date (CCMC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "11 Jan 2021",
+        "type": "Effective Date (CCMC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "12 Nov 2020",
+        "type": "Listing Date (CCMC)"
+      }
+    ],
+    "name": "AERO ENGINE CORPORATION OF CHINA",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CCMC-EO13959"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Communist Military Companies Sanctions List (CCMC)  - Treasury Department",
+    "source_information_url": "https://bit.ly/3wKD0sP",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  },
+  {
+    "id": "30882",
+    "addresses": [
+
+    ],
+    "alt_names": [
+
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "30882",
+    "ids": [
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CHA US",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "728 HK",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "China Telecom Corporation Limited",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "08 Jan 2021",
+        "type": "Listing Date (CCMC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "09 Mar 2021",
+        "type": "Effective Date (CCMC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "08 Jan 2022",
+        "type": "Divestment Date (CCMC)"
+      }
+    ],
+    "name": "CHINA TELECOM CORPORATION LIMITED",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CCMC-EO13959"
+    ],
+    "remarks": "(Linked To: CHINA TELECOMMUNICATIONS CORP.)",
+    "source": "Non-SDN Communist Military Companies Sanctions List (CCMC)  - Treasury Department",
+    "source_information_url": "https://bit.ly/3wKD0sP",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  }
+]

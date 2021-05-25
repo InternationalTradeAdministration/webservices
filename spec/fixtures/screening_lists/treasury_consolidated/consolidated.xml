@@ -1005,4 +1005,88 @@
       </address>
     </addressList>
   </sdnEntry>
+  <sdnEntry>
+    <uid>30882</uid>
+    <lastName>CHINA TELECOM CORPORATION LIMITED</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>(Linked To: CHINA TELECOMMUNICATIONS CORP.)</remarks>
+    <programList>
+      <program>CCMC-EO13959</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>138980</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>CHA US</idNumber>
+      </id>
+      <id>
+        <uid>138981</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>728 HK</idNumber>
+      </id>
+      <id>
+        <uid>139431</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>China Telecom Corporation Limited</idNumber>
+      </id>
+      <id>
+        <uid>139432</uid>
+        <idType>Listing Date (CCMC)</idType>
+        <idNumber>08 Jan 2021</idNumber>
+      </id>
+      <id>
+        <uid>139433</uid>
+        <idType>Effective Date (CCMC)</idType>
+        <idNumber>09 Mar 2021</idNumber>
+      </id>
+      <id>
+        <uid>139434</uid>
+        <idType>Divestment Date (CCMC)</idType>
+        <idNumber>08 Jan 2022</idNumber>
+      </id>
+    </idList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>30902</uid>
+    <lastName>AERO ENGINE CORPORATION OF CHINA</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>CCMC-EO13959</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>138957</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>1546063D CN</idNumber>
+      </id>
+      <id>
+        <uid>138958</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>Aero Engine Corp of China</idNumber>
+      </id>
+      <id>
+        <uid>139259</uid>
+        <idType>Divestment Date (CCMC)</idType>
+        <idNumber>12 Nov 2021</idNumber>
+      </id>
+      <id>
+        <uid>139240</uid>
+        <idType>Effective Date (CCMC)</idType>
+        <idNumber>11 Jan 2021</idNumber>
+      </id>
+      <id>
+        <uid>139239</uid>
+        <idType>Listing Date (CCMC)</idType>
+        <idNumber>12 Nov 2020</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>48589</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AERO ENGINE CORP OF CHINA</lastName>
+      </aka>
+    </akaList>
+  </sdnEntry>
 </sdnList>
