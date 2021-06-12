@@ -76,5 +76,99 @@
     "source_list_url": null,
     "title": null,
     "type": "Entity"
+  },
+  {
+    "id": "31914",
+    "addresses": [
+      {
+        "address": "Corp 6 A, Unit 2H, 1st Floor, Unit 95, prospekt Bolshoy Sampsoniyevskiy 60",
+        "city": "St Petersburg",
+        "state": null,
+        "postal_code": "194044",
+        "country": "RU"
+      },
+      {
+        "address": "Stepana Razina Street, 89, 2, 2",
+        "city": "Samara",
+        "state": "Samara Region",
+        "postal_code": "443099",
+        "country": "RU"
+      },
+      {
+        "address": "d. 60 korp. 6 litera A pom. 2N, 1 etazh chast pom. 95, prospekt Bolshoi Sampsonievski",
+        "city": "St. Petersburg",
+        "state": null,
+        "postal_code": "194044",
+        "country": "RU"
+      }
+    ],
+    "alt_names": [
+      "STIF JSC",
+      "STIF, AO",
+      "SAMARA THERMAL POWER FDN JSC",
+      "SAMARSKIY TEPLOENERGETICHESKIY IMUSHCHESTVENNIY FOND",
+      "JOINT STOCK COMPANY SAMARA THERMAL POWER FOUNDATION",
+      "SAMARA HEAT AND POWER PROPERTY FUND"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "31914",
+    "ids": [
+      {
+        "country": "RU",
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "6317063064",
+        "type": "Tax ID No."
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "IMO 6188586",
+        "type": "Identification Number"
+      },
+      {
+        "country": "RU",
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "1066317027787",
+        "type": "Business Registration Number"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Property and Interests in Property Blocked, Except Importation of Goods",
+        "type": "PEESA Information:"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "State-Owned Enterprise",
+        "type": "Target Type"
+      }
+    ],
+    "name": "SAMARA HEAT AND ENERGY PROPERTY FUND",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "PEESA"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Menu-Based Sanctions List (NS-MBS List) - Treasury Department",
+    "source_information_url": "https://bit.ly/2MbsybU",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
   }
 ]

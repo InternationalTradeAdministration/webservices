@@ -6,7 +6,7 @@ module ScreeningList
     def self.included(base)
       base.class_eval do
         class << self
-          attr_accessor :default_endpoint, :source_information_url, :program_id
+          attr_accessor :default_endpoint, :source_information_url, :program_id, :program_id_2
         end
       end
     end
@@ -14,6 +14,7 @@ module ScreeningList
     def initialize(resource = nil)
       @resource = resource || self.class.default_endpoint
       @program_id = self.class.program_id
+      @program_id_2 = self.class.program_id_2
     end
 
     def import
@@ -32,7 +33,14 @@ module ScreeningList
     private
 
     def should_process?(node)
-      @program_id == 'SDN' || node.xpath('.//xmlns:program').map(&:text).compact.any? { |p| p.include?(@program_id) }
+      @program_id == 'SDN' ||
+        if @program_id_2
+          node.xpath('.//xmlns:program').map(&:text).compact.any? do
+            |p| p.include?(@program_id) or p.include?(@program_id_2)
+          end
+        else
+          node.xpath('.//xmlns:program').map(&:text).compact.any? { | p | p.include?(@program_id) }
+        end
     end
 
     def document_node_xpath

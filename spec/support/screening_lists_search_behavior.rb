@@ -108,7 +108,7 @@ end
 
 shared_examples 'it contains all ScreeningList::Mbs results' do
   let(:source) { ScreeningList::Mbs }
-  let(:expected) { [0] }
+  let(:expected) { [0, 1] }
   it_behaves_like 'it contains all expected results of source'
 end
 
@@ -126,7 +126,7 @@ end
 
 shared_examples 'it contains all ScreeningList::Mbs results that match type "Entity"' do
   let(:source) { ScreeningList::Mbs }
-  let(:expected) { [0] }
+  let(:expected) { [0, 1] }
   it_behaves_like 'it contains all expected results of source'
 end
 

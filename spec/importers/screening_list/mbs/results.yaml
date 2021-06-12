@@ -9,7 +9,7 @@
   :vessel_owner:
   :remarks:
   :id: '27016'
-  :source:
+  :source: &1
     :full_name: Non-SDN Menu-Based Sanctions List (NS-MBS List) - Treasury Department
     :code: MBS
   :source_list_url:
@@ -85,3 +85,126 @@
     - INDUSTRIESDEFENSEFORUNDERSECRETARIAT
     - SSB
     - SSM
+- :entity_number: '31914'
+  :title:
+  :call_sign:
+  :vessel_type:
+  :gross_tonnage:
+  :gross_registered_tonnage:
+  :vessel_flag:
+  :vessel_owner:
+  :remarks:
+  :id: '31914'
+  :source: *1
+  :source_list_url:
+  :source_information_url: https://bit.ly/2MbsybU
+  :name: SAMARA HEAT AND ENERGY PROPERTY FUND
+  :type: Entity
+  :alt_names:
+    - STIF JSC
+    - STIF, AO
+    - SAMARA THERMAL POWER FDN JSC
+    - SAMARSKIY TEPLOENERGETICHESKIY IMUSHCHESTVENNIY FOND
+    - JOINT STOCK COMPANY SAMARA THERMAL POWER FOUNDATION
+    - SAMARA HEAT AND POWER PROPERTY FUND
+  :programs:
+    - PEESA
+  :nationalities: []
+  :citizenships: []
+  :dates_of_birth: []
+  :places_of_birth: []
+  :addresses:
+    - :city: St Petersburg
+      :country: RU
+      :postal_code: '194044'
+      :state:
+      :address: Corp 6 A, Unit 2H, 1st Floor, Unit 95, prospekt Bolshoy Sampsoniyevskiy
+        60
+      :full_address: Corp 6 A, Unit 2H, 1st Floor, Unit 95, prospekt Bolshoy Sampsoniyevskiy
+        60, St Petersburg, RU, 194044
+    - :city: Samara
+      :country: RU
+      :postal_code: '443099'
+      :state: Samara Region
+      :address: Stepana Razina Street, 89, 2, 2
+      :full_address: Stepana Razina Street, 89, 2, 2, Samara, RU, 443099, Samara Region
+    - :city: St. Petersburg
+      :country: RU
+      :postal_code: '194044'
+      :state:
+      :address: d. 60 korp. 6 litera A pom. 2N, 1 etazh chast pom. 95, prospekt Bolshoi
+        Sampsonievski
+      :full_address: d. 60 korp. 6 litera A pom. 2N, 1 etazh chast pom. 95, prospekt
+        Bolshoi Sampsonievski, St. Petersburg, RU, 194044
+  :ids:
+    - :country: RU
+      :expiration_date:
+      :issue_date:
+      :number: '6317063064'
+      :type: Tax ID No.
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: IMO 6188586
+      :type: Identification Number
+    - :country: RU
+      :expiration_date:
+      :issue_date:
+      :number: '1066317027787'
+      :type: Business Registration Number
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Property and Interests in Property Blocked, Except Importation of Goods
+      :type: 'PEESA Information:'
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: State-Owned Enterprise
+      :type: Target Type
+  :name_idx: SAMARA HEAT ENERGY PROPERTY FUND
+  :name_rev: FUND PROPERTY ENERGY HEAT SAMARA
+  :name_no_ws: SAMARAHEATENERGYPROPERTYFUND
+  :name_no_ws_rev: FUNDPROPERTYENERGYHEATSAMARA
+  :alt_idx:
+    - STIF JSC
+    - STIF AO
+    - SAMARA THERMAL POWER FDN JSC
+    - SAMARSKIY TEPLOENERGETICHESKIY IMUSHCHESTVENNIY FOND
+    - JOINT STOCK SAMARA THERMAL POWER FOUNDATION
+    - SAMARA HEAT POWER PROPERTY FUND
+  :alt_no_ws_with_common:
+    - STIFJSC
+    - STIFAO
+    - SAMARATHERMALPOWERFDNJSC
+    - SAMARSKIYTEPLOENERGETICHESKIYIMUSHCHESTVENNIYFOND
+    - JOINTSTOCKCOMPANYSAMARATHERMALPOWERFOUNDATION
+    - SAMARAHEATPOWERPROPERTYFUND
+  :alt_no_ws_rev_with_common:
+    - JSCSTIF
+    - AOSTIF
+    - JSCFDNPOWERTHERMALSAMARA
+    - FONDIMUSHCHESTVENNIYTEPLOENERGETICHESKIYSAMARSKIY
+    - FOUNDATIONPOWERTHERMALSAMARACOMPANYSTOCKJOINT
+    - FUNDPROPERTYPOWERHEATSAMARA
+  :alt_rev:
+    - JSC STIF
+    - AO STIF
+    - JSC FDN POWER THERMAL SAMARA
+    - FOND IMUSHCHESTVENNIY TEPLOENERGETICHESKIY SAMARSKIY
+    - FOUNDATION POWER THERMAL SAMARA STOCK JOINT
+    - FUND PROPERTY POWER HEAT SAMARA
+  :alt_no_ws:
+    - STIFJSC
+    - STIFAO
+    - SAMARATHERMALPOWERFDNJSC
+    - SAMARSKIYTEPLOENERGETICHESKIYIMUSHCHESTVENNIYFOND
+    - JOINTSTOCKSAMARATHERMALPOWERFOUNDATION
+    - SAMARAHEATPOWERPROPERTYFUND
+  :alt_no_ws_rev:
+    - JSCSTIF
+    - AOSTIF
+    - JSCFDNPOWERTHERMALSAMARA
+    - FONDIMUSHCHESTVENNIYTEPLOENERGETICHESKIYSAMARSKIY
+    - FOUNDATIONPOWERTHERMALSAMARASTOCKJOINT
+    - FUNDPROPERTYPOWERHEATSAMARA
