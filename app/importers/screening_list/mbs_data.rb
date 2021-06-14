@@ -5,5 +5,6 @@ module ScreeningList
     self.source_information_url =
       'https://home.treasury.gov/policy-issues/financial-sanctions/consolidated-sanctions-list/non-sdn-menu-based-sanctions-list-ns-mbs-list'
     self.program_id = 'CAATSA - RUSSIA'
+    self.program_id_2 = 'PEESA'
   end
 end

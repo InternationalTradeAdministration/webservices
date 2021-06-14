@@ -1089,4 +1089,107 @@
       </aka>
     </akaList>
   </sdnEntry>
+  <sdnEntry>
+    <uid>31914</uid>
+    <lastName>SAMARA HEAT AND ENERGY PROPERTY FUND</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>PEESA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>21715</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>6317063064</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>21753</uid>
+        <idType>Identification Number</idType>
+        <idNumber>IMO 6188586</idNumber>
+      </id>
+      <id>
+        <uid>21714</uid>
+        <idType>Business Registration Number</idType>
+        <idNumber>1066317027787</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>140769</uid>
+        <idType>PEESA Information:</idType>
+        <idNumber>Property and Interests in Property Blocked, Except Importation of Goods</idNumber>
+      </id>
+      <id>
+        <uid>140619</uid>
+        <idType>Target Type</idType>
+        <idNumber>State-Owned Enterprise</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>49969</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STIF JSC</lastName>
+      </aka>
+      <aka>
+        <uid>49970</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STIF, AO</lastName>
+      </aka>
+      <aka>
+        <uid>49972</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SAMARA THERMAL POWER FDN JSC</lastName>
+      </aka>
+      <aka>
+        <uid>49973</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SAMARSKIY TEPLOENERGETICHESKIY IMUSHCHESTVENNIY FOND</lastName>
+      </aka>
+      <aka>
+        <uid>49974</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>JOINT STOCK COMPANY SAMARA THERMAL POWER FOUNDATION</lastName>
+      </aka>
+      <aka>
+        <uid>50134</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SAMARA HEAT AND POWER PROPERTY FUND</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>47989</uid>
+        <address1>Corp 6 A, Unit 2H, 1st Floor</address1>
+        <address2>Unit 95</address2>
+        <address3>prospekt Bolshoy Sampsoniyevskiy 60</address3>
+        <city>St Petersburg</city>
+        <postalCode>194044</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>47990</uid>
+        <address1>Stepana Razina Street, 89, 2, 2</address1>
+        <city>Samara</city>
+        <stateOrProvince>Samara Region</stateOrProvince>
+        <postalCode>443099</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>48101</uid>
+        <address1>d. 60 korp. 6 litera A pom. 2N</address1>
+        <address2>1 etazh chast pom. 95</address2>
+        <address3>prospekt Bolshoi Sampsonievski</address3>
+        <city>St. Petersburg</city>
+        <postalCode>194044</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
 </sdnList>
