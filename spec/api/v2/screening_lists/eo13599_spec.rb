@@ -29,11 +29,11 @@ describe 'Eo13599 List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Eo13599 results that match countries "AE"'
     end
 
-    context 'when type is specified' do
-      subject { response }
-      let(:params) { { sources: '13599', type: 'Entity' } }
-      it_behaves_like 'a successful search request'
-      it_behaves_like 'it contains all ScreeningList::Eo13599 results that match type "Entity"'
-    end
+    # context 'when type is specified' do
+    #   subject { response }
+    #   let(:params) { { sources: '13599', type: 'Entity' } }
+    #   it_behaves_like 'a successful search request'
+    #   it_behaves_like 'it contains all ScreeningList::Eo13599 results that match type "Entity"'
+    # end
   end
 end

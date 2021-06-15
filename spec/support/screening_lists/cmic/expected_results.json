@@ -1,0 +1,434 @@
+[
+  {
+    "id": "30954",
+    "addresses": [
+      {
+        "address": "No. 1, Nansan Lane, Sanlihe, Xicheng District",
+        "city": "Beijing",
+        "state": null,
+        "postal_code": "100822",
+        "country": "CN"
+      }
+    ],
+    "alt_names": [
+      "CHINA NATIONAL NUCLEAR CORP",
+      "CNNC"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "30954",
+    "ids": [
+      {
+        "country": "CN",
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "91110000100009563N",
+        "type": "Unified Social Credit Code (USCC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "China National Nuclear Corporation",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Private Company",
+        "type": "Target Type"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10000KRQ8",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND100005B38",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10002J9T6",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND100027TJ1",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10002DLF5",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10003RXC5",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10002J9V2",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND100005B20",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND100025BB0",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10003VCD9",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10003RXB7",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND10001ZPR6",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2021",
+        "type": "Listing Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "02 Aug 2021",
+        "type": "Effective Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2022",
+        "type": "Purchase/Sales For Divestment Date (CMIC)"
+      }
+    ],
+    "name": "CHINA NATIONAL NUCLEAR CORPORATION",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CMIC-EO"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Chinese Military-Industrial Complex Companies List (CMIC) - Treasury Department",
+    "source_information_url": "https://bit.ly/3zsMQ4n",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  },
+  {
+    "id": "30950",
+    "addresses": [
+      {
+        "address": "No. 301, Zhongshan East Road, Xuanwu District",
+        "city": "Nanjing",
+        "state": "Jiangsu",
+        "postal_code": "210002",
+        "country": "CN"
+      }
+    ],
+    "alt_names": [
+      "PANDA ELECTRONICS GROUP LIMITED"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "30950",
+    "ids": [
+      {
+        "country": "CN",
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "913201921348831521",
+        "type": "Unified Social Credit Code (USCC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2021",
+        "type": "Listing Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "02 Aug 2021",
+        "type": "Effective Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2022",
+        "type": "Purchase/Sales For Divestment Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "State-Owned Enterprise",
+        "type": "Target Type"
+      }
+    ],
+    "name": "PANDA ELECTRONICS GROUP CO., LTD.",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CMIC-EO"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Chinese Military-Industrial Complex Companies List (CMIC) - Treasury Department",
+    "source_information_url": "https://bit.ly/3zsMQ4n",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  },
+  {
+    "id": "30951",
+    "addresses": [
+      {
+        "address": "18, Zhangjiang Road, Pudong New Area",
+        "city": "Shanghai",
+        "state": null,
+        "postal_code": "201203",
+        "country": "CN"
+      },
+      {
+        "address": null,
+        "city": null,
+        "state": null,
+        "postal_code": null,
+        "country": "KY"
+      }
+    ],
+    "alt_names": [
+      "SEMICONDUCTOR MFG INTL CORP",
+      "SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION LIMITED",
+      "SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION CO., LTD",
+      "SMIC"
+    ],
+    "citizenships": [
+
+    ],
+    "dates_of_birth": [
+
+    ],
+    "entity_number": "30951",
+    "ids": [
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Semiconductor Manufacturing International Corporation Limited",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "688981 CN",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "MKN1 DE",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "MKN2 DE",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "KYG8020E1199",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Semiconductor Manufacturing International Corporation",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "00981 HK",
+        "type": "Equity Ticker"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Semiconductor Manufacturing International Corporation Co., Ltd",
+        "type": "Issuer Name"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "XS1432320429",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "US81663N2062",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "XS2101828452",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "KYG8020E1017",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "XS1730881247",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "KYG802041031",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CNE1000041W8",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "CND100022N41",
+        "type": "ISIN"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2022",
+        "type": "Purchase/Sales For Divestment Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "02 Aug 2021",
+        "type": "Effective Date (CMIC)"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "Public Company",
+        "type": "Target Type"
+      },
+      {
+        "country": null,
+        "expiration_date": null,
+        "issue_date": null,
+        "number": "03 Jun 2021",
+        "type": "Listing Date (CMIC)"
+      }
+    ],
+    "name": "SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION",
+    "nationalities": [
+
+    ],
+    "places_of_birth": [
+
+    ],
+    "programs": [
+      "CMIC-EO"
+    ],
+    "remarks": null,
+    "source": "Non-SDN Chinese Military-Industrial Complex Companies List (CMIC) - Treasury Department",
+    "source_information_url": "https://bit.ly/3zsMQ4n",
+    "source_list_url": null,
+    "title": null,
+    "type": "Entity"
+  }
+]

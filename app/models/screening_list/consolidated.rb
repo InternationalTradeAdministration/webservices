@@ -3,6 +3,7 @@ module ScreeningList
     include Searchable
     self.model_classes = [ScreeningList::Cap,
                           ScreeningList::Ccmc,
+                          ScreeningList::Cmic,
                           ScreeningList::Dpl,
                           ScreeningList::Dtc,
                           ScreeningList::El,

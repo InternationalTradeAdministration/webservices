@@ -14,6 +14,7 @@ shared_context 'all CSL fixture data' do
   include_context 'ScreeningList::Meu data'
   include_context 'ScreeningList::Mbs data'
   include_context 'ScreeningList::Ccmc data'
+  include_context 'ScreeningList::Cmic data'
 end
 
 shared_context 'ScreeningList::Part561 data' do
@@ -371,9 +372,10 @@ end
 
 shared_examples 'it contains all ScreeningList::Eo13599 results that match type "Entity"' do
   let(:source) { ScreeningList::Eo13599 }
-  let(:expected) { [0, 1] }
+  let(:expected) { [0] }
   it_behaves_like 'it contains all expected results of source'
 end
+
 shared_context 'ScreeningList::Ccmc data' do
   before(:all) do
     ScreeningList::Ccmc.recreate_index
@@ -403,6 +405,38 @@ end
 shared_examples 'it contains all ScreeningList::Ccmc results that match type "Entity"' do
   let(:source) { ScreeningList::Ccmc }
   let(:expected) { [0, 1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_context 'ScreeningList::Cmic data' do
+  before(:all) do
+    ScreeningList::Cmic.recreate_index
+    VCR.use_cassette('importers/screening_list/cmic.yml', record: :once) do
+      ScreeningList::CmicData.new(
+        "#{Rails.root}/spec/fixtures/screening_lists/treasury_consolidated/consolidated.xml",).import
+    end
+
+    @all_possible_full_results ||= {}
+    @all_possible_full_results[ScreeningList::Cmic] = JSON.parse(open(
+      "#{File.dirname(__FILE__)}/screening_lists/cmic/expected_results.json",).read,)
+  end
+end
+
+shared_examples 'it contains all ScreeningList::Cmic results' do
+  let(:source) { ScreeningList::Cmic }
+  let(:expected) { [0, 1, 2] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Cmic results that match "PANDA ELECTRONICS"' do
+  let(:source) { ScreeningList::Cmic }
+  let(:expected) { [1] }
+  it_behaves_like 'it contains all expected results of source'
+end
+
+shared_examples 'it contains all ScreeningList::Cmic results that match type "Entity"' do
+  let(:source) { ScreeningList::Cmic }
+  let(:expected) { [0] }
   it_behaves_like 'it contains all expected results of source'
 end
 
