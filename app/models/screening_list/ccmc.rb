@@ -3,7 +3,7 @@ module ScreeningList
     include Indexable
     include ScreeningList::Mappable
     self.source = {
-      full_name: 'Non-SDN Communist Military Companies Sanctions List (CCMC)  - Treasury Department',
+      full_name: 'Non-SDN Communist Military Companies Sanctions List (CCMC) - Treasury Department',
       code:      'CCMC',
     }
   end

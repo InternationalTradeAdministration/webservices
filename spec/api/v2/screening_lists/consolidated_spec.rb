@@ -27,12 +27,14 @@ describe 'Consolidated Screening List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Meu results'
       it_behaves_like 'it contains all ScreeningList::Mbs results'
       it_behaves_like 'it contains all ScreeningList::Ccmc results'
+      it_behaves_like 'it contains all ScreeningList::Cmic results'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
            ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
-           ScreeningList::Cap, ScreeningList::Meu, ScreeningList::Mbs, ScreeningList::Ccmc,]
+           ScreeningList::Cap, ScreeningList::Meu, ScreeningList::Mbs, ScreeningList::Ccmc,
+           ScreeningList::Cmic,]
         end
       end
       it_behaves_like 'it contains sources_used' do
@@ -40,7 +42,8 @@ describe 'Consolidated Screening List API V2', type: :request do
           [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::El, ScreeningList::Eo13599,
            ScreeningList::Dpl, ScreeningList::Uvl, ScreeningList::Isn,
            ScreeningList::Dtc, ScreeningList::Part561, ScreeningList::Plc, ScreeningList::Ssi,
-           ScreeningList::Cap, ScreeningList::Meu, ScreeningList::Mbs, ScreeningList::Ccmc,]
+           ScreeningList::Cap, ScreeningList::Meu, ScreeningList::Mbs, ScreeningList::Ccmc,
+           ScreeningList::Cmic,]
         end
       end
     end
@@ -221,10 +224,11 @@ describe 'Consolidated Screening List API V2', type: :request do
       it_behaves_like 'it contains all ScreeningList::Part561 results that match type "Entity"'
       it_behaves_like 'it contains all ScreeningList::Cap results that match type "Entity"'
       it_behaves_like 'it contains all ScreeningList::Ccmc results that match type "Entity"'
+      it_behaves_like 'it contains all ScreeningList::Cmic results that match type "Entity"'
       it_behaves_like 'it contains only results with sources' do
         let(:sources) { [ScreeningList::Sdn, ScreeningList::Fse, ScreeningList::Ssi,
                          ScreeningList::Eo13599, ScreeningList::Part561, ScreeningList::Cap,
-                         ScreeningList::Ccmc,] }
+                         ScreeningList::Ccmc, ScreeningList::Cmic,] }
       end
 
       context 'and is set to "Vessel"' do
@@ -309,6 +313,17 @@ describe 'Consolidated Screening List API V2', type: :request do
         end
         it_behaves_like 'it contains sources_used' do
           let(:sources) { [ScreeningList::Ccmc] }
+        end
+      end
+
+      context 'and is set to "CMIC" source' do
+        let(:params) { { sources: 'CMIC' } }
+        it_behaves_like 'it contains all ScreeningList::Cmic results'
+        it_behaves_like 'it contains only results with sources' do
+          let(:sources) { [ScreeningList::Cmic] }
+        end
+        it_behaves_like 'it contains sources_used' do
+          let(:sources) { [ScreeningList::Cmic] }
         end
       end
 

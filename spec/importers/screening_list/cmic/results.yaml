@@ -1,0 +1,401 @@
+---
+- :entity_number: '30950'
+  :title:
+  :call_sign:
+  :vessel_type:
+  :gross_tonnage:
+  :gross_registered_tonnage:
+  :vessel_flag:
+  :vessel_owner:
+  :remarks:
+  :id: '30950'
+  :source: &1
+    :full_name: Non-SDN Chinese Military-Industrial Complex Companies List (CMIC)
+      - Treasury Department
+    :code: CMIC
+  :source_list_url:
+  :source_information_url: https://bit.ly/3zsMQ4n
+  :name: PANDA ELECTRONICS GROUP CO., LTD.
+  :type: Entity
+  :alt_names:
+    - PANDA ELECTRONICS GROUP LIMITED
+  :programs:
+    - CMIC-EO
+  :nationalities: []
+  :citizenships: []
+  :dates_of_birth: []
+  :places_of_birth: []
+  :addresses:
+    - :city: Nanjing
+      :country: CN
+      :postal_code: '210002'
+      :state: Jiangsu
+      :address: No. 301, Zhongshan East Road, Xuanwu District
+      :full_address: No. 301, Zhongshan East Road, Xuanwu District, Nanjing, CN, 210002,
+        Jiangsu
+  :ids:
+    - :country: CN
+      :expiration_date:
+      :issue_date:
+      :number: '913201921348831521'
+      :type: Unified Social Credit Code (USCC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2021
+      :type: Listing Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 02 Aug 2021
+      :type: Effective Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2022
+      :type: Purchase/Sales For Divestment Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: State-Owned Enterprise
+      :type: Target Type
+  :name_idx: PANDA ELECTRONICS GROUP
+  :name_no_ws_with_common: PANDAELECTRONICSGROUPCOLTD
+  :name_no_ws_rev_with_common: LTDCOGROUPELECTRONICSPANDA
+  :name_rev: GROUP ELECTRONICS PANDA
+  :name_no_ws: PANDAELECTRONICSGROUP
+  :name_no_ws_rev: GROUPELECTRONICSPANDA
+  :alt_idx:
+    - PANDA ELECTRONICS GROUP
+  :alt_no_ws_with_common:
+    - PANDAELECTRONICSGROUPLIMITED
+  :alt_no_ws_rev_with_common:
+    - LIMITEDGROUPELECTRONICSPANDA
+  :alt_rev:
+    - GROUP ELECTRONICS PANDA
+  :alt_no_ws:
+    - PANDAELECTRONICSGROUP
+  :alt_no_ws_rev:
+    - GROUPELECTRONICSPANDA
+- :entity_number: '30951'
+  :title:
+  :call_sign:
+  :vessel_type:
+  :gross_tonnage:
+  :gross_registered_tonnage:
+  :vessel_flag:
+  :vessel_owner:
+  :remarks:
+  :id: '30951'
+  :source: *1
+  :source_list_url:
+  :source_information_url: https://bit.ly/3zsMQ4n
+  :name: SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION
+  :type: Entity
+  :alt_names:
+    - SEMICONDUCTOR MFG INTL CORP
+    - SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION LIMITED
+    - SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION CO., LTD
+    - SMIC
+  :programs:
+    - CMIC-EO
+  :nationalities: []
+  :citizenships: []
+  :dates_of_birth: []
+  :places_of_birth: []
+  :addresses:
+    - :city: Shanghai
+      :country: CN
+      :postal_code: '201203'
+      :state:
+      :address: 18, Zhangjiang Road, Pudong New Area
+      :full_address: 18, Zhangjiang Road, Pudong New Area, Shanghai, CN, 201203
+    - :city:
+      :country: KY
+      :postal_code:
+      :state:
+      :address:
+      :full_address: KY
+  :ids:
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Semiconductor Manufacturing International Corporation Limited
+      :type: Issuer Name
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 688981 CN
+      :type: Equity Ticker
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: MKN1 DE
+      :type: Equity Ticker
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: MKN2 DE
+      :type: Equity Ticker
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: KYG8020E1199
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Semiconductor Manufacturing International Corporation
+      :type: Issuer Name
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: '00981 HK'
+      :type: Equity Ticker
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Semiconductor Manufacturing International Corporation Co., Ltd
+      :type: Issuer Name
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: XS1432320429
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: US81663N2062
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: XS2101828452
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: KYG8020E1017
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: XS1730881247
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: KYG802041031
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CNE1000041W8
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND100022N41
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2022
+      :type: Purchase/Sales For Divestment Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 02 Aug 2021
+      :type: Effective Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Public Company
+      :type: Target Type
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2021
+      :type: Listing Date (CMIC)
+  :name_idx: SEMICONDUCTOR MANUFACTURING INTERNATIONAL
+  :name_no_ws_with_common: SEMICONDUCTORMANUFACTURINGINTERNATIONALCORPORATION
+  :name_no_ws_rev_with_common: CORPORATIONINTERNATIONALMANUFACTURINGSEMICONDUCTOR
+  :name_rev: INTERNATIONAL MANUFACTURING SEMICONDUCTOR
+  :name_no_ws: SEMICONDUCTORMANUFACTURINGINTERNATIONAL
+  :name_no_ws_rev: INTERNATIONALMANUFACTURINGSEMICONDUCTOR
+  :alt_idx:
+    - SEMICONDUCTOR MFG INTL
+    - SEMICONDUCTOR MANUFACTURING INTERNATIONAL
+    - SEMICONDUCTOR MANUFACTURING INTERNATIONAL
+    - SMIC
+  :alt_no_ws_with_common:
+    - SEMICONDUCTORMFGINTLCORP
+    - SEMICONDUCTORMANUFACTURINGINTERNATIONALCORPORATIONLIMITED
+    - SEMICONDUCTORMANUFACTURINGINTERNATIONALCORPORATIONCOLTD
+    - SMIC
+  :alt_no_ws_rev_with_common:
+    - CORPINTLMFGSEMICONDUCTOR
+    - LIMITEDCORPORATIONINTERNATIONALMANUFACTURINGSEMICONDUCTOR
+    - LTDCOCORPORATIONINTERNATIONALMANUFACTURINGSEMICONDUCTOR
+    - SMIC
+  :alt_rev:
+    - INTL MFG SEMICONDUCTOR
+    - INTERNATIONAL MANUFACTURING SEMICONDUCTOR
+    - INTERNATIONAL MANUFACTURING SEMICONDUCTOR
+    - SMIC
+  :alt_no_ws:
+    - SEMICONDUCTORMFGINTL
+    - SEMICONDUCTORMANUFACTURINGINTERNATIONAL
+    - SEMICONDUCTORMANUFACTURINGINTERNATIONAL
+    - SMIC
+  :alt_no_ws_rev:
+    - INTLMFGSEMICONDUCTOR
+    - INTERNATIONALMANUFACTURINGSEMICONDUCTOR
+    - INTERNATIONALMANUFACTURINGSEMICONDUCTOR
+    - SMIC
+- :entity_number: '30954'
+  :title:
+  :call_sign:
+  :vessel_type:
+  :gross_tonnage:
+  :gross_registered_tonnage:
+  :vessel_flag:
+  :vessel_owner:
+  :remarks:
+  :id: '30954'
+  :source: *1
+  :source_list_url:
+  :source_information_url: https://bit.ly/3zsMQ4n
+  :name: CHINA NATIONAL NUCLEAR CORPORATION
+  :type: Entity
+  :alt_names:
+    - CHINA NATIONAL NUCLEAR CORP
+    - CNNC
+  :programs:
+    - CMIC-EO
+  :nationalities: []
+  :citizenships: []
+  :dates_of_birth: []
+  :places_of_birth: []
+  :addresses:
+    - :city: Beijing
+      :country: CN
+      :postal_code: '100822'
+      :state:
+      :address: No. 1, Nansan Lane, Sanlihe, Xicheng District
+      :full_address: No. 1, Nansan Lane, Sanlihe, Xicheng District, Beijing, CN, 100822
+  :ids:
+    - :country: CN
+      :expiration_date:
+      :issue_date:
+      :number: 91110000100009563N
+      :type: Unified Social Credit Code (USCC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: China National Nuclear Corporation
+      :type: Issuer Name
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: Private Company
+      :type: Target Type
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10000KRQ8
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND100005B38
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10002J9T6
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND100027TJ1
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10002DLF5
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10003RXC5
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10002J9V2
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND100005B20
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND100025BB0
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10003VCD9
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10003RXB7
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: CND10001ZPR6
+      :type: ISIN
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2021
+      :type: Listing Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 02 Aug 2021
+      :type: Effective Date (CMIC)
+    - :country:
+      :expiration_date:
+      :issue_date:
+      :number: 03 Jun 2022
+      :type: Purchase/Sales For Divestment Date (CMIC)
+  :name_idx: CHINA NATIONAL NUCLEAR
+  :name_no_ws_with_common: CHINANATIONALNUCLEARCORPORATION
+  :name_no_ws_rev_with_common: CORPORATIONNUCLEARNATIONALCHINA
+  :name_rev: NUCLEAR NATIONAL CHINA
+  :name_no_ws: CHINANATIONALNUCLEAR
+  :name_no_ws_rev: NUCLEARNATIONALCHINA
+  :alt_idx:
+    - CHINA NATIONAL NUCLEAR
+    - CNNC
+  :alt_no_ws_with_common:
+    - CHINANATIONALNUCLEARCORP
+    - CNNC
+  :alt_no_ws_rev_with_common:
+    - CORPNUCLEARNATIONALCHINA
+    - CNNC
+  :alt_rev:
+    - NUCLEAR NATIONAL CHINA
+    - CNNC
+  :alt_no_ws:
+    - CHINANATIONALNUCLEAR
+    - CNNC
+  :alt_no_ws_rev:
+    - NUCLEARNATIONALCHINA
+    - CNNC

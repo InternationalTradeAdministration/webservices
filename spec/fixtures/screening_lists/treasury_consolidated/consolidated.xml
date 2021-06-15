@@ -1192,4 +1192,333 @@
       </address>
     </addressList>
   </sdnEntry>
+  <sdnEntry>
+    <uid>30950</uid>
+    <lastName>PANDA ELECTRONICS GROUP CO., LTD.</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>CMIC-EO</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>21924</uid>
+        <idType>Unified Social Credit Code (USCC)</idType>
+        <idNumber>913201921348831521</idNumber>
+        <idCountry>China</idCountry>
+      </id>
+      <id>
+        <uid>141438</uid>
+        <idType>Listing Date (CMIC)</idType>
+        <idNumber>03 Jun 2021</idNumber>
+      </id>
+      <id>
+        <uid>141439</uid>
+        <idType>Effective Date (CMIC)</idType>
+        <idNumber>02 Aug 2021</idNumber>
+      </id>
+      <id>
+        <uid>141440</uid>
+        <idType>Purchase/Sales For Divestment Date (CMIC)</idType>
+        <idNumber>03 Jun 2022</idNumber>
+      </id>
+      <id>
+        <uid>141442</uid>
+        <idType>Target Type</idType>
+        <idNumber>State-Owned Enterprise</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>50488</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>PANDA ELECTRONICS GROUP LIMITED</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>48428</uid>
+        <address1>No. 301</address1>
+        <address2>Zhongshan East Road</address2>
+        <address3>Xuanwu District</address3>
+        <city>Nanjing</city>
+        <stateOrProvince>Jiangsu</stateOrProvince>
+        <postalCode>210002</postalCode>
+        <country>China</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>30951</uid>
+    <lastName>SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>CMIC-EO</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>141620</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>Semiconductor Manufacturing International Corporation Limited</idNumber>
+      </id>
+      <id>
+        <uid>139053</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>688981 CN</idNumber>
+      </id>
+      <id>
+        <uid>141622</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>MKN1 DE</idNumber>
+      </id>
+      <id>
+        <uid>141623</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>MKN2 DE</idNumber>
+      </id>
+      <id>
+        <uid>141624</uid>
+        <idType>ISIN</idType>
+        <idNumber>KYG8020E1199</idNumber>
+      </id>
+      <id>
+        <uid>139054</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>Semiconductor Manufacturing International Corporation</idNumber>
+      </id>
+      <id>
+        <uid>139059</uid>
+        <idType>Equity Ticker</idType>
+        <idNumber>00981 HK</idNumber>
+      </id>
+      <id>
+        <uid>141621</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>Semiconductor Manufacturing International Corporation Co., Ltd</idNumber>
+      </id>
+      <id>
+        <uid>141625</uid>
+        <idType>ISIN</idType>
+        <idNumber>XS1432320429</idNumber>
+      </id>
+      <id>
+        <uid>141626</uid>
+        <idType>ISIN</idType>
+        <idNumber>US81663N2062</idNumber>
+      </id>
+      <id>
+        <uid>141627</uid>
+        <idType>ISIN</idType>
+        <idNumber>XS2101828452</idNumber>
+      </id>
+      <id>
+        <uid>141628</uid>
+        <idType>ISIN</idType>
+        <idNumber>KYG8020E1017</idNumber>
+      </id>
+      <id>
+        <uid>141629</uid>
+        <idType>ISIN</idType>
+        <idNumber>XS1730881247</idNumber>
+      </id>
+      <id>
+        <uid>141630</uid>
+        <idType>ISIN</idType>
+        <idNumber>KYG802041031</idNumber>
+      </id>
+      <id>
+        <uid>141631</uid>
+        <idType>ISIN</idType>
+        <idNumber>CNE1000041W8</idNumber>
+      </id>
+      <id>
+        <uid>141632</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND100022N41</idNumber>
+      </id>
+      <id>
+        <uid>141633</uid>
+        <idType>Purchase/Sales For Divestment Date (CMIC)</idType>
+        <idNumber>03 Jun 2022</idNumber>
+      </id>
+      <id>
+        <uid>141634</uid>
+        <idType>Effective Date (CMIC)</idType>
+        <idNumber>02 Aug 2021</idNumber>
+      </id>
+      <id>
+        <uid>141635</uid>
+        <idType>Target Type</idType>
+        <idNumber>Public Company</idNumber>
+      </id>
+      <id>
+        <uid>141636</uid>
+        <idType>Listing Date (CMIC)</idType>
+        <idNumber>03 Jun 2021</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>48676</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SEMICONDUCTOR MFG INTL CORP</lastName>
+      </aka>
+      <aka>
+        <uid>50629</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION LIMITED</lastName>
+      </aka>
+      <aka>
+        <uid>50630</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SEMICONDUCTOR MANUFACTURING INTERNATIONAL CORPORATION CO., LTD</lastName>
+      </aka>
+      <aka>
+        <uid>50631</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>SMIC</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>48561</uid>
+        <address1>18, Zhangjiang Road, Pudong New Area</address1>
+        <city>Shanghai</city>
+        <postalCode>201203</postalCode>
+        <country>China</country>
+      </address>
+      <address>
+        <uid>48562</uid>
+        <country>Cayman Islands</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>30954</uid>
+    <lastName>CHINA NATIONAL NUCLEAR CORPORATION</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>CMIC-EO</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>21976</uid>
+        <idType>Unified Social Credit Code (USCC)</idType>
+        <idNumber>91110000100009563N</idNumber>
+        <idCountry>China</idCountry>
+      </id>
+      <id>
+        <uid>139060</uid>
+        <idType>Issuer Name</idType>
+        <idNumber>China National Nuclear Corporation</idNumber>
+      </id>
+      <id>
+        <uid>141557</uid>
+        <idType>Target Type</idType>
+        <idNumber>Private Company</idNumber>
+      </id>
+      <id>
+        <uid>141389</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10000KRQ8</idNumber>
+      </id>
+      <id>
+        <uid>141390</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND100005B38</idNumber>
+      </id>
+      <id>
+        <uid>141391</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10002J9T6</idNumber>
+      </id>
+      <id>
+        <uid>141392</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND100027TJ1</idNumber>
+      </id>
+      <id>
+        <uid>141393</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10002DLF5</idNumber>
+      </id>
+      <id>
+        <uid>141394</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10003RXC5</idNumber>
+      </id>
+      <id>
+        <uid>141395</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10002J9V2</idNumber>
+      </id>
+      <id>
+        <uid>141396</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND100005B20</idNumber>
+      </id>
+      <id>
+        <uid>141397</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND100025BB0</idNumber>
+      </id>
+      <id>
+        <uid>141398</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10003VCD9</idNumber>
+      </id>
+      <id>
+        <uid>141399</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10003RXB7</idNumber>
+      </id>
+      <id>
+        <uid>141400</uid>
+        <idType>ISIN</idType>
+        <idNumber>CND10001ZPR6</idNumber>
+      </id>
+      <id>
+        <uid>141404</uid>
+        <idType>Listing Date (CMIC)</idType>
+        <idNumber>03 Jun 2021</idNumber>
+      </id>
+      <id>
+        <uid>141405</uid>
+        <idType>Effective Date (CMIC)</idType>
+        <idNumber>02 Aug 2021</idNumber>
+      </id>
+      <id>
+        <uid>141406</uid>
+        <idType>Purchase/Sales For Divestment Date (CMIC)</idType>
+        <idNumber>03 Jun 2022</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>48890</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>CHINA NATIONAL NUCLEAR CORP</lastName>
+      </aka>
+      <aka>
+        <uid>50557</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>CNNC</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>48484</uid>
+        <address1>No. 1, Nansan Lane, Sanlihe, Xicheng District</address1>
+        <city>Beijing</city>
+        <postalCode>100822</postalCode>
+        <country>China</country>
+      </address>
+    </addressList>
+  </sdnEntry>
 </sdnList>
