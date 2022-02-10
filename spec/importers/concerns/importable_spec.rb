@@ -68,6 +68,14 @@ describe Importable do
         expect(MockData.new.lookup_country('undetermined')).to be_nil
       end
     end
+
+    context 'when the country name is Kosovo' do
+      it 'returns XK' do
+        expect(Rails.logger).not_to receive(:error)
+        expect(MockData.new.lookup_country('Kosovo')).to eq('XK')
+      end
+    end
+
     context 'when there is no country code' do
       it 'returns nil and generate an error log' do
         expect(Rails.logger).to receive(:error).with(/Could not find a country code for nowhere republic/)

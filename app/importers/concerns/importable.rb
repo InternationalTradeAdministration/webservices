@@ -33,21 +33,29 @@ module Importable
   end
 
   def lookup_country(country_str)
-    normalized_country_str = normalize_country(country_str)
+    country_str = country_str.strip
+    normalized_country_str = lookup_mappings(country_name_mappings, country_str, country_str)
     IsoCountryCodes.search_by_name(normalized_country_str).first.alpha2 if normalized_country_str
   rescue IsoCountryCodes::UnknownCodeError
-    Rails.logger.error "Could not find a country code for #{country_str}"
-    nil
+    country_code = lookup_mappings(country_code_mappings, country_str)
+    if country_code
+      country_code
+    else
+      Rails.logger.error "Could not find a country code for #{country_str}"
+      nil
+    end
   end
 
   def country_name_mappings
     @@country_name_mappings ||= YAML.load_file(File.join(Rails.root, 'config', 'country_mappings.yaml'))
   end
 
-  def normalize_country(country_str)
-    country_str = country_str.strip
+    def country_code_mappings
+      @@country_code_mappings ||= YAML.load_file(File.join(Rails.root, 'config', 'country_code_mappings.yaml'))
+    end
 
-    mapping = country_name_mappings.find do |_, regexes|
+  def lookup_mappings(mappings, country_str, default_value = nil)
+    mapping = mappings.find do |_, regexes|
       regexes.any? { |r| r.match country_str }
     end
 
@@ -56,7 +64,7 @@ module Importable
       # avoid error logs on names we don't have a country to map it to
       name == '<undetermined>' ? nil : name
     else
-      country_str
+      default_value
     end
   end
 
