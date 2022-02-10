@@ -60,7 +60,6 @@ Saint Vincent and the Grenadines:
 Sao Tome and Principe:
 - !ruby/regexp /\ASão Tomé & Príncipe\Z/i
 Serbia:
-- !ruby/regexp /\AKosovo\Z/i
 - !ruby/regexp /\ASerbia and Montenegro\Z/i
 Timor-Leste:
 - !ruby/regexp /\ATimor Leste\Z/i
