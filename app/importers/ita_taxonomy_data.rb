@@ -14,7 +14,7 @@ class ItaTaxonomyData
         "British Virgin Islands" => "Virgin Islands (British)",
         "United States" => "United States of America"
       }
-  PARTIAL_MATCH_URL = "https://restcountries.eu/rest/v2/name/%s"
+  PARTIAL_MATCH_URL = "https://restcountries.com/v2/%s"
   FULL_MATCH_URL = PARTIAL_MATCH_URL + "?fullText=true"
 
   def initialize(resource = nil, pre_loaded_terms = nil)
